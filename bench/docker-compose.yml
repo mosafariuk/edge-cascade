@@ -44,6 +44,7 @@ services:
       VLLM_URL: "http://mock-vllm:8000/v1/completions"
       EMBED_MODE: "${EMBED_MODE:-real}"    # 'hash' to isolate plumbing, 'real' for ONNX contention
       EGRESS: "${EGRESS:-redis}"           # 'redis' (TTA) or 'pgvector'
+      EXTRACT: "${EXTRACT:-0}"             # bench stack uses the mock vLLM: legacy path, not the evaluated cascade
       B_MAX: "32"
       W_MAX_MS: "19"
       SINK_MS: "${SINK_MS:-0}"             # inject egress latency to force backpressure

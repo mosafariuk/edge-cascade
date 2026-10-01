@@ -1,0 +1,13 @@
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=1 DURATION=90s RATE=50000/s ORT_INTRA_OP=0 EMBED_MODE=real
+
+reusing redis already listening on :6390
+W=8 trial 1/1 ... 1524 req/s   p99=5377ms   lg=11% redis=4.8%
+
+════════ SUMMARY (/opt/edge-cascade-bench/bench/sweep-results.csv) ════════
+  W  intraOp   n   mean rps    stdev  95% CI ±  note
+  8        0   1     1524.0      0.0       nan  
+  8        1   3    14101.7    125.7     142.3  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.

@@ -1,0 +1,7 @@
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=1 DURATION=90s RATE=50000/s ORT_INTRA_OP=1 EMBED_MODE=real
+
+reusing redis already listening on :6390
+W=8 trial 1/1 ... 
+interrupted — cleaning up

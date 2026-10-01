@@ -51,7 +51,7 @@ tests/
   verify-constrained.mjs # 13 assertions — schemas, JsonPos, value-surprisal guard, few-shot prompt builder
   verify-heavy.mjs       #  4 assertions — escalation path
   verify-shadow.mjs      #  6 assertions — shadow labelling, PAVA, Wilson CIs, held-out split
-  verify-worker.mjs      #  5 assertions — router reachability, stable ids, per-message failure isolation, PEL recovery
+  verify-worker.mjs      #  6 assertions — router reachability, stable ids, per-message failure isolation, PEL recovery, enforced guard config
 bench/
   scaling-sweep.sh       # pinned/unpinned worker-count sweep, n trials, t-based CIs
   spin-proof.sh          # unpinned + allow_spinning=0: direct test of the spin-wait hypothesis
@@ -63,11 +63,12 @@ bench/
   gen-synthetic-corpus.mjs  # synthetic corpus: truth sampled in code, LLM writes the text, mechanical faithfulness check
   shadow-run.mjs         # edge + judge over a corpus → shadow-pairs.jsonl (provenance header, traces, truth labels)
   optimize-guard.mjs     # runs prompt/temperature arms over a corpus, full per-token traces (DRY_RUN=1 without a GPU)
+  GPU-RUNBOOK.md         # serving the edge model on a rented GPU for the guard runs
   audit-sample.mjs, audit-score.mjs   # human-audit subset + judge-fidelity scoring
   bootstrap-model.mjs    # downloads the MiniLM ONNX weights (required before EMBED_MODE=real)
   docker-compose.yml     # redis + postgres/pgvector + mock-vllm (+ an unused rabbitmq service)
   init.sql               # pgvector schema, vector(384)
-  results-zen5/          # run 1 (2026-07-20): scaling, placement, latency CSVs, CONCLUSIONS.md
+  results-zen5/          # run 1 (2026-07-20): scaling, placement, latency CSVs, provenance, perf captures, CONCLUSIONS.md
   results-zen5-run2/     # run 2 (2026-09-30): spin-proof + 2x2 ablation CSVs, per-trial logs, PROVENANCE.txt
 analysis/
   queue_sim.py           # M/D/c queue + batching simulation (illustrative; M1-era parameters)
@@ -80,16 +81,17 @@ analysis/
 ## Quick start (local workers; ~5 minutes)
 ```bash
 npm ci                                  # NOT npm install — the lockfile pins onnxruntime-node 1.27.0
-npm test                                # 45 assertions across 6 suites + load-gen selftest
+npm test                                # 46 assertions across 6 suites + load-gen selftest
 npm run bootstrap-model                 # caches all-MiniLM-L6-v2 INT8 (22.97 MB) for the native embedder
 
 # infrastructure: broker, pgvector (schema from bench/init.sql), mock vLLM
 docker compose -f bench/docker-compose.yml up -d redis postgres mock-vllm
 
-# one worker, full cascade: local-first router → mock vLLM → guard → escalate stub → pgvector
+# one worker against the mock: local-first router → mock vLLM → entropy guard → escalate stub → pgvector
+# (the evaluated cascade — EXTRACT=1, the default — needs a real served edge model; see INGESTION.md §6)
 REDIS_URL=redis://127.0.0.1:6379 PG_URL=postgres://bench:bench@127.0.0.1:5432/cascade \
-VLLM_URL=http://127.0.0.1:8000/v1/completions EMBED_MODE=real EGRESS=pgvector \
-WORKER_SLOT=0 node src/pipeline-worker.mjs &
+VLLM_URL=http://127.0.0.1:8000/v1/completions EMBED_MODE=real EGRESS=pgvector EXTRACT=0 \
+WORKER_SLOT=0 node src/pipeline-worker.mjs &          # EXTRACT=0: the mock server cannot serve the real schemas
 
 # offered load (open-loop; minimum rate is 50 req/s)
 REDIS_URL=redis://127.0.0.1:6379 RATE_START=100 RATE_END=2000 DURATION=30 node bench/load-gen.mjs
@@ -111,8 +113,9 @@ run `bootstrap-model`); run workers locally until it is fixed.
 | `ORT_ALLOW_SPINNING` | unset | `0`/`1` → `session.intra_op.allow_spinning` via `SessionOptions.extra`; unset = runtime default |
 | `ROUTER` | `local-first` | `local-first`: score 1, every payload tries the local model and the guard decides; `centroid`: `1 − max cos` to hard-example centroids in `ROUTER_CENTROIDS` |
 | `ROUTE_TAU` | 0.75 | attempt local iff calibrated router score ≥ τ; `>1` disables the local path (bench mode) |
-| `EXTRACT` | unset | `1` = constrained structured extraction (`guided_json` + JsonPos guard); unset = unconstrained entropy-guarded path |
-| `MAX_SURPRISAL` | 0 | guard threshold (nats) on the mean surprisal over all value tokens; 0 = escalate on any measurable hesitation (fitted for the 2-shot prompt; use 0.021 zero-shot) |
+| `EXTRACT` | 1 | constrained extraction with the evaluated guard (2-shot prompt, `guided_json`, value-surprisal). `0` = legacy unconstrained path, for the mock server and the throughput benchmarks only |
+| `MAX_SURPRISAL` | 0 | guard threshold (nats) on the mean surprisal over all value tokens; 0 = escalate on any measurable hesitation. **The worker refuses to start with any other value** unless `ALLOW_GUARD_OVERRIDE=1` (then logged as not the evaluated configuration) |
+| `EDGE_DEADLINE_MS` | 5000 | abort and escalate an extraction slower than this; must exceed the serving stack's object latency (1.1–1.9 s measured) |
 | `EGRESS` | `redis` | `pgvector` (durable, idempotent upsert) or `redis` (results stream, for TTA measurement) |
 | `B_MAX` / `W_MAX_MS` | 32 / 19 | batch-size cap and `BLOCK` window (Eq. 3 of the paper is a cap, not a collector) |
 | `EGRESS_BACKOFF_BASE_MS` / `_MAX_MS` / `EGRESS_DRAIN_TIMEOUT_MS` | 100 / 10000 / 30000 | sink retry backoff and shutdown drain bound |
@@ -135,12 +138,14 @@ service is unused.
 ## Reproducing the paper's numbers
 1. **Scaling / placement / latency (Tables IV–VII):** on a quiesced bare-metal Linux host, see
    `bench/results-zen5/CONCLUSIONS.md` for the exact commands and interventions; raw rows are in
-   `bench/results-zen5/*.csv` (`latency-lambda.csv`, `PROVENANCE.txt` and `perf` captures live in
+   `bench/results-zen5/` (per-trial CSVs, `latency-lambda.csv`, `PROVENANCE.txt`, profiling logs and the two `perf` captures).
 2. **Mechanism, ablation, pool sweep (Table II):** `./bench/spin-proof.sh`, `./bench/ablation-2x2.sh`
    and `./bench/pool-sweep.sh` (~1 h, ~50 min, ~35 min; n=5 × 60 s). Run-2 results and verdict printouts are in `bench/results-zen5-run2/`
    (`run-all.log` holds the full console output).
 3. **Guard (Table VIII):** `python3 analysis/guard_confirm.py` reproduces every reported number
    from the committed `bench/results-zen5-run2/guard-confirm.jsonl` (no model needed). To
+   regenerate the traces: serve `Qwen/Qwen3-8B-AWQ` with vLLM 0.9.2 (`bench/GPU-RUNBOOK.md`),
    then `VLLM_URL=… TEMPS="0" SHOTS="0 1 2" PAYLOADS_ROOT=payloads/synthetic-confirm
    OUT=bench/results-zen5-run2/guard-confirm.jsonl node bench/optimize-guard.mjs`.
    Corpora: `payloads/synthetic-confirm/` (2,000, seed 20261004 — the reported one),
+   `payloads/synthetic/` (500, exploratory).

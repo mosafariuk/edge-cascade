@@ -48,6 +48,16 @@ export const EMBED_MODEL = Object.freeze({
   onnxruntime_node: '1.27.0',
 });
 
+/** The guard configuration that paper Table VIII was measured with. The worker runs THIS or
+ *  refuses to start (see resolveGuardConfig in pipeline-worker.mjs). */
+export const GUARD_EVALUATED = Object.freeze({
+  shots: 2,                      // in-context examples per schema (schemaEntry.examples)
+  maxSurprisal: 0,               // nats — escalate on any measurable hesitation
+  statistic: 'mean-all',         // mean surprisal over every value token of the object
+  resolution_nats: 1e-4,
+  source: 'bench/results-zen5-run2/guard-confirm.txt',
+});
+
 /** Wrap an instruction in the edge model's prompt format. */
 export function wrapEdgePrompt(instruction, format = EDGE_MODEL.prompt_format) {
   if (format === 'chatml-nothink') return `<|im_start|>user\n${instruction}<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n`;

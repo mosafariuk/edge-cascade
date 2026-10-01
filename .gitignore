@@ -20,4 +20,5 @@ payloads/telemetry/*
 !payloads/property_audit/voa_audit_*
 !payloads/telemetry/cv_audio_sync_*
 bench/shadow-trace.jsonl
+# private working documents (cover letter, reviewer notes, superseded material) — never published
 _private/

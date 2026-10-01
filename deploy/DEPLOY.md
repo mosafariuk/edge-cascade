@@ -27,10 +27,10 @@ sudo REDIS_PASSWORD='CHANGE-ME-strong' REDIS_BIND='10.0.0.5' ./edge-cascade/depl
 ```bash
 cd /opt/edge-cascade
 REDIS_PASSWORD='CHANGE-ME-strong' ./deploy/start-workers.sh          # auto-sizes to cores-RESERVE
-#   ROUTE_TAU=2 (default) = pure embed-bound run for μ_sys (local path off, every payload
-#   hits the heavy stub). For the full cascade set ROUTE_TAU=0.75 with the default
-#   ROUTER=local-first (score is 1, so every payload is tried locally and the
-#   value-surprisal guard decides escalation), and point VLLM_URL at a real server.
+#   Defaults run the cascade: ROUTE_TAU=0.75, EXTRACT=1 → every admitted payload is extracted
+#   by the edge model with the evaluated guard (2-shot prompt, s_max=0); point VLLM_URL at a
+#   real server. For the embed-bound capacity run (μ_sys, paper Table IV):
+#   ROUTE_TAU=2 EXTRACT=0 REDIS_PASSWORD=… ./deploy/start-workers.sh
 ```
 Each worker: `taskset -c <core> node src/pipeline-worker.mjs` with `ORT_INTRA_OP=1`.
 
