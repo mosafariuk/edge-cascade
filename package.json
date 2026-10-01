@@ -2,7 +2,9 @@
   "name": "edge-cascade",
   "version": "1.0.0",
   "type": "module",
-  "description": "Edge-Network Semantic Routing / LLM cascade gateway — quantized local router that resolves simple payloads and escalates complex ones to a heavy LLM API.",
+  "description": "Edge-Network Semantic Routing / LLM cascade gateway \u2014 quantized local router that resolves simple payloads and escalates complex ones to a heavy LLM API.",
+  "license": "MIT",
+  "author": "Mohammad Safari",
   "scripts": {
     "worker": "UV_THREADPOOL_SIZE=8 node src/pipeline-worker.mjs",
     "mockvllm": "node bench/mock-vllm.mjs",

@@ -149,3 +149,6 @@ service is unused.
    OUT=bench/results-zen5-run2/guard-confirm.jsonl node bench/optimize-guard.mjs`.
    Corpora: `payloads/synthetic-confirm/` (2,000, seed 20261004 — the reported one),
    `payloads/synthetic/` (500, exploratory).
+
+## License
+Code: MIT — see `LICENSE`. © 2026 Mohammad Safari.
