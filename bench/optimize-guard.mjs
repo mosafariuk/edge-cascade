@@ -22,7 +22,7 @@ import { fileURLToPath } from 'node:url';
 import { SCHEMAS, admit } from '../src/schemas.mjs';
 import { JsonPos } from '../src/constrained.mjs';
 import { fieldDiff } from '../src/shadow.mjs';
-import { EDGE_MODEL, provenanceHeader, assertModelsDeclared } from '../src/models.mjs';
+import { EDGE_MODEL, provenanceHeader, assertModelsDeclared, buildEdgePrompt, wrapEdgePrompt } from '../src/models.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const VLLM_URL = process.env.VLLM_URL || 'http://127.0.0.1:18000/v1/completions';
@@ -38,29 +38,11 @@ const DRY = process.env.DRY_RUN === '1';
 const LIMIT = Number(process.env.LIMIT || 0);              // smoke test: first N payloads per kind
 if (!DRY) assertModelsDeclared(['edge']);
 
-// ── few-shot examples: hand-written, values chosen to occur nowhere in the corpus ──────
-// They demonstrate the two conventions the zero-shot model violates most: `null` for a
-// field the text does not state, and a boolean marker `true` ONLY when the text states it.
-const SHOT_EXAMPLES = {
-  property_audit: [
-    { p: { raw_text: 'Annexe C, Harbour Yard. Current rateable value £31,750. A neighbouring unit is assessed at £29,000. No ancillary items.' },
-      a: { current_value_gbp: 31750, previous_value_gbp: null, cohort_avg_increase_pct: null, effective_date_raw: null, assets: [] } },
-    { p: { raw_text: 'Suite 9, Old Brewery: curr val 27.3k, prev 22,950. Cohort avg incr 6.4%. Eff. 12-Jan. Incl. cycle shelter.' },
-      a: { current_value_gbp: 27300, previous_value_gbp: 22950, cohort_avg_increase_pct: 6.4, effective_date_raw: '12-Jan', assets: ['cycle shelter'] } },
-  ],
-  telemetry: [
-    { p: { raw_telemetry: '[01:07:33] Pitch elevated +1.6σ. Frame buffer at 212. Baseline deviation flagged.' },
-      a: { acoustic_sigma: 1.6, gaze_deviation_duration_sec: null, gaze_offscreen: false, posture_rigid: false, baseline_nominal: false } },
-    { p: { raw_telemetry: '[00:42:10] Gaze off-screen for 5.3s; rigid posture detected. Baseline stress metrics nominal.' },
-      a: { acoustic_sigma: null, gaze_deviation_duration_sec: 5.3, gaze_offscreen: true, posture_rigid: true, baseline_nominal: true } },
-  ],
-};
-const turn = (instruction, answer) => `<|im_start|>user\n${instruction}<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n${answer ?? ''}`;
-function buildPrompt(entry, payload, shots) {
-  let p = '';
-  for (const ex of SHOT_EXAMPLES[entry.key].slice(0, shots)) p += turn(entry.prompt(ex.p), JSON.stringify(ex.a)) + '<|im_end|>\n';
-  return p + turn(entry.prompt(payload));            // open assistant turn; guided_json constrains what follows
-}
+// ── few-shot examples: schemaEntry.examples (src/schemas.mjs), prompt via buildEdgePrompt —
+// the same function the worker uses, so what is evaluated is what is deployed.
+const turn = (instruction) => wrapEdgePrompt(instruction);
+const buildPrompt = (entry, payload, shots) => buildEdgePrompt(entry, payload, shots);
+const SHOT_EXAMPLES = Object.fromEntries(Object.entries(SCHEMAS).map(([k, e]) => [k, e.examples]));
 
 // ── corpus ───────────────────────────────────────────────────────────────────────────
 const payloads = [];

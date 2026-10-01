@@ -1,0 +1,5 @@
+3 configurations × 2000 payloads → bench/results-zen5-run2/guard-confirm.jsonl
+  T0_shot0       accuracy 76.5%  (1529/2000)  non-done 0  287s
+  T0_shot1       accuracy 91.8%  (1835/2000)  non-done 0  212s
+  T0_shot2       accuracy 96.2%  (1924/2000)  non-done 0  216s
+done. Next: python3 analysis/guard_grid.py bench/results-zen5-run2/guard-confirm.jsonl

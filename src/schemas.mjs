@@ -126,6 +126,16 @@ export const SCHEMAS = {
     validate: ajv.compile(PropertyExtract),
     derive: propertyDerive,
     judgeKeys: ['current_value_gbp', 'previous_value_gbp', 'cohort_avg_increase_pct', 'assets'],
+    // In-context examples (hand-written; values occur in no evaluation corpus). They show the
+    // two conventions a zero-shot model violates most: `null` for a field the text does not
+    // state, and nothing invented in a list. FROZEN: the confirmation run (paper §VI-G) used
+    // exactly these; changing them invalidates Table VIII.
+    examples: [
+      { payload: { raw_text: 'Annexe C, Harbour Yard. Current rateable value £31,750. A neighbouring unit is assessed at £29,000. No ancillary items.' },
+        answer: { current_value_gbp: 31750, previous_value_gbp: null, cohort_avg_increase_pct: null, effective_date_raw: null, assets: [] } },
+      { payload: { raw_text: 'Suite 9, Old Brewery: curr val 27.3k, prev 22,950. Cohort avg incr 6.4%. Eff. 12-Jan. Incl. cycle shelter.' },
+        answer: { current_value_gbp: 27300, previous_value_gbp: 22950, cohort_avg_increase_pct: 6.4, effective_date_raw: '12-Jan', assets: ['cycle shelter'] } },
+    ],
     field: 'raw_text',
     prompt: (p) => `Extract the fields as strict JSON. Do not compute or infer; copy values as written. Use null for any field the text does not state. "assets" lists only ancillary items the text says the property includes (e.g. parking spaces), never the property itself; use [] if none.\nTEXT: ${p.raw_text}\nJSON:`,
   },
@@ -136,6 +146,14 @@ export const SCHEMAS = {
     validate: ajv.compile(TelemetryExtract),
     derive: telemetryDerive,
     judgeKeys: ['acoustic_sigma', 'gaze_deviation_duration_sec', 'gaze_offscreen', 'posture_rigid', 'baseline_nominal'],
+    // In-context examples: a boolean marker is `true` ONLY when the telemetry states it.
+    // FROZEN — see property_audit.examples.
+    examples: [
+      { payload: { raw_telemetry: '[01:07:33] Pitch elevated +1.6σ. Frame buffer at 212. Baseline deviation flagged.' },
+        answer: { acoustic_sigma: 1.6, gaze_deviation_duration_sec: null, gaze_offscreen: false, posture_rigid: false, baseline_nominal: false } },
+      { payload: { raw_telemetry: '[00:42:10] Gaze off-screen for 5.3s; rigid posture detected. Baseline stress metrics nominal.' },
+        answer: { acoustic_sigma: null, gaze_deviation_duration_sec: 5.3, gaze_offscreen: true, posture_rigid: true, baseline_nominal: true } },
+    ],
     field: 'raw_telemetry',
     prompt: (p) => `Extract the fields as strict JSON. Do not infer; copy observed values. Use null for any numeric field the telemetry does not state; set a boolean marker true only if the telemetry states it, otherwise false.\nTELEMETRY: ${p.raw_telemetry}\nJSON:`,
   },

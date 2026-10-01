@@ -136,3 +136,36 @@ Files: `guard-grid.jsonl` (6,000 traces), `guard-grid.log`, `guard-grid.txt`
   anatomy was known; the held-out split has now been used twice; 2-shot leaves 2 held-out
   errors, so its guard figures are meaningless. Needs a fresh, larger corpus
   (≥2,000 records → ~80 errors at 96% accuracy) before Table VIII changes.
+
+## 9. Confirmation run (paper Table VIII) — 2026-10-01
+
+Pre-registered: `analysis/guard_confirm.py` committed before the data (commit "Pre-register the
+guard confirmation run"). Fresh corpus `payloads/synthetic-confirm` (2,000 records, seed
+20261004; 349 first drafts regenerated, 2 templated). rented host, RTX 3090 PCIe 4.0 ×16,
+Qwen3-8B-AWQ, vLLM 0.9.2 (`gpu-host-confirm.txt`). Files: `guard-confirm.jsonl` (6,000 traces),
+`guard-confirm.log`, `guard-confirm.txt`.
+
+Held-out n=600 (train 1,400), T=0, statistic = mean surprisal over all value tokens:
+
+| | 0-shot | 1-shot | 2-shot |
+|---|---|---|---|
+| edge accuracy | 78.3% [74.9, 81.4] | 91.5% [89.0, 93.5] | **97.0% [95.3, 98.1]** |
+| errors | 130 | 51 | 18 |
+| AUROC | 0.794 | 0.896 | 0.851 |
+| s_max (20% target, train) | 0.0208 | 0 | 0 |
+| escalated | 21.0% | 22.2% | **13.7%** |
+| local precision | 86.1% | 98.7% | 99.2% |
+| error recall | 49.2% [40.8, 57.7] | 88.2% [76.6, 94.5] | 77.8% [54.8, 91.0] |
+| silent errors, guard / none | 11.0% / 21.7% | 1.0% / 8.5% | **0.7% / 3.0%** |
+
+- **H1 confirmed** (few-shot → accuracy): +13.2 [9.7, 16.8] and +18.7 [15.3, 22.0] pts;
+  2-shot vs 1-shot +5.5 [3.7, 7.3].
+- **H2 confirmed** (guard → fewer silent errors) in every arm: −10.7, −7.5, −2.3 pts, all
+  intervals exclude zero. With the guard, 2-shot vs 1-shot is not distinguishable (−0.3).
+- **Decision (pre-registered): deploy 2-shot**, `MAX_SURPRISAL = 0` at 1e-4 nat resolution.
+- Zero-shot arm agrees with the exploratory Table (AUROC 0.794 vs 0.805; recall 49.2% vs 41.2%,
+  overlapping intervals).
+- Residual errors at 2-shot are all `assets` list mismatches; the 4 the guard misses have zero
+  surprisal. Windowed statistic: AUROC 0.50 on property in every arm.
+- Code now deploys what was evaluated: `SCHEMAS[*].examples`, `buildEdgePrompt`,
+  `EDGE_MODEL.few_shot = 2`; prompt verified byte-identical to the one the run sent.

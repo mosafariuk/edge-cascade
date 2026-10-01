@@ -64,48 +64,52 @@ uses batch `metadata.ref_year` to resolve partial dates like `01-Apr` → `2026-
 is fast, outlines can be slow). **Verify once** that your vLLM returns *post-mask* logprobs
 (entropy ~0 at a structural position) — that's the assumption the value-surprisal guard needs.
 
-## 4. Guard under constrained decoding (value-surprisal — POST-MASK measured)
+## 4. Correctness: prompt conventions first, guard second (POST-MASK measured)
 `bench/vllm-probe.mjs` against the served stack (Qwen/Qwen3-8B-AWQ, vLLM 0.9.2, xgrammar,
 RTX 3090) returned **POST-MASK**: entropy at the first grammar-forced token is 0.049 nats, so a
-windowed-entropy guard is defeated. The guard measures **surprisal (−logprob) at VALUE
-positions only** (a `JsonPos` state machine excludes keys + structure) and escalates when the
-**mean over all value tokens of the completed object** exceeds `MAX_SURPRISAL`.
+windowed-entropy guard is defeated.
 
-Two rules learned from the first run against a real model (neither is visible with the mock):
+**First-order lever — the prompt.** Every extraction prompt carries two solved in-context
+examples per schema (`SCHEMAS[*].examples`, built by `buildEdgePrompt`, `EDGE_MODEL.few_shot = 2`).
+They teach the two conventions a zero-shot model breaks: `null` for a field the text does not
+state, and a boolean marker `true` only when the text states it. The examples are FROZEN —
+the confirmation run used exactly these.
 
-- **Every extraction field is required and nullable.** With optional fields the grammar lets
-  the model close the object early; the omission is a structural token and the guard sees
-  nothing (a stated "12.5% baseline" was dropped at signal 0.000).
-- **Do not window the statistic.** The first design averaged the first 6 value tokens; one
-  5-digit number fills that window and later fields are never scored (AUROC 0.48 on the
-  property workload = chance). `statistic: 'window-mean'` is kept only for comparison.
+**Second-order filter — the guard.** Surprisal (−logprob) is measured at VALUE positions only
+(a `JsonPos` state machine excludes keys + structure) at 1e-4 nat resolution; the object
+escalates when the **mean over all value tokens** exceeds `MAX_SURPRISAL`.
+
+Rules learned against a real model (none is visible with the mock):
+- **Every extraction field is required and nullable** — an omitted optional field is a
+  structural token; the guard sees nothing (a stated "12.5% baseline" dropped at signal 0).
+- **Do not window the statistic** — a first-6-token mean is at chance (AUROC 0.50) on the
+  property workload: one multi-digit number fills the window.
+- **Temperature does not help** — T 0→0.5 changes neither accuracy nor the reported logprobs.
 
 Belt-and-suspenders: `JSON.parse` + Ajv validate + `derive`; any failure also escalates.
 
-## 5. Calibrated threshold (measured, held-out)
-Stack and corpus: `src/models.mjs`; `payloads/synthetic/` (500 records, constructed truth,
-mechanically verified); raw pairs `bench/results-zen5-run2/shadow-pairs.jsonl`; every number
-below is printed by `python3 analysis/guard_eval.py`.
+## 5. Measured operating point (pre-registered, held-out)
+Corpus `payloads/synthetic-confirm/` (2,000 records, constructed truth, mechanically verified);
+traces `bench/results-zen5-run2/guard-confirm.jsonl`; every number below is printed by
+`python3 analysis/guard_confirm.py` (committed before the data were collected).
 
-**`MAX_SURPRISAL = 0.027` nats** (default in code; 20%-target quantile on the 350-record
-training split). On the 150 held-out records (34 edge errors):
+| held-out n=600, T=0 | 0-shot | 1-shot | **2-shot (deployed)** |
+|---|---|---|---|
+| edge accuracy | 78.3% | 91.5% | **97.0%** [95.3, 98.1] |
+| errors | 130 | 51 | **18** (all `assets`) |
+| AUROC of the guard signal | 0.794 | 0.896 | 0.851 |
+| fitted `MAX_SURPRISAL` (20% target) | 0.021 | 0 | **0** |
+| escalated | 21.0% | 22.2% | **13.7%** |
+| error recall | 49.2% | 88.2% | 77.8% [54.8, 91.0] |
+| silent errors, guard / no guard | 11.0% / 21.7% | 1.0% / 8.5% | **0.7% / 3.0%** |
 
-| metric | value (Wilson 95%) |
-|---|---|
-| AUROC, mean over all value tokens | 0.805 (window-mean: 0.680; 0.478 on property) |
-| escalation rate | 17.3% [12.1, 24.2] |
-| local precision | 83.9% [76.4, 89.3] (no guard: 77.3%) |
-| edge-error recall | 41.2% [26.4, 57.8] |
-| edge accuracy, all 500 | 74.2% (property 84.0%, telemetry 64.4%) |
-| judge (GPT-4o) vs constructed truth | 96.4% [94.4, 97.7] |
+**`MAX_SURPRISAL = 0`** (default): with the conventions in context 87% of extractions have no
+measurable surprisal, so the guard is "escalate on any hesitation". Use 0.021 if you deploy
+zero-shot. Judge (GPT-4o) vs constructed truth on the exploratory corpus: 96.4%.
 
-Recall reaches 68% at 29% escalation and 85% at 53%. **The guard is a filter, not a safety
-case**: most edge errors are confident (a hallucinated boolean at 0.1–0.2 nats).
-Earlier figures in this file (threshold 1.845, 20.8% / 98.2% / 91.8%) came from a run whose
-data were not retained and could not be reproduced; they are withdrawn.
-
-Re-fit on a sliding window as traffic drifts: `PAYLOADS_ROOT=… HOLDOUT=0.3 npm run shadow`
-(needs a served edge model and a judge API key), then `python3 analysis/guard_eval.py`.
+Earlier figures in this file (threshold 1.845, 20.8% / 98.2% / 91.8%) were never reproducible
+and are withdrawn. The guard is a filter, not a safety case: the surviving errors are
+confident list-item mismatches that no confidence check can see.
 
 ## 6. Running it
 ```bash
