@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0569",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:37:35] Acoustic sigma recorded at +3.9σ. Gaze remained on-screen with a 2.7s deviation. No rigid posture detected. Baseline stress metrics not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.9,
+      "gaze_deviation_duration_sec": 2.7,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

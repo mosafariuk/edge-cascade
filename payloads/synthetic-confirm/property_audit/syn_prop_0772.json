@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0772",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: Current rateable value 5.4k GBP (was 4.4k). Cohort avg inc 19.2%. Assets: basement storage unit, rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5400,
+      "previous_value_gbp": 4400,
+      "cohort_avg_increase_pct": 19.2,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit",
+        "rear service yard"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0602",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, curr val. 4.5k GBP, prev. 3.6k GBP. No cohort % avail. No ancill.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4500,
+      "previous_value_gbp": 3600,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

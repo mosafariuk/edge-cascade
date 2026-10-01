@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0676",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A has a current rateable value of £321,000. The effective date is 30 September 2025. The premises include a bicycle store, 2 parking spaces, and 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 321000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "bicycle store",
+        "2 parking spaces",
+        "1 loading bay"
+      ]
+    }
+  }
+}

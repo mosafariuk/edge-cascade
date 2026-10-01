@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0883",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A shows a current rateable value of 243,300 GBP. The previous value was 264,700 GBP. Assets included are external signage rights. Note: Unit 2, just down the hall, has a ceiling height of 3.6 meters. There is no effective date mentioned. The cohort average is a 12.4% increase.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 243300,
+      "previous_value_gbp": 264700,
+      "cohort_avg_increase_pct": 12.4,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

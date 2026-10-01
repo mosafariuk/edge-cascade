@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0655",
+  "source": "synthetic",
+  "raw_text": "In Warehouse B, Trafford Park, an effective date applies: 30 September 2025, with the current value of the property being 42,700 pounds, an increase from 34,500 pounds previously, but no cohort average increase is listed. Without listed assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 42700,
+      "previous_value_gbp": 34500,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": []
+    }
+  }
+}

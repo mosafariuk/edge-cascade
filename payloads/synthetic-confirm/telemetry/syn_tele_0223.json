@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0223",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:12:25] Acoustic level is +2.4σ, with a gaze deviation of 7.7 seconds. Rigid contraction noted. Observation recorded alongside 3200 frames.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.4,
+      "gaze_deviation_duration_sec": 7.7,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

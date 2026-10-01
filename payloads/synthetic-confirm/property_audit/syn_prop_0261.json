@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0261",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park has a current rateable value of 5,000 pounds. No previous rateable value is available.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

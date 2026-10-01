@@ -1,0 +1,2 @@
+[embed] native onnxruntime-node, intraOpNumThreads=32, allow_spinning=0
+[router] local-first, ROUTE_TAU=2 (local path DISABLED: every payload escalates)

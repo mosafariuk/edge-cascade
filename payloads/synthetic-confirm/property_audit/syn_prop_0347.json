@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0347",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: £7,600 current, £7,100 prev. Eff. date 2026-04-01. Assets: bicycle store, 2 parking spaces. No cohort %.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 7600,
+      "previous_value_gbp": 7100,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "bicycle store",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

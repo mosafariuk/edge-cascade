@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0256",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:08:09] The pitch elevated by +1.6σ. A gaze deviation of 4.0s was observed off-screen. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.6,
+      "gaze_deviation_duration_sec": 4,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

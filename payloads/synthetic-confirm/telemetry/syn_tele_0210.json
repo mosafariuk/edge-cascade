@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0210",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:50:31] During a 5.3s gaze, a +3σ pitch elevation was noted, while baseline metrics were flagged for deviation.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3,
+      "gaze_deviation_duration_sec": 5.3,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

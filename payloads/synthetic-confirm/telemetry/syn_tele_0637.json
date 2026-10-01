@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0637",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:04:54] Gaze off-screen. Rigid contraction obs. Baseline nominal. No acous. elev. No gaze dev.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

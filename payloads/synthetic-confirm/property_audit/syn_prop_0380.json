@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0380",
+  "source": "synthetic",
+  "raw_text": "1 April 2026 is the effective date for Unit 12, Riverside Trade Park, with a current rateable value of 190,000 GBP. Previously it was 138,150 GBP, and no cohort data is provided; assets are also absent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 190000,
+      "previous_value_gbp": 138150,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

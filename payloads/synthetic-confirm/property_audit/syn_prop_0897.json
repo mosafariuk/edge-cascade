@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0897",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A curr val 15.5k GBP, prev val 13,950 GBP. Cohort avg inc 2.2 pct. No eff date. No assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 15500,
+      "previous_value_gbp": 13950,
+      "cohort_avg_increase_pct": 2.2,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

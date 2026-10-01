@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0516",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current rateable value of 130,850 pounds, previously valued at 107,250 pounds. The cohort average increase is 10.5 percent. The effective date is 1 April 2026.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 130850,
+      "previous_value_gbp": 107250,
+      "cohort_avg_increase_pct": 10.5,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

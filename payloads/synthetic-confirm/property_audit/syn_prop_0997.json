@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0997",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Pk RV is 72.8k GBP, up from a prev 51.5k GBP. Cohort 3.5%. Assets: bicycle store, basement storage unit, 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 72800,
+      "previous_value_gbp": 51500,
+      "cohort_avg_increase_pct": 3.5,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store",
+        "basement storage unit",
+        "1 loading bay"
+      ]
+    }
+  }
+}

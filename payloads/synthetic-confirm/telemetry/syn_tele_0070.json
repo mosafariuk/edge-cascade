@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0070",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:21:45] Deviation of gaze lasted for 2.7s while pitch was elevated at +1.5σ, no rigid posture occurred, and the baseline metrics were nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.5,
+      "gaze_deviation_duration_sec": 2.7,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

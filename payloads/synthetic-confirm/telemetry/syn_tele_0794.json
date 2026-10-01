@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0794",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:49:56] No pitch elevation registered. 8.6s gaze deviation observed off-screen, not in a rigid posture, baseline deviation is flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 8.6,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

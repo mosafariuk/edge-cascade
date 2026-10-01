@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0974",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:05:42] Acoustic variance is +1σ. Gaze deviation was for 6.7s. Gaze remained on-screen. Rigid posture not detected. Baseline is not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1,
+      "gaze_deviation_duration_sec": 6.7,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

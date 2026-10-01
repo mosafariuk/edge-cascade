@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0115",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:48:56] With 1.9σ pitch elevation, the posture was rigid; stress metrics remained nominal despite no gaze deviation.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.9,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

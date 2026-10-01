@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0140",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park has a current rating of 9,000 GBP. Including a mezzanine level, 4 parking spaces, and a bicycle store, it had a previous value of 7,300 GBP. No effective date; cohort 9.2%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 9000,
+      "previous_value_gbp": 7300,
+      "cohort_avg_increase_pct": 9.2,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "4 parking spaces",
+        "bicycle store"
+      ]
+    }
+  }
+}

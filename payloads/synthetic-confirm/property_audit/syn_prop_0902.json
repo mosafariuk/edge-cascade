@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0902",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, 353.75k current, prev 256k. Avg increase 6.6%. No effect date. No assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 353750,
+      "previous_value_gbp": 256000,
+      "cohort_avg_increase_pct": 6.6,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0120",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:53:49] At +1.8σ acoustic, with gaze deviating for 6.3s off-screen, baseline deviation is noted; however, no rigidity in posture.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.8,
+      "gaze_deviation_duration_sec": 6.3,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

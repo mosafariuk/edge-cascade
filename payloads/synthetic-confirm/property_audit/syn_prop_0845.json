@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0845",
+  "source": "synthetic",
+  "raw_text": "With assets such as 2 parking spaces, Workshop 7, Canal Mills, valued at 148,900 GBP, effective date 01-Apr, had a previous value of 94,500 GBP. The cohort average increase is 16.9%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 148900,
+      "previous_value_gbp": 94500,
+      "cohort_avg_increase_pct": 16.9,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "2 parking spaces"
+      ]
+    }
+  }
+}

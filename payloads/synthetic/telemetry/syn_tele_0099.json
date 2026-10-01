@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0099",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:57:00] +0.9σ noted. Gaze deviation recorded for 1.5s. Gaze remained on-screen and posture not rigid. Baseline is nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.9,
+      "gaze_deviation_duration_sec": 1.5,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

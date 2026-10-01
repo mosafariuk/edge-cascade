@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0685",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:01:01] Stress metrics at baseline are nominal, no acoustic pitch elevation recorded. Gaze deviation occurred for 3.3 seconds, gaze remained on-screen and posture was not rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 3.3,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

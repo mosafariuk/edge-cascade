@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0866",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:25:28] A pitch elevation of +3.3σ was observed. Gaze deviated for 6 seconds. Baseline stress metrics deviated.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.3,
+      "gaze_deviation_duration_sec": 6,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

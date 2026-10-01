@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0823",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current rateable value of 58,500 GBP and a previous rateable value of 42,100 GBP. The unit includes 3 EV charging points and external signage rights. A neighboring unit has a rateable value of 8,300 GBP.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 58500,
+      "previous_value_gbp": 42100,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points",
+        "external signage rights"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0570",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:59:07] Nominal baseline stress metrics. Gaze remained on-screen, with +2σ pitch elevation. No rigid posture.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

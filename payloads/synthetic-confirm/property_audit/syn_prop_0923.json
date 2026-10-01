@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0923",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills has a current rateable value of 9,100 pounds. Effective from 1 April 2026. The premises include a rear service yard and bicycle store. Unit 8 nearby spans 2,450 square feet.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 9100,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "rear service yard",
+        "bicycle store"
+      ]
+    }
+  }
+}

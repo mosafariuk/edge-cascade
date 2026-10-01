@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0623",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park is valued at 91,100 pounds, previously 57,800 pounds, with a cohort increase of 7 percent. Effective 30 September 2025. The premises next door is 108 square meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 91100,
+      "previous_value_gbp": 57800,
+      "cohort_avg_increase_pct": 7,
+      "effective_date_raw": "30 September 2025",
+      "assets": []
+    }
+  }
+}

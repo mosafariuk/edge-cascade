@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0744",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current value of 74,500 GBP, with a previous value of 55,700 GBP. No cohort percentage is on record. No effective date is available. The assets include a roof terrace, mezzanine level, and external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 74500,
+      "previous_value_gbp": 55700,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "mezzanine level",
+        "external signage rights"
+      ]
+    }
+  }
+}

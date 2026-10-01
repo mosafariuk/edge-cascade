@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0570",
+  "source": "synthetic",
+  "raw_text": "Although the First Floor Studio, Northern Quarter's rateable value is now 5,000 GBP, the effective date is 1 April 2026; its previous value was clearly 4,500 GBP. The cohort average increase is calculated as 12.8 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5000,
+      "previous_value_gbp": 4500,
+      "cohort_avg_increase_pct": 12.8,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

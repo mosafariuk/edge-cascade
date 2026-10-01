@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0948",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:48:30] Gaze remains on-screen with a noted deviation lasting 4.4s. Rigid posture is present. Baseline deviation exists. Temperature at 15°C.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 4.4,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

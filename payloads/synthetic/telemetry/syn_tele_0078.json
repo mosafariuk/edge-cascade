@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0078",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:45:15] Gaze deviation lasted 6.2s while maintaining rigid posture, with baseline metrics nominal. A frame count of 1200 was noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 6.2,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

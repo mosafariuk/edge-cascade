@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0728",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail is currently valued at 10,200 pounds, with a previous value of 7,550 pounds. It includes a rear service yard and 2 parking spaces. The upper floor has 2,000 square feet.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10200,
+      "previous_value_gbp": 7550,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

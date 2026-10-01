@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0817",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:06:12] +1.1σ, 1.5s. Gaze off-screen. Rigid posture.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.1,
+      "gaze_deviation_duration_sec": 1.5,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

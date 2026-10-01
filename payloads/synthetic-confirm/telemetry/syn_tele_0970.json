@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0970",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:26:31] The baseline stress metrics are nominal, although there is no pitch elevation and no gaze deviation recorded.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

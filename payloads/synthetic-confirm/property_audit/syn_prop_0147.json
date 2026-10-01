@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0147",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A: Curr val £107,600. Prev val n/a. Avg cohort incr 17.5%. No eff date. Assets: 1 loading bay, 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 107600,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 17.5,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

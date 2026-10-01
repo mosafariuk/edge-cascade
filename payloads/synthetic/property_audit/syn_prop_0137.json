@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0137",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter: curr val 207.2k GBP, prev val 189,250 GBP, no cohort %. No eff. date. Inc. bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 207200,
+      "previous_value_gbp": 189250,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

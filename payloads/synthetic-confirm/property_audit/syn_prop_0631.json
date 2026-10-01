@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0631",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter has a current rateable value of 369500 pounds, effective from 1 April 2026. The previous rateable value was 315750 pounds. This property includes a mezzanine level, a roof terrace, and 1 loading bay. The cohort average percentage increase is 5 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 369500,
+      "previous_value_gbp": 315750,
+      "cohort_avg_increase_pct": 5,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "mezzanine level",
+        "roof terrace",
+        "1 loading bay"
+      ]
+    }
+  }
+}

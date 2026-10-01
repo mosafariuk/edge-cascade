@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0318",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:48:41] Acoustic elevation recorded at +3.4σ. Baseline stress deviation flagged. Min. depth: 45m.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

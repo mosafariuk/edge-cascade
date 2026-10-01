@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0454",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current rateable value of 26,700 GBP. The previous rateable value was 20,500 GBP. There is no cohort average increase percentage available. The effective date is 2025-10-15. This property includes no ancillary assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 26700,
+      "previous_value_gbp": 20500,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2025-10-15",
+      "assets": []
+    }
+  }
+}

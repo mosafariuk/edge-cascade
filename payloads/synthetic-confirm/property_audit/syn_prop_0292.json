@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0292",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: current value 4.5k. No prev. value. Cohort avg 18.1% inc. No eff. date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 18.1,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

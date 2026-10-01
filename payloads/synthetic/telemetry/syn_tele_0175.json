@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0175",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:56:47] With a gaze deviation of 5.6 seconds observed, posture was rigid and baseline metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 5.6,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

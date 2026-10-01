@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0045",
+  "source": "synthetic",
+  "raw_text": "On the First Floor Studio, Northern Quarter, 106,600 GBP is the current rateable value, with a cohort average increase of 12.4%. Previously, the rateable value was 72,500 GBP. No effective date and no ancillary assets are noted.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 106600,
+      "previous_value_gbp": 72500,
+      "cohort_avg_increase_pct": 12.4,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

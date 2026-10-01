@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0144",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current rateable value of 72,200 pounds, with a previous value of 53,600 pounds. The cohort average increase is 18.7 percent, effective from 15-Oct. Assets include 2 parking spaces and a rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 72200,
+      "previous_value_gbp": 53600,
+      "cohort_avg_increase_pct": 18.7,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "2 parking spaces",
+        "rear service yard"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0158",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:21:50] Acoustic pitch at +0.6σ. Ceiling height noted 3.2 meters elsewhere. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.6,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

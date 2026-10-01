@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0258",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse has a current rateable value of 10,000 GBP. Effective date: 01/04/2026. No previous rateable value is available. Note: Platform 1 also houses 4 seating booths.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0333",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:21:45] Pitch elevation is +4.3σ and gaze deviates for 7.9s with gaze off-screen. Rigid contraction is observed. Baseline stress metrics are nominal. Note: 560m counted elsewhere.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.3,
+      "gaze_deviation_duration_sec": 7.9,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

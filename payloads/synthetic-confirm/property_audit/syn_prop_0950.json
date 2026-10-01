@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0950",
+  "source": "synthetic",
+  "raw_text": "With a bicycle store included, Warehouse B, Trafford Park, currently values at 44,000 GBP; previously, it was 27,850 GBP. The cohort average is 10.9%, with no specific effective date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 44000,
+      "previous_value_gbp": 27850,
+      "cohort_avg_increase_pct": 10.9,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

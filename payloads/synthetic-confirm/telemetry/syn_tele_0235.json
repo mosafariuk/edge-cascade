@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0235",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:26:19] Baseline nominal, however, without any sign of gaze deviation. Gaze remains focused on-screen with posture not showing rigid traits.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

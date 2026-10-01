@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0148",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:56:55] Acoustic pitch elevation peaked at +4.3σ, with gaze deviating for 3.9s and posture rigid. Off-screen gaze indicated. Note: 120 units reported from adjacent channel.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.3,
+      "gaze_deviation_duration_sec": 3.9,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

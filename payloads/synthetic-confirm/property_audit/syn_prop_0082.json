@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0082",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail: curr val 197.55k, prev val 189.3k. Cohort inc avg 22.4%. Eff date 15-Oct. Inc rear service yard, 3 EV charging points, mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 197550,
+      "previous_value_gbp": 189300,
+      "cohort_avg_increase_pct": 22.4,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "rear service yard",
+        "3 EV charging points",
+        "mezzanine level"
+      ]
+    }
+  }
+}

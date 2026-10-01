@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0748",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park maintains a current value of 141,800 GBP. Previously valued at 152,100 GBP. Unrelated address is 22 Park Avenue.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 141800,
+      "previous_value_gbp": 152100,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

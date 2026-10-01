@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0253",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A current rateable value: 268,600 GBP; previous: 237,700 GBP. It includes bicycle store, 3 EV charging points. Note: ground floor area is 312 square meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 268600,
+      "previous_value_gbp": 237700,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

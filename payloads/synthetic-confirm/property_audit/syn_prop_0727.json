@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0727",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park holds a current value of £6,050. No previous assessment on record. Effective 01-Apr with basement storage unit. Cohort avg. increase % unlisted.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6050,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

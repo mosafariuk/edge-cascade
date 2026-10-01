@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0168",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail holds a current value of 273,600 pounds, with the previous value being 210,450 pounds. Effective from 15-Oct with a cohort average increase of 4.5%. Includes 3 EV charging points. Measures 3500 sq ft.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 273600,
+      "previous_value_gbp": 210450,
+      "cohort_avg_increase_pct": 4.5,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

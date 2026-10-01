@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0082",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: Current val 87k GBP, prev val 60,350 GBP. Cohort avg incr 13.1%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 87000,
+      "previous_value_gbp": 60350,
+      "cohort_avg_increase_pct": 13.1,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

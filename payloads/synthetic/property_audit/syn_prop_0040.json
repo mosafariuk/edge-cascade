@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0040",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail, effective immediately, features 4 parking spaces and 1 loading bay, with its current rateable value hitting 5,800 pounds, having been previously 5,700 pounds. The cohort average increase is 4.3 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5800,
+      "previous_value_gbp": 5700,
+      "cohort_avg_increase_pct": 4.3,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces",
+        "1 loading bay"
+      ]
+    }
+  }
+}

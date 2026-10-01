@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0243",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A has a current rateable value of 17,000 pounds and a previous value of 12,800 pounds. The effective date is 1 April 2026. Includes 1 loading bay and rear service yard. Nearby unit 2A measures 1,200 sq ft.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 17000,
+      "previous_value_gbp": 12800,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "1 loading bay",
+        "rear service yard"
+      ]
+    }
+  }
+}

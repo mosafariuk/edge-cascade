@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0598",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:28:17] Acoustic level at +1.6σ and gaze deviation of 1.7s. Rigid posture noted. 320 frames processed. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.6,
+      "gaze_deviation_duration_sec": 1.7,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

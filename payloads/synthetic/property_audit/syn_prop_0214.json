@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0214",
+  "source": "synthetic",
+  "raw_text": "At Kiosk 2, Station Concourse, the current rateable value is 211,300 GBP, with the previous being 190,800 GBP. The cohort average increase is 16.8 percent. The effective date is 2025-10-15. Ancillary assets include a roof terrace and a mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 211300,
+      "previous_value_gbp": 190800,
+      "cohort_avg_increase_pct": 16.8,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "roof terrace",
+        "mezzanine level"
+      ]
+    }
+  }
+}

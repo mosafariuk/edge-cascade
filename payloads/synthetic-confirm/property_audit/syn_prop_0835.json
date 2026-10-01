@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0835",
+  "source": "synthetic",
+  "raw_text": "9.9% is the cohort avg, with Workshop 7, Canal Mills having a current rateable value of 4,500 GBP and previously 3,200 GBP. No effective date is recorded and no ancillary assets are mentioned.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4500,
+      "previous_value_gbp": 3200,
+      "cohort_avg_increase_pct": 9.9,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

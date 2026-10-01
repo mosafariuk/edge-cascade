@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0250",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse. With 71,850 GBP, its current rateable value, and previously at 45,150 GBP, it features a rear service yard and 3 EV charging points, despite no effective date specified and a cohort rise of 21.8%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 71850,
+      "previous_value_gbp": 45150,
+      "cohort_avg_increase_pct": 21.8,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points",
+        "rear service yard"
+      ]
+    }
+  }
+}

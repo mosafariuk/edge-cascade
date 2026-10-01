@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0402",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail: RV now 21.8k; was 21.85k. Inc. 2 parking spaces. Cohort avg. +12.7%. No eff. date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 21800,
+      "previous_value_gbp": 21850,
+      "cohort_avg_increase_pct": 12.7,
+      "effective_date_raw": null,
+      "assets": [
+        "2 parking spaces"
+      ]
+    }
+  }
+}

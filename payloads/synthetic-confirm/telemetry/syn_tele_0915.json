@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0915",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:09:01] Baseline stress metrics are nominal with a pitch elevation of +2.7σ. Rigid contraction evident, and gaze deviated for 8.9s.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.7,
+      "gaze_deviation_duration_sec": 8.9,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

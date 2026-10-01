@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0762",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills rv 320.05k as of 2026-04-01. No prev. Assessment. Avg. cohort incr. 18.2%. Inc. rear service yard, mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 320050,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 18.2,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "rear service yard",
+        "mezzanine level"
+      ]
+    }
+  }
+}

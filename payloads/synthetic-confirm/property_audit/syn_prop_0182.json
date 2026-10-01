@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0182",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail: Curr val £66,850, Prev val £55,750, Coh inc 13.2%, Eff dt 1 April 2026. No assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 66850,
+      "previous_value_gbp": 55750,
+      "cohort_avg_increase_pct": 13.2,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

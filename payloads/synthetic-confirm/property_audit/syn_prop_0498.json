@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0498",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A now holds a rateable value of 86,300 pounds, previously 62,500 pounds. The cohort average increase is 7 percent, effective from 01/04/2026. Contains rear service yard. Total area: 400 square meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 86300,
+      "previous_value_gbp": 62500,
+      "cohort_avg_increase_pct": 7,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

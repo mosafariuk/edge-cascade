@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0500",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:06:41] Gaze deviation was 6.7s with acoustic increase to +3.6σ. Baseline is flagged, posture not rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.6,
+      "gaze_deviation_duration_sec": 6.7,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

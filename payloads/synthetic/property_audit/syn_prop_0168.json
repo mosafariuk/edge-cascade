@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0168",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park has a current rateable value of 61,500 pounds and a previous rateable value of 57,000 pounds. It includes a bicycle store. The site area covers 1,500 square meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 61500,
+      "previous_value_gbp": 57000,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0578",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail's current rateable value is 94,100 GBP, up from a previous value of 74,400 GBP. The effective date is 30 September 2025. The property comes with a roof terrace, basement storage unit, and bicycle store. Distractor: Nearby coordinates are (53.4808, -2.2426).",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 94100,
+      "previous_value_gbp": 74400,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "roof terrace",
+        "basement storage unit",
+        "bicycle store"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0463",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:42:07] Gaze is off-screen with 8.1s deviation. Acoustic pitch elevation is +2.9σ. Nominal baseline. (42 units reported operation)",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.9,
+      "gaze_deviation_duration_sec": 8.1,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

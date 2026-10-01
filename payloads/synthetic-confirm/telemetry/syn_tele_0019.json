@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0019",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:21:26] Acoustic elevation +3.6σ noted. No gaze deviation or rigid posture. Baseline deviation detected.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.6,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

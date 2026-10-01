@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0132",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse: Curr val is 15.7k GBP eff 15-Oct. Prev val was 11.15k GBP. 3 EV charging points. Cohort inc. 19.2%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 15700,
+      "previous_value_gbp": 11150,
+      "cohort_avg_increase_pct": 19.2,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

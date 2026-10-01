@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0780",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail includes no ancillary assets, has an effective date of 2025-10-15, and has risen in rateable value from 2,100 GBP to 3,000 GBP. The cohort average increase is not provided.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3000,
+      "previous_value_gbp": 2100,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2025-10-15",
+      "assets": []
+    }
+  }
+}

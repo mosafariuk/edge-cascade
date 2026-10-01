@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0193",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse now has a rateable value of 72,700 pounds. It was previously valued at 47,100 pounds. The effective date of this assessment is 01/04/2026, and it includes a rear service yard and a bicycle store. An additional unrelated space nearby has a ceiling height of 3 meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 72700,
+      "previous_value_gbp": 47100,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "rear service yard",
+        "bicycle store"
+      ]
+    }
+  }
+}

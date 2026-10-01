@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0487",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse: curr val £258k, prev val £249,750. Cohort avg inc 6.8%. Eff from 1 April 2026. Has basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 258000,
+      "previous_value_gbp": 249750,
+      "cohort_avg_increase_pct": 6.8,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

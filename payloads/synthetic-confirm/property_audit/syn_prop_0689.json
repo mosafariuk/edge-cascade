@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0689",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail. Current rateable value stands at 4,700 pounds, with a previous value of 3,800 pounds. The cohort average increase is 16.2 percent. Effective date is 15-Oct. Features mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4700,
+      "previous_value_gbp": 3800,
+      "cohort_avg_increase_pct": 16.2,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

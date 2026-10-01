@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0453",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park has a current rateable value of 6,800 GBP. The property includes a mezzanine level and 4 parking spaces. The plot next door measures 500 m².",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6800,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "4 parking spaces"
+      ]
+    }
+  }
+}

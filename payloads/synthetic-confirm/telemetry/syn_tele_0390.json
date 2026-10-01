@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0390",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:21:59] Gaze is off-screen without pitch elevation, no rigidity, and nominal baseline status.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0096",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter is rated at 214,000 pounds currently. There was no previous rateable value. The effective date is 01/04/2026. It includes 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 214000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0185",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:23:10] The pitch elevation shows +4.5σ, with rigid contraction observed. Metrics for baseline stress are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.5,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

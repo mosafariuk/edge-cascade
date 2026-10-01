@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0488",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: current value is 3,850 pounds. No previous value reported. No cohort percentage increase mentioned. No assets are listed. There are 5 vending machines nearby.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3850,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

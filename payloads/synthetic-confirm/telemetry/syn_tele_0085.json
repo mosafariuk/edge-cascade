@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0085",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:42:48] With +3σ acoustic elevation, gaze deviation lasted 3.3s though not off-screen. Baseline is flagged as deviating.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3,
+      "gaze_deviation_duration_sec": 3.3,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

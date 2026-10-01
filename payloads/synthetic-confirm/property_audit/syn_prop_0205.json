@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0205",
+  "source": "synthetic",
+  "raw_text": "Mezzanine level is an asset of First Floor Studio, Northern Quarter. As of the 2025-10-15 effective date, the studio's current rateable value is 382,500 pounds, a change from the previous 254,900 pounds. The cohort average increase stands at 16 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 382500,
+      "previous_value_gbp": 254900,
+      "cohort_avg_increase_pct": 16,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

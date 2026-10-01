@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0340",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills, with a current value of £61,650, previously valued at £50,000, includes a rear service yard with no effective date recorded. The cohort average increase is 20.6%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 61650,
+      "previous_value_gbp": 50000,
+      "cohort_avg_increase_pct": 20.6,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

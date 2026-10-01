@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0415",
+  "source": "synthetic",
+  "raw_text": "At 3rd Floor Office Suite, EC1A, 80,300 pounds is now current value, no prior set. Announced for an effective date 15-Oct, 4 parking spaces included; no cohort level given.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 80300,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "4 parking spaces"
+      ]
+    }
+  }
+}

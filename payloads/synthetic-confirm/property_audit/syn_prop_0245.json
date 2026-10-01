@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0245",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park currently holds a rateable value of 65,000 GBP, including no ancillary assets. Its previous value was assessed at 49,200 GBP. A cohort average increase of 16.9% was recorded by 01/04/2026.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 65000,
+      "previous_value_gbp": 49200,
+      "cohort_avg_increase_pct": 16.9,
+      "effective_date_raw": "01/04/2026",
+      "assets": []
+    }
+  }
+}

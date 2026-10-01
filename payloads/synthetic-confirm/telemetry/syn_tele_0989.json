@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0989",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:55:14] Acoustic pitch elevated to +3.4σ. No gaze deviation duration recorded. Gaze remained on-screen. Rigid posture observed. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

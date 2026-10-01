@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0164",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:59:56] Acoustic pitch elevation of +0.7σ. No gaze deviation duration. Gaze moved off-screen. Baseline is nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.7,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

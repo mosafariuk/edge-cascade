@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0002",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter: curr val £3.8k. prev £2,850. Cohort avg 13.4%. Incl roof terrace.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3800,
+      "previous_value_gbp": 2850,
+      "cohort_avg_increase_pct": 13.4,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace"
+      ]
+    }
+  }
+}

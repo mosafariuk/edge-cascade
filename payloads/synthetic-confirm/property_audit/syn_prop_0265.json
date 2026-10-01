@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0265",
+  "source": "synthetic",
+  "raw_text": "With a current value of 3,500 pounds, Workshop 7, Canal Mills, includes a basement storage unit and pertains to 30 September 2025. The cohort increase is 6.7%. Previous value not given.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 6.7,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

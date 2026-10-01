@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0430",
+  "source": "synthetic",
+  "raw_text": "In Warehouse B, Trafford Park, currently valued at 102,500 GBP, the previous assessment was 65,600 GBP; no cohort increase percentage is given. Including a basement storage unit and 3 EV charging points, the place lacks a specified effective date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 102500,
+      "previous_value_gbp": 65600,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

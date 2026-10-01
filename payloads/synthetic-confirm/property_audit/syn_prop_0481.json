@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0481",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills currently has a rateable value of £79,500. The previous rateable value was £77,100. The cohort average increase stands at 24.4%. This property includes a basement storage unit, a roof terrace, and 4 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 79500,
+      "previous_value_gbp": 77100,
+      "cohort_avg_increase_pct": 24.4,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit",
+        "roof terrace",
+        "4 parking spaces"
+      ]
+    }
+  }
+}

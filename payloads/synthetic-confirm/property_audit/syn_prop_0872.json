@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0872",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail: curr val £98.5k, prev val £63.5k, avg inc 20%. No assets recorded.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 98500,
+      "previous_value_gbp": 63500,
+      "cohort_avg_increase_pct": 20,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

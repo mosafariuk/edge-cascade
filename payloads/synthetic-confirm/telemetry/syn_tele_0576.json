@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0576",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:47:49] Pitch elevated by +2.6σ. Gaze was off-screen. Rigid posture observed, baseline stress metrics are not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.6,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

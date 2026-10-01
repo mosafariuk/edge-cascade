@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0275",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:42:57] Gaze off-screen for 6.3s while acoustic sigma reached +2.9σ. Rigid posture and baseline deviation observed.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.9,
+      "gaze_deviation_duration_sec": 6.3,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0393",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current rateable value of 22,100 GBP. Assets include a bicycle store and 2 parking spaces. The cohort average increase is 20.7%. Neighboring unit has 45 seats.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 22100,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 20.7,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

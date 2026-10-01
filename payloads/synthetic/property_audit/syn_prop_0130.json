@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0130",
+  "source": "synthetic",
+  "raw_text": "For Unit 4, Ground Floor Retail, with no ancillary items, the effective date is missing as it's current at 5,200 GBP, no prior value. 12.9% was the cohort.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5200,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 12.9,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

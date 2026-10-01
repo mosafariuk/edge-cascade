@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0955",
+  "source": "synthetic",
+  "raw_text": "Assets included are external signage rights, 3 EV charging points, and 1 loading bay at Unit 4, Ground Floor Retail, where a rateable value of 238,600 GBP applies. This is effective from 01-Apr, having been 199,550 GBP previously, with the cohort average increase recorded as 12%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 238600,
+      "previous_value_gbp": 199550,
+      "cohort_avg_increase_pct": 12,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "external signage rights",
+        "3 EV charging points",
+        "1 loading bay"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0298",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse features a mezzanine level, external signage rights, and 4 parking spaces. The current rateable value stands at 53,000 GBP, previously 58,700 GBP. The cohort average increase is 3.2 percent. Additional workshops in the area total 1,200 sq ft.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 53000,
+      "previous_value_gbp": 58700,
+      "cohort_avg_increase_pct": 3.2,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces",
+        "external signage rights",
+        "mezzanine level"
+      ]
+    }
+  }
+}

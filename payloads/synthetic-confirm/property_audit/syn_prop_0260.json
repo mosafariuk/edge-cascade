@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0260",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A details a current value of 3,500 pounds, with no previous value documented. The effective date is 2026-04-01. There are no ancillary assets; however, the cohort average increase was 24.9%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 24.9,
+      "effective_date_raw": "2026-04-01",
+      "assets": []
+    }
+  }
+}

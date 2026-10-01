@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0180",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:30:48] Though the pitch elevation is +4.4σ, there was no gaze deviation observed, implying a non-nominal baseline.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

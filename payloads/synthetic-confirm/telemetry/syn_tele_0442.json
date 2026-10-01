@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0442",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:37:18] No acoustic pitch data. Rigid posture noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

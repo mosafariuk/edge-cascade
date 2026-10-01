@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0995",
+  "source": "synthetic",
+  "raw_text": "With the value standing at 4,450 GBP, the 3rd Floor Office Suite, EC1A, previously held 3,700 GBP. Cohort's average increase is 19.2 percent. Effective on 2025-10-15, it includes 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4450,
+      "previous_value_gbp": 3700,
+      "cohort_avg_increase_pct": 19.2,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

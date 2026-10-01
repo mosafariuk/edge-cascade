@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0154",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:56:45] Acoustic pitch elevation recorded at +2.5σ, gaze was off-screen for 1.8 seconds, and posture was not rigid. Baseline stress metrics are not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.5,
+      "gaze_deviation_duration_sec": 1.8,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

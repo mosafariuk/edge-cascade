@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0072",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: curr val 6.6k, prev 4.7k, cohort inc 23.7% eff 30 September 2025.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6600,
+      "previous_value_gbp": 4700,
+      "cohort_avg_increase_pct": 23.7,
+      "effective_date_raw": "30 September 2025",
+      "assets": []
+    }
+  }
+}

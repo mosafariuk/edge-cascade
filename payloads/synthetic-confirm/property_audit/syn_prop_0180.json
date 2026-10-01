@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0180",
+  "source": "synthetic",
+  "raw_text": "Previous value 26,450 pounds is noted for Unit 4, Ground Floor Retail, whose current figure stands at 35,400 pounds, effective 15-Oct. This premises also includes a basement storage unit, with the cohort average increase at 12.3 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 35400,
+      "previous_value_gbp": 26450,
+      "cohort_avg_increase_pct": 12.3,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

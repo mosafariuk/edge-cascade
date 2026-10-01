@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0472",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A: 189.4k current, 161.65k previous, basement storage unit present.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 189400,
+      "previous_value_gbp": 161650,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

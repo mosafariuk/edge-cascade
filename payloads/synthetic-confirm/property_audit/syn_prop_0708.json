@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0708",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse shows a current rateable value of 8,500 GBP. The cohort average increase is 17.7%. External signage rights are included. The nearby kiosk is open 24 hours a day.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 8500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 17.7,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

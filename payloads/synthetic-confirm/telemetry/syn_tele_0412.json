@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0412",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:25:38] 5.3s gaze dev, gaze not off-screen, no rigid posture noted. Baseline dev flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 5.3,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

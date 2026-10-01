@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0312",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High St: Now £11k, was £8.55k. Eff. 30 September 2025. Assets include 1 loading bay, basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 11000,
+      "previous_value_gbp": 8550,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "1 loading bay",
+        "basement storage unit"
+      ]
+    }
+  }
+}

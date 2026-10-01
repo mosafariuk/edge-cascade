@@ -1,0 +1,23 @@
+node_modules/
+.DS_Store
+.env
+.worker-pids
+# LaTeX build products
+*.aux
+*.out
+*.toc
+semantic-cascading.log
+# benchmark scratch (results-zen5*/ are committed, including their per-trial logs)
+bench/sweep-logs/
+bench/smoke-logs/
+bench/sweep-results.csv
+bench/smoke.csv
+bench/shadow-pairs.jsonl
+bench/audit-todo.csv
+logs-worker-*.log
+payloads/property_audit/*
+payloads/telemetry/*
+!payloads/property_audit/voa_audit_*
+!payloads/telemetry/cv_audio_sync_*
+bench/shadow-trace.jsonl
+_private/

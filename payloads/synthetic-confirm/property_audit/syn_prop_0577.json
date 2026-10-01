@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0577",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park, curr val £313.5k, no prev val. No cohort avg incr, no eff date. Bicycle store and mezzanine level incl.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 313500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store",
+        "mezzanine level"
+      ]
+    }
+  }
+}

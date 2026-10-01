@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0520",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:09:47] A +3σ pitch elevation is observed. Baseline deviation detected, gaze remains on-screen, and no rigidity is recorded.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

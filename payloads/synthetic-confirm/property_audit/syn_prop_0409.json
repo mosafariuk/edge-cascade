@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0409",
+  "source": "synthetic",
+  "raw_text": "For 3rd Floor Office Suite, EC1A, the current value stands at 309,000 pounds, previously at 296,150 pounds. No cohort average increase is recorded. No effective date is noted. Assets include a rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 309000,
+      "previous_value_gbp": 296150,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

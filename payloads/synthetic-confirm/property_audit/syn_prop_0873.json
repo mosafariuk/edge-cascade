@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0873",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter shows an effective current value of 151,500 pounds, with the prior assessment at 109,300 pounds. The cohort average rise is 18.2 percent. Effective 01-Apr. Adjacent unit's projection: 210,000 pounds.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 151500,
+      "previous_value_gbp": 109300,
+      "cohort_avg_increase_pct": 18.2,
+      "effective_date_raw": "01-Apr",
+      "assets": []
+    }
+  }
+}

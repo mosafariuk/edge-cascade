@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0293",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail, with a mezzanine level, has a current rateable value of 134,500 GBP, previously assessed at 117,700 GBP. The cohort average increase is 6.8 percent. Effective from 30 September 2025. Neighbouring units, such as 5, have a separate valuation of 120,000 GBP.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 134500,
+      "previous_value_gbp": 117700,
+      "cohort_avg_increase_pct": 6.8,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

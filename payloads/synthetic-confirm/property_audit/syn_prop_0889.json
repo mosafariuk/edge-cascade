@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0889",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A shows a CURRENT rateable value of £392,700. PREVIOUS rateable value was £374,000. Cohort average increase is 22.9%. Effective date: \"15-Oct\". No ancillary assets included.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 392700,
+      "previous_value_gbp": 374000,
+      "cohort_avg_increase_pct": 22.9,
+      "effective_date_raw": "15-Oct",
+      "assets": []
+    }
+  }
+}

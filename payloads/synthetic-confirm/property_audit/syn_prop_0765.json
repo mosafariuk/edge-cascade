@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0765",
+  "source": "synthetic",
+  "raw_text": "Cohort avg. increase of 8.9% applies at Corner Shop, 81 High Street where the previous rateable value was 5,800 pounds, now 7,400 pounds. No assets to mention.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 7400,
+      "previous_value_gbp": 5800,
+      "cohort_avg_increase_pct": 8.9,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

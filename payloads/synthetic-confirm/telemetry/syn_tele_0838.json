@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0838",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:31:31] Acoustic level raised by +4.3σ. (Frame: 240) Detected rigid posture. Baseline deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.3,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

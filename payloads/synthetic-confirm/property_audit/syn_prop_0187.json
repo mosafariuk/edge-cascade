@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0187",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street now has a val of 28.9k, up from prev val 23,250. No cohort inc percentage or eff date. No assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 28900,
+      "previous_value_gbp": 23250,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

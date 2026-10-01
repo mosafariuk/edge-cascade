@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0850",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:19:01] Gaze was not off-screen, though deviation lasted 8.5s. The posture was not rigid, and a baseline deviation was flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 8.5,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

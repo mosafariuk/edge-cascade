@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0535",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:01:52] The baseline metrics are nominal as acoustics peaked at +2.3σ but gaze did not go off-screen even during 6.1s deviation. No rigid posture was noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.3,
+      "gaze_deviation_duration_sec": 6.1,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

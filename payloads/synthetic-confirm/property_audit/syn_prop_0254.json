@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0254",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills has a current rateable value of 27,900 GBP, with a previous assessment on record of 25,500 GBP. No cohort average increase is available. No effective date provided. This property has no ancillary assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 27900,
+      "previous_value_gbp": 25500,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

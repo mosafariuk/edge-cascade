@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0892",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park curr val 64.5k GBP, prev val 44,250 GBP. Cohort avg inc 7 pct. No eff date stated.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 64500,
+      "previous_value_gbp": 44250,
+      "cohort_avg_increase_pct": 7,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

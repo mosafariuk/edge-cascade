@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0475",
+  "source": "synthetic",
+  "raw_text": "Featuring a mezzanine level and 1 loading bay, the Corner Shop at 81 High Street had a previous rateable value of 3,750 pounds, now increased to 4,500 pounds, effective from 1 April 2026. A similar cohort average increase of 11.9% was noted.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4500,
+      "previous_value_gbp": 3750,
+      "cohort_avg_increase_pct": 11.9,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "mezzanine level",
+        "1 loading bay"
+      ]
+    }
+  }
+}

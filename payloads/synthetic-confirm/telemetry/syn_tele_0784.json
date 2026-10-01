@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0784",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:07:50] Pitch elevation is +1.1σ. No gaze deviation observed, remained on-screen. No rigid posture detected. Baseline metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.1,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

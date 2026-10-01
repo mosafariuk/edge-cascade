@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0165",
+  "source": "synthetic",
+  "raw_text": "Effective from 01/04/2026, at 3rd Floor Office Suite, EC1A, the current rateable value is 16,050 pounds, with 1 loading bay included. There was no previous rateable value noted and no cohort percentage information available.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 16050,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

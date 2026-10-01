@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0681",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A. The current rateable value is 10,500 pounds. Previously, it was 8,200 pounds. The cohort average increase is 11.1 percent. Effective date: 1 April 2026. Includes a rear service yard, 1 loading bay, and a bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10500,
+      "previous_value_gbp": 8200,
+      "cohort_avg_increase_pct": 11.1,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "rear service yard",
+        "1 loading bay",
+        "bicycle store"
+      ]
+    }
+  }
+}

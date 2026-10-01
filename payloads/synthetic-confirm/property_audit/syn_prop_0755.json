@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0755",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A is valued at £76,000 as of 30 September 2025, where the cohort averages a 5.7% increase. It features a bicycle store, external signage rights, and 2 parking spaces, previously valued at £56,950.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 76000,
+      "previous_value_gbp": 56950,
+      "cohort_avg_increase_pct": 5.7,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "bicycle store",
+        "external signage rights",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

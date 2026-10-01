@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0012",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A: current rateable value 86.55k GBP, previous 56.45k GBP. No cohort avg increase, no eff date. Assets incl. rear service yard, 2 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 86550,
+      "previous_value_gbp": 56450,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

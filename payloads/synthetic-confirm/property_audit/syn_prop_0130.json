@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0130",
+  "source": "synthetic",
+  "raw_text": "With Workshop 7, Canal Mills, assess the current rateable value of 135,000 pounds, where no pre-assessment exists. Includes mezzanine level and external signage rights, while a cohort rise stands marked at 7 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 135000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 7,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "external signage rights"
+      ]
+    }
+  }
+}

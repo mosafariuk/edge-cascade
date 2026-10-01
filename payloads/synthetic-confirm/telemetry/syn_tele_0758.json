@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0758",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:40:29] Acoustic pitch is at +3.5σ. Baseline metrics nominal. Coordinates noted: (15,30).",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.5,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

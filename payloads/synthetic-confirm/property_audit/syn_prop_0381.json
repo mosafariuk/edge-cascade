@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0381",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills currently has a rateable value of 3,250 pounds. Previously, it had a value of 3,300 pounds. The cohort average increase was 2.3 percent. Effective from 2026-04-01, it includes 4 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3250,
+      "previous_value_gbp": 3300,
+      "cohort_avg_increase_pct": 2.3,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "4 parking spaces"
+      ]
+    }
+  }
+}

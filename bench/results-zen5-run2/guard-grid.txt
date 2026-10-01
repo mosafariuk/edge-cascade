@@ -1,0 +1,49 @@
+source: bench/results-zen5-run2/guard-grid.jsonl
+edge: Qwen/Qwen3-8B-AWQ  corpus: payloads/synthetic (500 records)  split: train=350 eval=150 (same as Table VIII)
+
+== per configuration (statistic = mean surprisal, the deployed guard) ==
+config          acc all acc eval fail | AUROC tr AUROC ev | @20%: esc   prec recall  SILENT | @30%: esc   prec recall  SILENT
+T0_shot0          74.2%    77.3%    0 |    0.776    0.803 |     17.3%  83.9%  41.2%   13.3% |     31.3%  89.3%  67.6%    7.3%
+T0.1_shot0        74.2%    76.7%    0 |    0.775    0.820 |     17.3%  84.7%  45.7%   12.7% |     30.0%  89.5%  68.6%    7.3%
+T0.3_shot0        74.0%    76.0%    0 |    0.777    0.830 |     16.7%  83.2%  41.7%   14.0% |     28.7%  89.7%  69.4%    7.3%
+T0.5_shot0        73.0%    74.7%    0 |    0.787    0.846 |     17.3%  83.9%  47.4%   13.3% |     28.7%  89.7%  71.1%    7.3%
+T0_shot1          91.6%    93.3%    0 |    0.873    0.833 |     21.3%  98.3%  80.0%    1.3% |     21.3%  98.3%  80.0%    1.3%
+T0.1_shot1        91.4%    92.7%    0 |    0.873    0.845 |     22.0%  98.3%  81.8%    1.3% |     22.0%  98.3%  81.8%    1.3%
+T0.3_shot1        91.2%    92.0%    0 |    0.853    0.856 |     22.0%  98.3%  83.3%    1.3% |     22.0%  98.3%  83.3%    1.3%
+T0.5_shot1        91.4%    92.0%    0 |    0.867    0.856 |     22.0%  98.3%  83.3%    1.3% |     22.0%  98.3%  83.3%    1.3%
+T0_shot2          96.2%    98.7%    0 |    0.763    0.990 |     12.7% 100.0% 100.0%    0.0% |     12.7% 100.0% 100.0%    0.0%
+T0.1_shot2        96.2%    98.7%    0 |    0.763    0.990 |     12.7% 100.0% 100.0%    0.0% |     12.7% 100.0% 100.0%    0.0%
+T0.3_shot2        96.2%    98.7%    0 |    0.763    0.990 |     12.7% 100.0% 100.0%    0.0% |     12.7% 100.0% 100.0%    0.0%
+T0.5_shot2        96.4%    98.7%    0 |    0.747    0.990 |     12.7% 100.0% 100.0%    0.0% |     12.7% 100.0% 100.0%    0.0%
+  SILENT = wrong AND kept local, as % of all held-out records (lower is better; no guard = 100% − accuracy).
+
+== held-out AUROC by statistic ==
+config            mean surprisal     max surprisal    mean entropy@k  min margin (neg)
+T0_shot0                   0.803             0.785             0.796             0.784
+T0.1_shot0                 0.820             0.798             0.811             0.798
+T0.3_shot0                 0.830             0.812             0.823             0.811
+T0.5_shot0                 0.846             0.826             0.844             0.825
+T0_shot1                   0.833             0.833             0.868             0.900
+T0.1_shot1                 0.845             0.845             0.878             0.908
+T0.3_shot1                 0.856             0.856             0.886             0.914
+T0.5_shot1                 0.856             0.856             0.886             0.912
+T0_shot2                   0.990             0.988             0.986             0.986
+T0.1_shot2                 0.990             0.986             0.986             0.986
+T0.3_shot2                 0.990             0.986             0.986             0.986
+T0.5_shot2                 0.990             0.990             0.986             0.988
+
+== temperature check: records whose value tokens are IDENTICAL to T0_shot0 ==
+  T0.1_shot0: 490/500 token-identical; mean |Δ surprisal| per value token = 0.00040 nats   → negligible (< 0.01 nats): T has no material effect on reported logprobs
+  T0.3_shot0: 478/500 token-identical; mean |Δ surprisal| per value token = 0.00095 nats   → negligible (< 0.01 nats): T has no material effect on reported logprobs
+  T0.5_shot0: 461/500 token-identical; mean |Δ surprisal| per value token = 0.00126 nats   → negligible (< 0.01 nats): T has no material effect on reported logprobs
+
+== selection (lowest TRAIN silent-error rate at the 20% target) ==
+  baseline: T0_shot0 / mean surprisal   train silent 15.7%  | HELD-OUT: AUROC 0.803  escalated 17.3%  precision 83.9% [76.4, 89.3]  recall 41.2% [26.4, 57.8]  silent 13.3%
+  selected: T0.1_shot1 / max surprisal   train silent 1.4%  | HELD-OUT: AUROC 0.845  escalated 22.0%  precision 98.3% [94.0, 99.5]  recall 81.8% [52.3, 94.9]  silent 1.3%
+
+  paired bootstrap on held-out (4000 resamples), selected − baseline:
+    ΔAUROC            = +0.042   95% [-0.120, +0.185]
+    Δ silent-error    = -12.0 pts  95% [-18.0, -6.7]   (negative = fewer silent errors)
+  VERDICT: IMPROVEMENT — interval excludes zero; confirm on a fresh corpus before changing the paper
+
+Note: 12 configurations × 4 statistics were compared; only the pre-registered selection above is a valid claim.

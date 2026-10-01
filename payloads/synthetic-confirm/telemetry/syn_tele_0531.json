@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0531",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:41:53] Acoustic sigma is +4σ. The gaze is off-screen. The posture is rigid. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

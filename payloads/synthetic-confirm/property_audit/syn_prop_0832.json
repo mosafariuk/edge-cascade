@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0832",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park: curr val £12.5k, prev val £12.9k, avg inc 8.5%. Includes basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 12500,
+      "previous_value_gbp": 12900,
+      "cohort_avg_increase_pct": 8.5,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

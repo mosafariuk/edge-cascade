@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0213",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:41:54] Acoustic pitch elevation recorded at +1.1σ, gaze deviation lasted 2.8s. There are 350 data frames recorded. Baseline deviation is flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.1,
+      "gaze_deviation_duration_sec": 2.8,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0550",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:43:12] Acoustic level at +0.7σ, while posture shows rigid contraction. Despite 8.8s of gaze deviation, baseline stress is nominal, and gaze remained on-screen.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.7,
+      "gaze_deviation_duration_sec": 8.8,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

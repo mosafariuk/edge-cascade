@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0642",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:36:47] Acoustic +2.2σ; 5s gaze dev; baseline deviates.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.2,
+      "gaze_deviation_duration_sec": 5,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

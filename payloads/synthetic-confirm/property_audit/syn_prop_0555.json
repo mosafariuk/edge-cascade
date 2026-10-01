@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0555",
+  "source": "synthetic",
+  "raw_text": "On 01/04/2026, Unit 4, Ground Floor Retail achieves a rateable value of £3,500, which was not previously recorded. Showing a 21.9% cohort average increase, there are no ancillary assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 21.9,
+      "effective_date_raw": "01/04/2026",
+      "assets": []
+    }
+  }
+}

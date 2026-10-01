@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0893",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:07:17] +3.8σ acoustic pitch, gaze deviated for 3.8s and is off-screen. Nominal baseline, with 12,000 frame count.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.8,
+      "gaze_deviation_duration_sec": 3.8,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

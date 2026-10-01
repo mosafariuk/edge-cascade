@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0120",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park, at 331,000 pounds currently, was previously 319,050 pounds. The effective date is 2025-10-15. Cohort average increase is at 23.3 percent. No ancillary assets are noted.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 331000,
+      "previous_value_gbp": 319050,
+      "cohort_avg_increase_pct": 23.3,
+      "effective_date_raw": "2025-10-15",
+      "assets": []
+    }
+  }
+}

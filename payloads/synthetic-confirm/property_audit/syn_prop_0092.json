@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0092",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High St. has current value of 3k GBP. Prev. value: 2,850. Avg increase: 17.7%. Assets: external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3000,
+      "previous_value_gbp": 2850,
+      "cohort_avg_increase_pct": 17.7,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

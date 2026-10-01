@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0792",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:32:53] Acoustic elevation: +1.4σ. No pitch duration or baseline dev noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

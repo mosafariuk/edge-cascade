@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0336",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:44:52] The pitch elevation is +1.5σ with a gaze deviation duration of 2.9s. Baseline deviation is flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.5,
+      "gaze_deviation_duration_sec": 2.9,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0947",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street: curr 33.5k (was 33.55k). No cohort pct. No eff date. Assets: basement storage unit, 3 EV charging points, mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 33500,
+      "previous_value_gbp": 33550,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit",
+        "3 EV charging points",
+        "mezzanine level"
+      ]
+    }
+  }
+}

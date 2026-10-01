@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0560",
+  "source": "synthetic",
+  "raw_text": "With 4 parking spaces, Unit 12, Riverside Trade Park reaches £106,000 in its rateable value, up from £75,450, as of 30 September 2025, with the cohort's increase being 16.2%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 106000,
+      "previous_value_gbp": 75450,
+      "cohort_avg_increase_pct": 16.2,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "4 parking spaces"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0098",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:10:25] +4.1σ and gaze deviation lasted 2.8s during this frame of 2560. Baseline is nominal and athlete observed with rigid posture.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.1,
+      "gaze_deviation_duration_sec": 2.8,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

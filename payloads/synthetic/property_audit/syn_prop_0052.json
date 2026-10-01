@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0052",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: curr val 50k. Prev val 41.7k. Eff dt 30 September 2025. No cohort info.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 50000,
+      "previous_value_gbp": 41700,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": []
+    }
+  }
+}

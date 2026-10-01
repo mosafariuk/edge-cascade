@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_1000",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills is valued currently at 62,100 GBP, having been 50,650 GBP previously. Effective from 15-Oct, the workshop contains no additional assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 62100,
+      "previous_value_gbp": 50650,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "15-Oct",
+      "assets": []
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0680",
+  "source": "synthetic",
+  "raw_text": "The effective date is 15-Oct for Unit 4, Ground Floor Retail, with the current rateable value set at £106,450. Previous value was £100,450. The cohort average increased by 24.8%. Assets include a bicycle store, 2 parking spaces, and a basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 106450,
+      "previous_value_gbp": 100450,
+      "cohort_avg_increase_pct": 24.8,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "bicycle store",
+        "2 parking spaces",
+        "basement storage unit"
+      ]
+    }
+  }
+}

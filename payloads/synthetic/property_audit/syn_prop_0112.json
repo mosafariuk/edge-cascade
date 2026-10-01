@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0112",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail now at 44.5k GBP, previously 29.9k GBP. Cohort baseline avg incr 10.3%. Eff. date: 1 April 2026. No assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 44500,
+      "previous_value_gbp": 29900,
+      "cohort_avg_increase_pct": 10.3,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

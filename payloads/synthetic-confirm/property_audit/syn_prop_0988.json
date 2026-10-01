@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0988",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse: Current rateable value £13,550. Previous £14,150. 1 loading bay included. Unit coordinates 51.500728,-0.124626.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 13550,
+      "previous_value_gbp": 14150,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

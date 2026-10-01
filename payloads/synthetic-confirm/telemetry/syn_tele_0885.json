@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0885",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:40:26] Baseline stress metrics nominal, but acoustic pitch was elevated at +0.9σ. No gaze deviation recorded.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.9,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

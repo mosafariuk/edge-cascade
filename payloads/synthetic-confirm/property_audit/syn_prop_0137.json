@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0137",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: Curr val 277.5k GBP eff 1 April 2026. No prev val. rear service yard, bicycle store, 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 277500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "rear service yard",
+        "bicycle store",
+        "1 loading bay"
+      ]
+    }
+  }
+}

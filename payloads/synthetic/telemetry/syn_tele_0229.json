@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0229",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:24:25] Acoustic deviation +1.1σ. Gaze deviation present for 5.9s. Gaze did not go off-screen. No rigid posture noted. Baseline metrics are not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.1,
+      "gaze_deviation_duration_sec": 5.9,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

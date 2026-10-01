@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0177",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail: curr. £49k, prev. £33.9k, cohort +2.8%, eff date 01-Apr. Asset: 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 49000,
+      "previous_value_gbp": 33900,
+      "cohort_avg_increase_pct": 2.8,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

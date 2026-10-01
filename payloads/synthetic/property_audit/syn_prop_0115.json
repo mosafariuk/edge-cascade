@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0115",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse includes a roof terrace, a bicycle store, and 1 loading bay, with the current value being 114,500 GBP. No previous value exists. The cohort average increase is 22.9 percent. As of 1 April 2026, these were noted.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 114500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 22.9,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "roof terrace",
+        "bicycle store",
+        "1 loading bay"
+      ]
+    }
+  }
+}

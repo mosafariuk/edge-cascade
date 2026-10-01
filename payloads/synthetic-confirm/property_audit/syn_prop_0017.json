@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0017",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail curr: 19.75k GBP, prev: 14.1k GBP. Eff date: 2026-04-01. Bicycle store incl.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 19750,
+      "previous_value_gbp": 14100,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

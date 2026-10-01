@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0698",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A boasts 3 EV charging points, a bicycle store, and external signage rights. The current rateable value is 43,500 GBP, rising from a previous 38,650 GBP. With a cohort average increase of 7.3 percent, it's effective from 01/04/2026. Coordinates for nearby property: N 51.515.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 43500,
+      "previous_value_gbp": 38650,
+      "cohort_avg_increase_pct": 7.3,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "3 EV charging points",
+        "bicycle store",
+        "external signage rights"
+      ]
+    }
+  }
+}

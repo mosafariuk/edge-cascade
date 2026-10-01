@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0003",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:25:46] Pitch elevation at +3.1σ. Gaze deviation lasted 2.1s. 420 frames noted during data capture. Rigid posture was present.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.1,
+      "gaze_deviation_duration_sec": 2.1,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

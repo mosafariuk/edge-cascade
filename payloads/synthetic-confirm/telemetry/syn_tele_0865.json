@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0865",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:36:14] Baseline is nominal with a pitch elevation of +2.8σ. Gaze was off-screen for 4.1 seconds.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.8,
+      "gaze_deviation_duration_sec": 4.1,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

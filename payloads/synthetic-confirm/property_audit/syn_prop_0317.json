@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0317",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street: Curr. val. 28.95k, prev. val. 21.9k. Eff. 30 September 2025. Assets: external signage rights, 2 parking spaces, rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 28950,
+      "previous_value_gbp": 21900,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "external signage rights",
+        "2 parking spaces",
+        "rear service yard"
+      ]
+    }
+  }
+}

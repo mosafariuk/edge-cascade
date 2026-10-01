@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0790",
+  "source": "synthetic",
+  "raw_text": "Currently, Unit 4, Ground Floor Retail, valued at 27,800 pounds, had a previous value of 23,800 pounds, with an effective date of 01/04/2026 and a cohort average increase of 23.6 percent; included is a rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 27800,
+      "previous_value_gbp": 23800,
+      "cohort_avg_increase_pct": 23.6,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

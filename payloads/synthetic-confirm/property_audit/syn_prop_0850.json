@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0850",
+  "source": "synthetic",
+  "raw_text": "Northern Quarter, First Floor Studio has a roof terrace and 4 parking spaces. The value is 6,000 GBP after previously being 5,550 GBP. No cohort average percentage rise or effective date provided.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6000,
+      "previous_value_gbp": 5550,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "4 parking spaces"
+      ]
+    }
+  }
+}

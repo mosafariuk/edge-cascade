@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0350",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills, with its mezzanine level and external signage rights, has a current value of 31,700 pounds, following a previous value of 34,400 pounds, while there's no effective date announced. The cohort average increase figure is at 7.1 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 31700,
+      "previous_value_gbp": 34400,
+      "cohort_avg_increase_pct": 7.1,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "external signage rights"
+      ]
+    }
+  }
+}

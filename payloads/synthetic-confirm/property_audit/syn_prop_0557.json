@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0557",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street: curr. val. £230.4k, prev. £149.1k, cohort 5.6%. Eff. 01-Apr. Assets: 4 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 230400,
+      "previous_value_gbp": 149100,
+      "cohort_avg_increase_pct": 5.6,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "4 parking spaces"
+      ]
+    }
+  }
+}

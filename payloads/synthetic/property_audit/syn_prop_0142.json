@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0142",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street now at 3,500 GBP, previously 3,550 GBP. Cohort avg incr 15.7%. Eff. date 1 April 2026. No assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3500,
+      "previous_value_gbp": 3550,
+      "cohort_avg_increase_pct": 15.7,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

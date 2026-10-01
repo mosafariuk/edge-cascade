@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0715",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:08:45] Gaze is off-screen and acoustic pitch is +2.6σ. Rigid posture observed with nominal baseline stress metrics.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.6,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

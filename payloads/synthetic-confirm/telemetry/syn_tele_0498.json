@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0498",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:36:13] Acoustic pitch at +1.2σ, off-screen gaze noted. 2435 units processed. Baseline nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

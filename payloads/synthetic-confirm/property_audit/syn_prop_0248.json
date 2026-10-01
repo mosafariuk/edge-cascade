@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0248",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A registers a current rateable value of 192,500 GBP as of 01/04/2026, up from a previous 144,750 GBP. The cohort average rise is 16.4%. It includes a basement storage unit. Coordinates 51.5200° N, 0.1020° W mark the location accurately.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 192500,
+      "previous_value_gbp": 144750,
+      "cohort_avg_increase_pct": 16.4,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

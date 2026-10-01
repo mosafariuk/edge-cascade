@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0177",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street: curr. value 154k GBP, prev. 102250 GBP, eff. date 2026-04-01. Includes mezzanine level, rear service yard, bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 154000,
+      "previous_value_gbp": 102250,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "mezzanine level",
+        "rear service yard",
+        "bicycle store"
+      ]
+    }
+  }
+}

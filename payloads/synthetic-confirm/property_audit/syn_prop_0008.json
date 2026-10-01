@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0008",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A has a current rateable value of £50,300 and a previous rateable value of £36,900. Effective from 01/04/2026, it includes a bicycle store, basement storage unit, and rear service yard. The cohort average increase is 23.8%. Note: Floor area contains exactly 3,200 square feet.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 50300,
+      "previous_value_gbp": 36900,
+      "cohort_avg_increase_pct": 23.8,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "bicycle store",
+        "basement storage unit",
+        "rear service yard"
+      ]
+    }
+  }
+}

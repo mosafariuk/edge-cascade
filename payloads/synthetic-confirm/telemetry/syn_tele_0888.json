@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0888",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:48:23] Acoustic pitch +2.6σ with gaze off-screen for 8.5s, rigid posture noted. Camera frame count: 2400.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.6,
+      "gaze_deviation_duration_sec": 8.5,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

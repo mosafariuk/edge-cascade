@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0163",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:42:07] Gaze off-screen for 7.1 seconds. Baseline nominal. Notable frame rate of 60fps.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 7.1,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

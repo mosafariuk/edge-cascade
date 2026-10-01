@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0958",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse now stands at a rateable value of £128,600, previously £121,950. An adjacent kiosk features 3,300 frames of digital advertising display.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 128600,
+      "previous_value_gbp": 121950,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

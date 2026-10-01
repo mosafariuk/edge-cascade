@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0645",
+  "source": "synthetic",
+  "raw_text": "The current value, amounting to 42,300 pounds, applies to Kiosk 2, Station Concourse, while 37,950 pounds was the previous value. With a bicycle store, mezzanine level, and 3 EV charging points, the kiosk features various assets. No effective date is recorded, though the cohort average increase stands at 3.2 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 42300,
+      "previous_value_gbp": 37950,
+      "cohort_avg_increase_pct": 3.2,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points",
+        "bicycle store",
+        "mezzanine level"
+      ]
+    }
+  }
+}

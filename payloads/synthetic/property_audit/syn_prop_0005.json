@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0005",
+  "source": "synthetic",
+  "raw_text": "The effective date is 2025-10-15, for Corner Shop, 81 High Street, which has roof terrace and external signage rights as assets. The rateable value is 21,000 GBP, compared to the baseline average increase of 7.8%. No previous value is provided.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 21000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 7.8,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "roof terrace",
+        "external signage rights"
+      ]
+    }
+  }
+}

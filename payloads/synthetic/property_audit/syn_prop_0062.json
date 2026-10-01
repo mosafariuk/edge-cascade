@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0062",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: Current 47.5k, Prev 30,250. No cohort pct. No eff date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 47500,
+      "previous_value_gbp": 30250,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

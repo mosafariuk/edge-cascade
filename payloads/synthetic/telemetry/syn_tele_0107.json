@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0107",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:30:56] Acσ: +2σ. Gaze dev: 6.2s. Rigid posture noted. Baseline dev flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2,
+      "gaze_deviation_duration_sec": 6.2,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

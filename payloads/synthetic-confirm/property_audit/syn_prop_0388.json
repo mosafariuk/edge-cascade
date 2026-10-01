@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0388",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street has a current rateable value of 17,500 pounds, previously 17,300 pounds. Effective from 15-Oct. Includes bicycle store, 2 parking spaces, external signage rights. The unit next door has a frame count of 54.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 17500,
+      "previous_value_gbp": 17300,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "bicycle store",
+        "2 parking spaces",
+        "external signage rights"
+      ]
+    }
+  }
+}

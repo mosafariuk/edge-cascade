@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0179",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:17:56] +1.2σ pitch elevation. 5.1s gaze deviation detected, but gaze remained on-screen. No rigid posture observed. Baseline deviation is flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.2,
+      "gaze_deviation_duration_sec": 5.1,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

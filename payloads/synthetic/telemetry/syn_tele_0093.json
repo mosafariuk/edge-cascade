@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0093",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:22:42] +1.9σ pitch elevation, 1s gaze deviation, and gaze is off-screen. Baseline reads nominal. Coordinates affected 102, 205.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.9,
+      "gaze_deviation_duration_sec": 1,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

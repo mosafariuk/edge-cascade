@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0777",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A: Current value £173.9k, prev. £135.8k. Cohort avg inc 16.4%. Includes assets: 1 loading bay, roof terrace, 2 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 173900,
+      "previous_value_gbp": 135800,
+      "cohort_avg_increase_pct": 16.4,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay",
+        "roof terrace",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

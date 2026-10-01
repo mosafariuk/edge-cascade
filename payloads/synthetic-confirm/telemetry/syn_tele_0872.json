@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0872",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:22:48] 5.8s gaze dev, posture NR. B-line nominal, no dB deviation.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 5.8,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

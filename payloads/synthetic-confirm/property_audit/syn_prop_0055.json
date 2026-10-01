@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0055",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills includes 1 loading bay. The current rateable value is 186800 GBP, while the average cohort increase is 12.3%. There is no effective date provided, and no previous value is available.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 186800,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 12.3,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

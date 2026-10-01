@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0048",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:00:38] Acoustic pitch is +3.3σ with a gaze deviation lasting 0.7s. Baseline stress metrics are nominal. Gaze is maintained on-screen. Ground floor holds 1500 sq ft.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.3,
+      "gaze_deviation_duration_sec": 0.7,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

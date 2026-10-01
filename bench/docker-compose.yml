@@ -1,0 +1,72 @@
+# docker-compose.yml — full end-to-end benchmark stack for the routing gateway.
+# Run from the scratchpad root:  docker compose -f bench/docker-compose.yml up --build --scale worker=4
+name: cascade-bench
+
+services:
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--save", "", "--appendonly", "no", "--maxclients", "20000"]
+    ports: ["6379:6379"]
+    healthcheck: { test: ["CMD", "redis-cli", "ping"], interval: 2s, timeout: 2s, retries: 20 }
+
+  rabbitmq:
+    image: rabbitmq:3.13-management-alpine
+    ports: ["5672:5672", "15672:15672"]     # AMQP + management UI
+    environment: { RABBITMQ_DEFAULT_USER: guest, RABBITMQ_DEFAULT_PASS: guest }
+    healthcheck: { test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"], interval: 5s, timeout: 5s, retries: 20 }
+
+  postgres:
+    image: pgvector/pgvector:pg16          # official image with pgvector preinstalled
+    environment:
+      POSTGRES_USER: bench
+      POSTGRES_PASSWORD: bench
+      POSTGRES_DB: cascade
+    ports: ["5432:5432"]
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U bench -d cascade"], interval: 3s, timeout: 3s, retries: 20 }
+
+  mock-vllm:
+    image: node:20-alpine
+    working_dir: /app
+    command: ["node", "bench/mock-vllm.mjs"]
+    environment: { PORT: "8000", TOKEN_MS: "4", LOGPROBS_K: "20" }
+    volumes: [ "..:/app:ro" ]              # mount scratchpad root read-only
+    ports: ["8000:8000"]
+    healthcheck: { test: ["CMD", "wget", "-qO-", "http://localhost:8000/health"], interval: 3s, timeout: 3s, retries: 20 }
+
+  worker:
+    build: { context: .., dockerfile: bench/Dockerfile.worker }
+    environment:
+      UV_THREADPOOL_SIZE: "8"              # libuv fix
+      REDIS_URL: "redis://redis:6379"
+      PG_URL: "postgres://bench:bench@postgres:5432/cascade"
+      VLLM_URL: "http://mock-vllm:8000/v1/completions"
+      EMBED_MODE: "${EMBED_MODE:-real}"    # 'hash' to isolate plumbing, 'real' for ONNX contention
+      EGRESS: "${EGRESS:-redis}"           # 'redis' (TTA) or 'pgvector'
+      B_MAX: "32"
+      W_MAX_MS: "19"
+      SINK_MS: "${SINK_MS:-0}"             # inject egress latency to force backpressure
+    depends_on:
+      redis: { condition: service_healthy }
+      postgres: { condition: service_healthy }
+      mock-vllm: { condition: service_healthy }
+    deploy:
+      resources:
+        limits: { cpus: "2.0", memory: 1g }   # bound each worker so contention is observable
+    # scale with:  --scale worker=N
+
+  load-gen:
+    image: node:20-alpine
+    working_dir: /app
+    command: ["node", "bench/load-gen.mjs"]
+    environment:
+      REDIS_URL: "redis://redis:6379"
+      RATE_START: "${RATE_START:-10}"
+      RATE_END: "${RATE_END:-5000}"
+      DURATION: "${DURATION:-30}"
+      HARD_FRAC: "${HARD_FRAC:-0.2}"
+    volumes: [ "..:/app:ro" ]
+    depends_on:
+      redis: { condition: service_healthy }
+    profiles: ["load"]                     # only starts when you ask for it

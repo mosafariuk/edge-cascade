@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0857",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:31:48] Pitch up by +4.2σ, no other issues detected.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

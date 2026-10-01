@@ -1,0 +1,283 @@
+=== START Wed Sep 30 21:49:27 UTC 2026 ===
+preflight: session created with session.intra_op.allow_spinning=0 → node_modules/@xenova/transformers/.cache/Xenova/all-MiniLM-L6-v2/onnx/model_quantized.onnx
+
+═══════ arm A:unpinned-spinON ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=0 PIN_CORES=0 ALLOW_SPINNING=default EMBED_MODE=real LABEL=A:unpinned-spinON
+
+starting dedicated redis on :6390 (core 15)
+W=1 trial 1/5 ... 4078 req/s   p99=4854ms   lg=14% redis=5.5%
+W=1 trial 2/5 ... 4493 req/s   p99=4876ms   lg=14% redis=5.7%
+W=1 trial 3/5 ... 3907 req/s   p99=5059ms   lg=14% redis=5.7%
+W=1 trial 4/5 ... 3908 req/s   p99=4917ms   lg=14% redis=5.5%
+W=1 trial 5/5 ... 4465 req/s   p99=4865ms   lg=14% redis=5.6%
+
+W=8 trial 1/5 ... 1453 req/s   p99=6424ms   lg=9% redis=4.1%
+W=8 trial 2/5 ... 1562 req/s   p99=6430ms   lg=9% redis=4.2%
+W=8 trial 3/5 ... 1527 req/s   p99=6754ms   lg=10% redis=4.2%
+W=8 trial 4/5 ... 1548 req/s   p99=6315ms   lg=10% redis=4.2%
+W=8 trial 5/5 ... 1370 req/s   p99=6406ms   lg=9% redis=4.1%
+
+W=14 trial 1/5 ... 1527 req/s   p99=7872ms   lg=8% redis=4.1%
+W=14 trial 2/5 ... 1471 req/s   p99=8088ms   lg=8% redis=4.0%
+W=14 trial 3/5 ... 1320 req/s   p99=7705ms   lg=8% redis=3.9%
+W=14 trial 4/5 ... 1614 req/s   p99=7739ms   lg=8% redis=4.0%
+W=14 trial 5/5 ... 1492 req/s   p99=7621ms   lg=8% redis=3.9%
+
+════════ SUMMARY (bench/results-zen5-run2/spin-proof.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+A:unpinned-spinON    1       0   0 default   5     4170.2    290.5     360.7  
+A:unpinned-spinON    8       0   0 default   5     1492.0     80.1      99.4  
+A:unpinned-spinON   14       0   0 default   5     1484.8    107.1     133.0  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ arm B:unpinned-spinOFF ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=0 PIN_CORES=0 ALLOW_SPINNING=0 EMBED_MODE=real LABEL=B:unpinned-spinOFF
+
+starting dedicated redis on :6390 (core 15)
+W=1 trial 1/5 ... 4773 req/s   p99=4483ms   lg=11% redis=4.4%
+W=1 trial 2/5 ... 4613 req/s   p99=4593ms   lg=14% redis=5.0%
+W=1 trial 3/5 ... 4714 req/s   p99=4456ms   lg=11% redis=4.3%
+W=1 trial 4/5 ... 4841 req/s   p99=4474ms   lg=12% redis=4.3%
+W=1 trial 5/5 ... 4854 req/s   p99=4453ms   lg=11% redis=4.4%
+
+W=8 trial 1/5 ... 11445 req/s   p99=4693ms   lg=24% redis=11.3%
+W=8 trial 2/5 ... 11132 req/s   p99=4911ms   lg=23% redis=11.0%
+W=8 trial 3/5 ... 11594 req/s   p99=5080ms   lg=24% redis=12.0%
+W=8 trial 4/5 ... 11492 req/s   p99=4820ms   lg=23% redis=11.5%
+W=8 trial 5/5 ... 12021 req/s   p99=4416ms   lg=21% redis=10.3%
+
+W=14 trial 1/5 ... 13423 req/s   p99=4882ms   lg=31% redis=16.3%
+W=14 trial 2/5 ... 12871 req/s   p99=5031ms   lg=30% redis=16.0%
+W=14 trial 3/5 ... 13675 req/s   p99=4739ms   lg=30% redis=16.2%
+W=14 trial 4/5 ... 13812 req/s   p99=4520ms   lg=30% redis=16.0%
+W=14 trial 5/5 ... 13688 req/s   p99=4576ms   lg=31% redis=16.3%
+
+════════ SUMMARY (bench/results-zen5-run2/spin-proof.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+A:unpinned-spinON    1       0   0 default   5     4170.2    290.5     360.7  
+A:unpinned-spinON    8       0   0 default   5     1492.0     80.1      99.4  
+A:unpinned-spinON   14       0   0 default   5     1484.8    107.1     133.0  
+B:unpinned-spinOFF   1       0   0       0   5     4759.0     99.1     123.0  
+B:unpinned-spinOFF   8       0   0       0   5    11536.8    320.9     398.4  
+B:unpinned-spinOFF  14       0   0       0   5    13493.8    375.7     466.5  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ arm C:pinned-spinON ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=1 PIN_CORES=1 ALLOW_SPINNING=default EMBED_MODE=real LABEL=C:pinned-spinON
+
+starting dedicated redis on :6390 (core 15)
+W=1 trial 1/5 ... 2223 req/s   p99=4575ms   lg=10% redis=3.8%
+W=1 trial 2/5 ... 2251 req/s   p99=4534ms   lg=10% redis=3.9%
+W=1 trial 3/5 ... 2241 req/s   p99=4530ms   lg=10% redis=3.8%
+W=1 trial 4/5 ... 2230 req/s   p99=4548ms   lg=10% redis=3.8%
+W=1 trial 5/5 ... 2242 req/s   p99=4537ms   lg=10% redis=3.8%
+
+W=8 trial 1/5 ... 14017 req/s   p99=3997ms   lg=14% redis=6.8%
+W=8 trial 2/5 ... 13953 req/s   p99=4000ms   lg=14% redis=7.0%
+W=8 trial 3/5 ... 13944 req/s   p99=3971ms   lg=14% redis=7.0%
+W=8 trial 4/5 ... 13912 req/s   p99=3956ms   lg=14% redis=7.0%
+W=8 trial 5/5 ... 13860 req/s   p99=3971ms   lg=14% redis=7.0%
+
+W=14 trial 1/5 ... 21924 req/s   p99=3710ms   lg=22% redis=13.3%
+W=14 trial 2/5 ... 21890 req/s   p99=3637ms   lg=22% redis=13.3%
+W=14 trial 3/5 ... 21802 req/s   p99=3621ms   lg=22% redis=13.3%
+W=14 trial 4/5 ... 21873 req/s   p99=3691ms   lg=22% redis=13.4%
+W=14 trial 5/5 ... 21777 req/s   p99=3684ms   lg=22% redis=13.5%
+
+════════ SUMMARY (bench/results-zen5-run2/spin-proof.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+A:unpinned-spinON    1       0   0 default   5     4170.2    290.5     360.7  
+A:unpinned-spinON    8       0   0 default   5     1492.0     80.1      99.4  
+A:unpinned-spinON   14       0   0 default   5     1484.8    107.1     133.0  
+B:unpinned-spinOFF   1       0   0       0   5     4759.0     99.1     123.0  
+B:unpinned-spinOFF   8       0   0       0   5    11536.8    320.9     398.4  
+B:unpinned-spinOFF  14       0   0       0   5    13493.8    375.7     466.5  
+C:pinned-spinON      1       1   1 default   5     2237.4     11.0      13.6  
+C:pinned-spinON      8       1   1 default   5    13937.2     57.6      71.5  
+C:pinned-spinON     14       1   1 default   5    21853.2     61.6      76.5  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ arm D:pinned-spinOFF ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=1 PIN_CORES=1 ALLOW_SPINNING=0 EMBED_MODE=real LABEL=D:pinned-spinOFF
+
+starting dedicated redis on :6390 (core 15)
+W=1 trial 1/5 ... 2213 req/s   p99=4584ms   lg=10% redis=3.8%
+W=1 trial 2/5 ... 2222 req/s   p99=4583ms   lg=10% redis=3.8%
+W=1 trial 3/5 ... 2234 req/s   p99=4557ms   lg=10% redis=3.8%
+W=1 trial 4/5 ... 2243 req/s   p99=4519ms   lg=10% redis=3.8%
+W=1 trial 5/5 ... 2242 req/s   p99=4562ms   lg=10% redis=3.9%
+
+W=8 trial 1/5 ... 13943 req/s   p99=4020ms   lg=14% redis=6.9%
+W=8 trial 2/5 ... 13941 req/s   p99=4000ms   lg=14% redis=7.0%
+W=8 trial 3/5 ... 13900 req/s   p99=3993ms   lg=14% redis=6.9%
+W=8 trial 4/5 ... 13901 req/s   p99=3969ms   lg=14% redis=6.9%
+W=8 trial 5/5 ... 13906 req/s   p99=3990ms   lg=14% redis=6.9%
+
+W=14 trial 1/5 ... 21874 req/s   p99=3621ms   lg=22% redis=12.9%
+W=14 trial 2/5 ... 21809 req/s   p99=3629ms   lg=23% redis=13.3%
+W=14 trial 3/5 ... 21991 req/s   p99=3708ms   lg=22% redis=13.4%
+W=14 trial 4/5 ... 21723 req/s   p99=3613ms   lg=22% redis=13.2%
+W=14 trial 5/5 ... 21876 req/s   p99=3703ms   lg=22% redis=13.2%
+
+════════ SUMMARY (bench/results-zen5-run2/spin-proof.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+A:unpinned-spinON    1       0   0 default   5     4170.2    290.5     360.7  
+A:unpinned-spinON    8       0   0 default   5     1492.0     80.1      99.4  
+A:unpinned-spinON   14       0   0 default   5     1484.8    107.1     133.0  
+B:unpinned-spinOFF   1       0   0       0   5     4759.0     99.1     123.0  
+B:unpinned-spinOFF   8       0   0       0   5    11536.8    320.9     398.4  
+B:unpinned-spinOFF  14       0   0       0   5    13493.8    375.7     466.5  
+C:pinned-spinON      1       1   1 default   5     2237.4     11.0      13.6  
+C:pinned-spinON      8       1   1 default   5    13937.2     57.6      71.5  
+C:pinned-spinON     14       1   1 default   5    21853.2     61.6      76.5  
+D:pinned-spinOFF     1       1   1       0   5     2230.8     13.0      16.2  
+D:pinned-spinOFF     8       1   1       0   5    13918.2     21.9      27.1  
+D:pinned-spinOFF    14       1   1       0   5    21854.6     98.5     122.3  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+════════ spin-proof verdict (bench/results-zen5-run2/spin-proof.csv) ════════
+W= 1  A unpinned/spinON=   4170.2  B unpinned/spinOFF=   4759.0  C pinned=   2237.4  B/A= 1.14x   recovery of the pinned gap: -30.5%
+W= 8  A unpinned/spinON=   1492.0  B unpinned/spinOFF=  11536.8  C pinned=  13937.2  B/A= 7.73x   recovery of the pinned gap:  80.7%
+W=14  A unpinned/spinON=   1484.8  B unpinned/spinOFF=  13493.8  C pinned=  21853.2  B/A= 9.09x   recovery of the pinned gap:  59.0%
+
+Reading: recovery ≳ 50% at W=8/14 ⇒ spin-wait is the dominant mechanism (promote §III-C2 to a result).
+         recovery ≲ 10%          ⇒ spin-wait is NOT the mechanism; the 66% hot site is something else — demote.
+         in between              ⇒ spin is one of several losses; report the split.
+=== spin-proof done Wed Sep 30 22:56:34 UTC 2026 ===
+
+═══════ cell 1:intra0-taskset0 ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=0 PIN_CORES=0 ALLOW_SPINNING=default EMBED_MODE=real LABEL=1:intra0-taskset0
+
+starting dedicated redis on :6390 (core 15)
+W=8 trial 1/5 ... 1403 req/s   p99=6176ms   lg=9% redis=4.1%
+W=8 trial 2/5 ... 1583 req/s   p99=6317ms   lg=10% redis=4.2%
+W=8 trial 3/5 ... 1518 req/s   p99=6336ms   lg=9% redis=4.2%
+W=8 trial 4/5 ... 1409 req/s   p99=6293ms   lg=9% redis=4.1%
+W=8 trial 5/5 ... 1452 req/s   p99=6348ms   lg=10% redis=4.2%
+
+W=14 trial 1/5 ... 1504 req/s   p99=7765ms   lg=8% redis=4.0%
+W=14 trial 2/5 ... 1584 req/s   p99=7612ms   lg=8% redis=4.0%
+W=14 trial 3/5 ... 1524 req/s   p99=7890ms   lg=8% redis=3.9%
+W=14 trial 4/5 ... 1542 req/s   p99=8209ms   lg=8% redis=3.9%
+W=14 trial 5/5 ... 1512 req/s   p99=7887ms   lg=8% redis=4.0%
+
+════════ SUMMARY (bench/results-zen5-run2/ablation-2x2.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+1:intra0-taskset0    8       0   0 default   5     1473.0     76.7      95.3  
+1:intra0-taskset0   14       0   0 default   5     1533.2     31.8      39.5  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ cell 2:intra0-taskset1 ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=0 PIN_CORES=1 ALLOW_SPINNING=default EMBED_MODE=real LABEL=2:intra0-taskset1
+
+starting dedicated redis on :6390 (core 15)
+W=8 trial 1/5 ... 1353 req/s   p99=6162ms   lg=9% redis=4.2%
+W=8 trial 2/5 ... 1372 req/s   p99=6168ms   lg=9% redis=4.2%
+W=8 trial 3/5 ... 1369 req/s   p99=6234ms   lg=9% redis=4.2%
+W=8 trial 4/5 ... 1395 req/s   p99=6257ms   lg=9% redis=4.2%
+W=8 trial 5/5 ... 1384 req/s   p99=6235ms   lg=9% redis=4.2%
+
+W=14 trial 1/5 ... 1383 req/s   p99=6743ms   lg=9% redis=4.2%
+W=14 trial 2/5 ... 1369 req/s   p99=6784ms   lg=9% redis=4.2%
+W=14 trial 3/5 ... 1343 req/s   p99=6557ms   lg=9% redis=4.2%
+W=14 trial 4/5 ... 1371 req/s   p99=6815ms   lg=9% redis=4.1%
+W=14 trial 5/5 ... 1360 req/s   p99=6700ms   lg=9% redis=4.1%
+
+════════ SUMMARY (bench/results-zen5-run2/ablation-2x2.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+1:intra0-taskset0    8       0   0 default   5     1473.0     76.7      95.3  
+1:intra0-taskset0   14       0   0 default   5     1533.2     31.8      39.5  
+2:intra0-taskset1    8       0   1 default   5     1374.6     15.9      19.7  
+2:intra0-taskset1   14       0   1 default   5     1365.2     14.9      18.5  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ cell 3:intra1-taskset0 ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=1 PIN_CORES=0 ALLOW_SPINNING=default EMBED_MODE=real LABEL=3:intra1-taskset0
+
+starting dedicated redis on :6390 (core 15)
+W=8 trial 1/5 ... 14334 req/s   p99=3937ms   lg=14% redis=7.5%
+W=8 trial 2/5 ... 14205 req/s   p99=3984ms   lg=14% redis=7.4%
+W=8 trial 3/5 ... 14224 req/s   p99=4016ms   lg=14% redis=7.3%
+W=8 trial 4/5 ... 14153 req/s   p99=3990ms   lg=14% redis=7.3%
+W=8 trial 5/5 ... 14284 req/s   p99=3996ms   lg=14% redis=7.3%
+
+W=14 trial 1/5 ... 21731 req/s   p99=3669ms   lg=25% redis=14.8%
+W=14 trial 2/5 ... 21715 req/s   p99=3671ms   lg=25% redis=14.8%
+W=14 trial 3/5 ... 21680 req/s   p99=3676ms   lg=25% redis=14.8%
+W=14 trial 4/5 ... 21613 req/s   p99=3708ms   lg=24% redis=14.6%
+W=14 trial 5/5 ... 21620 req/s   p99=3694ms   lg=25% redis=14.7%
+
+════════ SUMMARY (bench/results-zen5-run2/ablation-2x2.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+1:intra0-taskset0    8       0   0 default   5     1473.0     76.7      95.3  
+1:intra0-taskset0   14       0   0 default   5     1533.2     31.8      39.5  
+2:intra0-taskset1    8       0   1 default   5     1374.6     15.9      19.7  
+2:intra0-taskset1   14       0   1 default   5     1365.2     14.9      18.5  
+3:intra1-taskset0    8       1   0 default   5    14240.0     70.4      87.4  
+3:intra1-taskset0   14       1   0 default   5    21671.8     53.8      66.8  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ cell 4:intra1-taskset1 ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=1 PIN_CORES=1 ALLOW_SPINNING=default EMBED_MODE=real LABEL=4:intra1-taskset1
+
+starting dedicated redis on :6390 (core 15)
+W=8 trial 1/5 ... 13764 req/s   p99=4016ms   lg=14% redis=7.0%
+W=8 trial 2/5 ... 13908 req/s   p99=3977ms   lg=14% redis=7.0%
+W=8 trial 3/5 ... 13890 req/s   p99=4037ms   lg=14% redis=6.9%
+W=8 trial 4/5 ... 13905 req/s   p99=4001ms   lg=14% redis=6.9%
+W=8 trial 5/5 ... 13883 req/s   p99=3994ms   lg=14% redis=6.8%
+
+W=14 trial 1/5 ... 21943 req/s   p99=3639ms   lg=22% redis=13.2%
+W=14 trial 2/5 ... 21816 req/s   p99=3698ms   lg=22% redis=13.1%
+W=14 trial 3/5 ... 21693 req/s   p99=3642ms   lg=22% redis=13.3%
+W=14 trial 4/5 ... 21811 req/s   p99=3633ms   lg=22% redis=13.3%
+W=14 trial 5/5 ... 21669 req/s   p99=3636ms   lg=22% redis=13.1%
+
+════════ SUMMARY (bench/results-zen5-run2/ablation-2x2.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+1:intra0-taskset0    8       0   0 default   5     1473.0     76.7      95.3  
+1:intra0-taskset0   14       0   0 default   5     1533.2     31.8      39.5  
+2:intra0-taskset1    8       0   1 default   5     1374.6     15.9      19.7  
+2:intra0-taskset1   14       0   1 default   5     1365.2     14.9      18.5  
+3:intra1-taskset0    8       1   0 default   5    14240.0     70.4      87.4  
+3:intra1-taskset0   14       1   0 default   5    21671.8     53.8      66.8  
+4:intra1-taskset1    8       1   1 default   5    13870.0     60.2      74.7  
+4:intra1-taskset1   14       1   1 default   5    21786.4    110.1     136.7  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+════════ 2×2 table (bench/results-zen5-run2/ablation-2x2.csv) ════════
+
+W=8                 taskset OFF              taskset ON
+  intra-op=0        1473 ±   95 (n=5)        1375 ±   20 (n=5)
+  intra-op=1       14240 ±   87 (n=5)       13870 ±   75 (n=5)
+  share of the (4)−(1) gap recovered by:  intra-op alone (3): 103.0%   taskset alone (2):  -0.8%   interaction:  -2.2%
+
+W=14                 taskset OFF              taskset ON
+  intra-op=0        1533 ±   39 (n=5)        1365 ±   18 (n=5)
+  intra-op=1       21672 ±   67 (n=5)       21786 ±  137 (n=5)
+  share of the (4)−(1) gap recovered by:  intra-op alone (3):  99.4%   taskset alone (2):  -0.8%   interaction:  +1.4%
+=== ALL DONE Wed Sep 30 23:41:22 UTC 2026 ===

@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0540",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills, effective from no set date, sees a valuation of 30,000 GBP, having previously been 23,800 GBP. The cohort average increase is 20.3 percent. No ancillary assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 30000,
+      "previous_value_gbp": 23800,
+      "cohort_avg_increase_pct": 20.3,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0128",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:41:26] Pitch read +2.1σ while gaze, deviated for 2.7s, off-screen. Baseline dev. flagged. The adjacent frame count is 1024.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.1,
+      "gaze_deviation_duration_sec": 2.7,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0788",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse has a current rateable value of 192,000 pounds with a previous value of 156,000 pounds. The cohort average increase is 9.6 percent. Effective date is 01/04/2026. Nearby, platform 1 serves over 25,000 passengers daily. This premises includes a roof terrace.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 192000,
+      "previous_value_gbp": 156000,
+      "cohort_avg_increase_pct": 9.6,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "roof terrace"
+      ]
+    }
+  }
+}

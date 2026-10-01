@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0917",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills curr val 3.5k. No prev val. No avg inc. Eff dt: 01-Apr. No assets incl.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": []
+    }
+  }
+}

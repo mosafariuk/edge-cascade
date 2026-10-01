@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0320",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A on 15-Oct has a rateable value of 55,100 pounds, up from 34,600 pounds, amidst a 22.5% cohort average increase. Included is a mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 55100,
+      "previous_value_gbp": 34600,
+      "cohort_avg_increase_pct": 22.5,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

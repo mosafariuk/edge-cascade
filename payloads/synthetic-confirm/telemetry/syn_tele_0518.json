@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0518",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:06:42] Acoustic pitch increased by +1.5σ while gaze is off-screen. Coordinate 5500, baseline metrics nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.5,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,5 @@
+NVIDIA GeForce RTX 3090, 580.178.04, 24576 MiB, 4, 16
+vllm 0.9.2 torch 2.7.0+cu128
+Qwen/Qwen3-8B-AWQ
+Qwen/Qwen3-8B-AWQ
+1512

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0151",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:03:52] Gaze deviated for 3.3 seconds and is off-screen. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 3.3,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

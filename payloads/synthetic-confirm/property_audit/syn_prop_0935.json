@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0935",
+  "source": "synthetic",
+  "raw_text": "For First Floor Studio, Northern Quarter, the rateable value is now 260,050 GBP as of 15-Oct. This rose from 240,250 GBP. Assets include 2 parking spaces. Cohort average increase is 19.4 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 260050,
+      "previous_value_gbp": 240250,
+      "cohort_avg_increase_pct": 19.4,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "2 parking spaces"
+      ]
+    }
+  }
+}

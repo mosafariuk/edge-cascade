@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0480",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail, with 3 EV charging points, now valued at 75,800 pounds but was 53,300 pounds before. The cohort average increase at 6.4% applies, and a rear service yard is included.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 75800,
+      "previous_value_gbp": 53300,
+      "cohort_avg_increase_pct": 6.4,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points",
+        "rear service yard"
+      ]
+    }
+  }
+}

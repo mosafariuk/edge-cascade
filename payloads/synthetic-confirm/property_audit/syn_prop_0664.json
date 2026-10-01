@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0664",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park, currently valued at 6,000 GBP, had a previous assessment of 6,450 GBP. No cohort average percentage increase is recorded. The effective date is 30 September 2025. Ancillary assets include a bicycle store, mezzanine level, and 4 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6000,
+      "previous_value_gbp": 6450,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "bicycle store",
+        "mezzanine level",
+        "4 parking spaces"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0150",
+  "source": "synthetic",
+  "raw_text": "From 01-Apr, Workshop 7, Canal Mills has a current value of 73,050 pounds, increased from a previous value of 56,650 pounds. With a cohort average increase of 13.8 percent, the premises include external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 73050,
+      "previous_value_gbp": 56650,
+      "cohort_avg_increase_pct": 13.8,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

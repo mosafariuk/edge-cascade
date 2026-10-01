@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0160",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, valued now at £45,650, was £46,600. With a 23.6% cohort avg increase, it includes 3 EV charging points, mezzanine level, rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 45650,
+      "previous_value_gbp": 46600,
+      "cohort_avg_increase_pct": 23.6,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points",
+        "mezzanine level",
+        "rear service yard"
+      ]
+    }
+  }
+}

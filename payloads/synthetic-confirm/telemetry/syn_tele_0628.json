@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0628",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:57:18] Acoustic pitch elevation is +1σ. Gaze is off-screen. Rigid contraction observed. Baseline deviation flagged. Note: Coordinate 72°E observed.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

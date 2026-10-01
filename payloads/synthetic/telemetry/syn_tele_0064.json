@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0064",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:57:01] +0.8σ recorded for pitch elevation. 2.8 seconds of gaze deviation, with gaze off-screen. Rigid posture not observed. Baseline metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.8,
+      "gaze_deviation_duration_sec": 2.8,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

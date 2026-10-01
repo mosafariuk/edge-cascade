@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0649",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:16:40] No acoustic pitch elevation is recorded. No gaze deviation or off-screen. Rigid posture not detected. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

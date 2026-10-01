@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0928",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:35:31] Gaze deviation of 5.7s, with nominal baseline stress metrics. 3D coordinates logged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 5.7,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

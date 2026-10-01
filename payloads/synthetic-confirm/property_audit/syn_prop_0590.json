@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0590",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street, with 4 parking spaces and a bicycle store, valued 15,300 GBP where before 10,550 GBP, cohort average increased 13.8%, lacks an effective date, also includes a basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 15300,
+      "previous_value_gbp": 10550,
+      "cohort_avg_increase_pct": 13.8,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces",
+        "bicycle store",
+        "basement storage unit"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0038",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:48:45] Acoustic pitch at +2.5σ with a gaze deviation duration of 7.3s. Rigid posture noted. Baseline deviation flagged. Additional data shows 220 frames processed.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.5,
+      "gaze_deviation_duration_sec": 7.3,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

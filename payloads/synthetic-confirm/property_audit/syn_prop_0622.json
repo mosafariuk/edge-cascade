@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0622",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter current value 5.5k. Prev. 4.05k. Av. incr. 9.9%. Eff. 01/04/2026. rear service yard, 4 parking spaces, roof terrace.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5500,
+      "previous_value_gbp": 4050,
+      "cohort_avg_increase_pct": 9.9,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "rear service yard",
+        "4 parking spaces",
+        "roof terrace"
+      ]
+    }
+  }
+}

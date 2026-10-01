@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0202",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park's curr. rateable val.: £109k. Prev. rateable val.: £94350. Effective: 01/04/2026. Asset: roof terrace.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 109000,
+      "previous_value_gbp": 94350,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "roof terrace"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0090",
+  "source": "synthetic",
+  "raw_text": "Including bicycle store and 2 parking spaces, 3rd Floor Office Suite, EC1A has an effective date of 01-Apr. Previously valued at 11,550 GBP, now the rateable value is 11,300 GBP. The cohort baseline increased by 15.1%, plus a rear service yard is part of the assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 11300,
+      "previous_value_gbp": 11550,
+      "cohort_avg_increase_pct": 15.1,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "bicycle store",
+        "2 parking spaces",
+        "rear service yard"
+      ]
+    }
+  }
+}

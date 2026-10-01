@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0192",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse crnt val: 70.2k, prev val: 73,350. Cohort avg incrs 23.1%. Effctv dt 01-Apr.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 70200,
+      "previous_value_gbp": 73350,
+      "cohort_avg_increase_pct": 23.1,
+      "effective_date_raw": "01-Apr",
+      "assets": []
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0037",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A: Curr val 79.4k, prev val 67.15k. Cohort AVG incr 3.7%. Assets: 4 parking spaces, bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 79400,
+      "previous_value_gbp": 67150,
+      "cohort_avg_increase_pct": 3.7,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces",
+        "bicycle store"
+      ]
+    }
+  }
+}

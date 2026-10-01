@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0575",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:37:14] Baseline stress metrics are nominal while gaze deviation lasted for 1.2s. Acoustic elevation not detected; gaze was not off-screen and posture was not rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 1.2,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

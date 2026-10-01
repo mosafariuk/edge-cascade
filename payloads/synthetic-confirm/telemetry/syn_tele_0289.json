@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0289",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:18:46] Pitch is +0.7σ with 2.1s of gaze deviation. Gaze was not off-screen, and posture was not rigid. Baseline stress metrics nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.7,
+      "gaze_deviation_duration_sec": 2.1,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

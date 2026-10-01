@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0095",
+  "source": "synthetic",
+  "raw_text": "With a current value of 14,300 pounds, Unit 12, Riverside Trade Park had a previous valuation of 11,400 pounds. Featuring a mezzanine level, bicycle store, and 2 parking spaces, the cohort average increase is 7.8 percent. The effective date is not available.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 14300,
+      "previous_value_gbp": 11400,
+      "cohort_avg_increase_pct": 7.8,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "bicycle store",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

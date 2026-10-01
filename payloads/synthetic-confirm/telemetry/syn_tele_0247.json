@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0247",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:03:55] +0.7σ pitch, gaze duration 2.5s. Gaze is off-screen. Baseline nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.7,
+      "gaze_deviation_duration_sec": 2.5,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0178",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:01:00] Acoustic pitch at +0.9σ with gaze deviating for 7.3s and gaze is off-screen. Baseline stress metrics are nominal, yet total coordinates logged are (12, 45).",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.9,
+      "gaze_deviation_duration_sec": 7.3,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

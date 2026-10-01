@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0071",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:03:33] Pitch elevation at +2.5σ. Gaze deviated for 8.1s and is off-screen. Baseline deviation is flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.5,
+      "gaze_deviation_duration_sec": 8.1,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

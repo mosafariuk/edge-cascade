@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0122",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park currently assessed at 3,400 GBP; prev. 2,950 GBP. Inc. 4 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3400,
+      "previous_value_gbp": 2950,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces"
+      ]
+    }
+  }
+}

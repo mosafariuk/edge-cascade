@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0775",
+  "source": "synthetic",
+  "raw_text": "With a previous rateable value of 3,250 GBP, the current valuation for Unit 4, Ground Floor Retail is now 3,200 GBP; additionally included are 3 EV charging points. No cohort average percentage is given, and an effective date is not available.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3200,
+      "previous_value_gbp": 3250,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0080",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:43:46] Gaze detected off-screen with no pitch elevation recorded and no gaze deviation observed. Rigid posture not detected and baseline deviation is flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

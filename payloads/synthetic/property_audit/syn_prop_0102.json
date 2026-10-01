@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0102",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: current value 267.4k as of 01-Apr. No prev value. Basement storage unit incl.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 267400,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

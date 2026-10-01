@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0049",
+  "source": "synthetic",
+  "raw_text": "At 3rd Floor Office Suite, EC1A, the current rateable value is 29,350 pounds with no previous assessment on record. The cohort average increase is 5.5 percent. The effective date is 30 September 2025. Includes: bicycle store, roof terrace.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 29350,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 5.5,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "bicycle store",
+        "roof terrace"
+      ]
+    }
+  }
+}

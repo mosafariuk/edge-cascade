@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0625",
+  "source": "synthetic",
+  "raw_text": "Granting external signage rights, Unit 12, Riverside Trade Park features a 65,900 pound current value, a 45,700 pound previous value, and an effective date of 30 September 2025.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 65900,
+      "previous_value_gbp": 45700,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

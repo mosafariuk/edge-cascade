@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0785",
+  "source": "synthetic",
+  "raw_text": "The premises, Warehouse B, Trafford Park, on the 15-Oct, has a current rateable value positioned at 3,500 pounds. Previously rated at 2,700 pounds, it comes alongside a cohort average increase of 18.7 percent. Additionally, it has 4 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3500,
+      "previous_value_gbp": 2700,
+      "cohort_avg_increase_pct": 18.7,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "4 parking spaces"
+      ]
+    }
+  }
+}

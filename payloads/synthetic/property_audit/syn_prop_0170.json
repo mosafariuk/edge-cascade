@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0170",
+  "source": "synthetic",
+  "raw_text": "From 30 September 2025, the current rateable value for Unit 4, Ground Floor Retail is 288,900 pounds; no previous value recorded. It features 2 parking spaces, a roof terrace, and a mezzanine level with a cohort average increase of 14.4 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 288900,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 14.4,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "2 parking spaces",
+        "roof terrace",
+        "mezzanine level"
+      ]
+    }
+  }
+}

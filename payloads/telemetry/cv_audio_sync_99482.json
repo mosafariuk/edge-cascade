@@ -1,0 +1,6 @@
+{
+  "req_id": "cv_audio_sync_99482",
+  "stream_type": "elite_sports_performance",
+  "raw_telemetry": "[00:14:22] Acoustic feature extraction: pitch elevated +2.4σ. Gaze-tracking infrastructure reports lock on off-screen coordinate X:-45 Y:12 for 4.2s. Baseline stress metrics nominal.",
+  "timestamp": 1718819400
+}

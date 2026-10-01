@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0398",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:12:29] Pitch has risen by +1.1σ. Gaze is off-screen for 0.8 seconds, indicating a rigid posture. 300 frames were processed, and baseline metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.1,
+      "gaze_deviation_duration_sec": 0.8,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

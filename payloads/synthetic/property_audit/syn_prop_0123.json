@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0123",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street has a current rateable value of 30,000 GBP. The cohort average percentage increase is 23.8%. Include a roof terrace. Total area: 600 sq ft.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 30000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 23.8,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace"
+      ]
+    }
+  }
+}

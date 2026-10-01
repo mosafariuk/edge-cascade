@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0260",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:45:07] Despite +1.4σ, the gaze stayed on-screen. Baseline deviation flagged; posture remained rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

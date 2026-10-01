@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0887",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:53:14] Acoustic pitch +2.8σ, gaze dev 3.2s. Baseline flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.8,
+      "gaze_deviation_duration_sec": 3.2,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

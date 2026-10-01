@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0217",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: curr 6500, prev 4350. Effective from 01/04/2026. No assets included.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6500,
+      "previous_value_gbp": 4350,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": []
+    }
+  }
+}

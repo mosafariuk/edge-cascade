@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0093",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: On 01/04/2026, the current rateable value is 10,500 GBP, with a cohort average increase of 16.8 percent. This workshop includes 2 parking spaces and a rear service yard. Notably, a neighbouring unit has a rate of 8,900 GBP.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 16.8,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "2 parking spaces",
+        "rear service yard"
+      ]
+    }
+  }
+}

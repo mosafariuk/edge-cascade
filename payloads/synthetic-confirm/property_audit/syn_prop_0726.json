@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0726",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park currently has a rateable value of 89,100 pounds. The previous rateable value was 73,700 pounds. The effective date is 2026-04-01. It includes 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 89100,
+      "previous_value_gbp": 73700,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

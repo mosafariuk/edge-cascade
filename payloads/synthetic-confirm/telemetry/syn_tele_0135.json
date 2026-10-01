@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0135",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:34:38] Baseline stress metrics are not nominal. Gaze deviated for 6.7s while being off-screen. No acoustic pitch figure is recorded, and posture was not rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 6.7,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

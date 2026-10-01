@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0858",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park's current rateable value is 85,000 GBP, previously 74,600 GBP. It includes 1 loading bay and a bicycle store. The cohort average increase stands at 9.7 percent. Another unit in the vicinity has 6,400 GBP.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 85000,
+      "previous_value_gbp": 74600,
+      "cohort_avg_increase_pct": 9.7,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay",
+        "bicycle store"
+      ]
+    }
+  }
+}

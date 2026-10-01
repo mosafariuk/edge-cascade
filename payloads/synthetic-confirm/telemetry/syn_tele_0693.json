@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0693",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:57:09] Acoustic pitch is elevated at +3.9σ. Baseline nominal. Room 839 has 2 windows.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.9,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

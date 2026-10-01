@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0310",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, having an asset of 1 loading bay, sees the current rateable value at 23,350 GBP. Its previous was 20,650 GBP. Cohort increase is 14.3%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 23350,
+      "previous_value_gbp": 20650,
+      "cohort_avg_increase_pct": 14.3,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

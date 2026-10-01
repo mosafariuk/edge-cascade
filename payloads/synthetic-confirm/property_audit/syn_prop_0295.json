@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0295",
+  "source": "synthetic",
+  "raw_text": "The bicycle store is a noted asset for Kiosk 2, Station Concourse, where the current rateable value is stated at 5,800 GBP, previously 3,850 GBP. The cohort average increase reaches 17.5 percent, though no effective date is specified.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5800,
+      "previous_value_gbp": 3850,
+      "cohort_avg_increase_pct": 17.5,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

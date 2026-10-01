@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0681",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:53:25] Acoustic pitch elevation recorded at +1.1σ. Gaze deviation lasted 8.4 seconds. The posture was rigid with baseline stress metrics flagged as deviated.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.1,
+      "gaze_deviation_duration_sec": 8.4,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

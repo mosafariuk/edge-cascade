@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0318",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current rateable value of 201,450 pounds, previously 137,950 pounds. Effective 01/04/2026, it includes a mezzanine level, rear service yard, and 4 parking spaces. Nearby unit has 2,000 square feet.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 201450,
+      "previous_value_gbp": 137950,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "mezzanine level",
+        "rear service yard",
+        "4 parking spaces"
+      ]
+    }
+  }
+}

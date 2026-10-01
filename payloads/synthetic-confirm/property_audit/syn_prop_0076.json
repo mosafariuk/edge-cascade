@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0076",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A is valued currently at 29,250 GBP, having been previously assessed at 22,500 GBP. The effective date is 15-Oct with a cohort average increase of 13.1 percent. It includes 2 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 29250,
+      "previous_value_gbp": 22500,
+      "cohort_avg_increase_pct": 13.1,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "2 parking spaces"
+      ]
+    }
+  }
+}

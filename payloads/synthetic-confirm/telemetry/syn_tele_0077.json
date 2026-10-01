@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0077",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:52:43] +1.8σ, 6.6s gaze dev. No rigid posture. Baseline not nom.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.8,
+      "gaze_deviation_duration_sec": 6.6,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

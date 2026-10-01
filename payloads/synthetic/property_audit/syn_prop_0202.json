@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0202",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter current val 12.1k. Previous val 11,950. Effective 01-Apr.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 12100,
+      "previous_value_gbp": 11950,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": []
+    }
+  }
+}

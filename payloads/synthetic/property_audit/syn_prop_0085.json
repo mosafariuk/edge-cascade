@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0085",
+  "source": "synthetic",
+  "raw_text": "On 1 April 2026, Workshop 7, Canal Mills stands with a rateable value of 4,600 GBP, compared to its previous 4,650 GBP. Provided is a rear service yard. The cohort average was noted at 3 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4600,
+      "previous_value_gbp": 4650,
+      "cohort_avg_increase_pct": 3,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

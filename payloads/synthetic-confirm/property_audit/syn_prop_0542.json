@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0542",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills - CV: 53.15k, was 38.05k. Inc. 1 loading bay, mezzanine level, 2 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 53150,
+      "previous_value_gbp": 38050,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay",
+        "mezzanine level",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

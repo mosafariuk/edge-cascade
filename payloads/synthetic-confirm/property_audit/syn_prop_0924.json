@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0924",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A holds a current rateable value of 209,500 GBP, and no previous assessment on record. No effective date on record. Includes 3 EV charging points as ancillary assets. The cohort's average increase was 19.9%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 209500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 19.9,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

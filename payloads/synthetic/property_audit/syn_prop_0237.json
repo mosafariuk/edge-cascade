@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0237",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter: Curr. val. 40,850, prev. val. 29,550. Cohort avg. inc. 15.2%. Assets: external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 40850,
+      "previous_value_gbp": 29550,
+      "cohort_avg_increase_pct": 15.2,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

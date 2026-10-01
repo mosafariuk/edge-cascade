@@ -1,0 +1,67 @@
+==============================================================
+ PROVENANCE — run 2 (spin-proof + 2x2 ablation)
+==============================================================
+captured (UTC): Wed Sep 30 21:44:17 UTC 2026
+host:           edg-network  (bare metal; address redacted, host destroyed after capture)
+
+--- VIRTUALIZATION ---
+systemd-detect-virt: none
+hypervisor cpu flag count: 0
+
+--- CPU ---
+CPU(s):                                  32
+Model name:                              AMD Ryzen 9 9950X 16-Core Processor
+BIOS Model name:                         AMD Ryzen 9 9950X 16-Core Processor             Unknown CPU @ 4.3GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      16
+Socket(s):                               1
+CPU(s) scaling MHz:                      37%
+CPU max MHz:                             5752.0000
+CPU min MHz:                             600.0000
+L1d cache:                               768 KiB (16 instances)
+L1i cache:                               512 KiB (16 instances)
+L2 cache:                                16 MiB (16 instances)
+L3 cache:                                64 MiB (2 instances)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-31
+Vulnerability L1tf:                      Not affected
+
+--- L3 / CCD TOPOLOGY ---
+cpu0 L3 shared_cpu_list: 0-7,16-23
+cpu7 L3 shared_cpu_list: 0-7,16-23
+cpu8 L3 shared_cpu_list: 8-15,24-31
+cpu15 L3 shared_cpu_list: 8-15,24-31
+
+--- FREQUENCY POLICY (threat 4) ---
+driver: amd-pstate-epp  governor: performance  amd_pstate: active  epp: performance
+boost: not disabled (same as run 1)
+
+--- ISA ---
+avx512_vnni avx512bw avx512f avx512vl avx_vnni 
+
+--- MEMORY / OS / KERNEL ---
+               total        used        free      shared  buff/cache   available
+Mem:           186Gi       2.3Gi       183Gi        12Mi       2.6Gi       184Gi
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
+kernel: 6.8.0-142-generic
+scheduler: EEVDF (kernel default >=6.6)
+
+--- TOOLCHAIN ---
+node: v24.21.0
+redis: v=7.0.15
+onnxruntime-node: 1.27.0
+model: Xenova/all-MiniLM-L6-v2 model_quantized.onnx 22972370 bytes
+model sha256: afdb6f1a0e45b715d0bb9b11772f032c399babd23bfc31fed1c170afc848bdb1
+
+--- INTERVENTIONS ---
+1. RAID1 resync FROZEN (echo frozen > /sys/block/md0/md/sync_action): frozen
+2. apt-daily.timer, apt-daily-upgrade.timer, unattended-upgrades MASKED
+3. host redis-server unit disabled; bench starts its own on :6390 pinned to infra core
+4. kernel.perf_event_paranoid = 1
+5. load generator + redis pinned to core 15 via taskset
+
+--- DIFFERENCES FROM RUN 1 (2026-07-20) ---
+kernel 6.8.0 (run 1: 6.17.0); Ubuntu 24.04.5 (run 1: 24.04.4); node v24.21.0 (run 1: 24.18.0). Same CPU model, RAM, L3 map, ORT version, model checksum.
+
+--- CODE ---
+src/embed-native.mjs allowSpinning → SessionOptions.extra.session.intra_op.allow_spinning (added 2026-09-30)

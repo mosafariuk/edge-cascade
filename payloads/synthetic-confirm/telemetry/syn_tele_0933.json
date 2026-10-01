@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0933",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:21:07] Acoustic elevation at +0.3σ. Gaze deviation of 8.8s and off-screen recorded. Nominal baseline. Disengagement count: 37.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.3,
+      "gaze_deviation_duration_sec": 8.8,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

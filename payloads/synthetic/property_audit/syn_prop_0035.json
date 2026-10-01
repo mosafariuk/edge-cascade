@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0035",
+  "source": "synthetic",
+  "raw_text": "Mezzanine level and roof terrace are included at First Floor Studio, Northern Quarter, which has a current rateable value of 83,100 pounds. No previous value. By 15-Oct, not a cohort average increase recorded.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 83100,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "mezzanine level",
+        "roof terrace"
+      ]
+    }
+  }
+}

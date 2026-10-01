@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0125",
+  "source": "synthetic",
+  "raw_text": "Effective 17,400 GBP current value applies to First Floor Studio, Northern Quarter, once 12,950 GBP prior. The cohort mentions a 21.8 percentage increase with assets like 1 loading bay, 2 parking spaces, and 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 17400,
+      "previous_value_gbp": 12950,
+      "cohort_avg_increase_pct": 21.8,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay",
+        "2 parking spaces",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

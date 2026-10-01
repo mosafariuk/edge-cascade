@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0092",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park current value 6.5k GBP (prev 6.2k GBP). Cohort avg incr 13.5 pct.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6500,
+      "previous_value_gbp": 6200,
+      "cohort_avg_increase_pct": 13.5,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

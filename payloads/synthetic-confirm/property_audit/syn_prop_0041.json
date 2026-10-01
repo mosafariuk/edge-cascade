@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0041",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current rateable value of 13,500 GBP. Previously, the rateable value was 10,500 GBP. Effective date is 01/04/2026. Assets include 2 parking spaces, basement storage unit, and 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 13500,
+      "previous_value_gbp": 10500,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "2 parking spaces",
+        "basement storage unit",
+        "1 loading bay"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0040",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:50:23] With pitch elevation at +2.3σ and a 3.9s gaze deviation observed, rigid posture is present. Baseline metrics confirmed nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.3,
+      "gaze_deviation_duration_sec": 3.9,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

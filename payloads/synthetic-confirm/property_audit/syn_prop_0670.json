@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0670",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter, now valued at 22,400 GBP compared to 14,800 GBP before, has its rate change effective from 2025-10-15, including a bicycle store and 4 parking spaces with an 8.2 percent cohort average increase.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 22400,
+      "previous_value_gbp": 14800,
+      "cohort_avg_increase_pct": 8.2,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "bicycle store",
+        "4 parking spaces"
+      ]
+    }
+  }
+}

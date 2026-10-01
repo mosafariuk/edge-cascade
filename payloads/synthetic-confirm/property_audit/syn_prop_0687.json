@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0687",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park. Current val: 28k. Prev.: 24,600. Eff. date: 01/04/2026.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 28000,
+      "previous_value_gbp": 24600,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": []
+    }
+  }
+}

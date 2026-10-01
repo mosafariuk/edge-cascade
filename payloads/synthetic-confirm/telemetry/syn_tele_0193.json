@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0193",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:41:35] Pitch elevation recorded at +1.2σ; floor 230m. Baseline stress metrics nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

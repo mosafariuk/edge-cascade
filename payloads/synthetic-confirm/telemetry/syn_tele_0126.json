@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0126",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:03:19] Rigid posture with a gaze deviation of 1.6 seconds. Baseline stress metrics deviation detected.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 1.6,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

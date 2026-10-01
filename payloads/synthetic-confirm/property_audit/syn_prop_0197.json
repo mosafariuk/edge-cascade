@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0197",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park: current val 44.3k, prev 31.05k, cohort avg incr pct 10.6%, eff date 2025-10-15, incl 2 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 44300,
+      "previous_value_gbp": 31050,
+      "cohort_avg_increase_pct": 10.6,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "2 parking spaces"
+      ]
+    }
+  }
+}

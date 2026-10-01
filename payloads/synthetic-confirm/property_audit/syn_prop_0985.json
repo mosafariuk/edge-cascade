@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0985",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, with 3 EV charging points and a bicycle store, has a current value of 30,000 GBP and the effective date is 01-Apr, with no previous value recorded and no cohort average increase.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 30000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "3 EV charging points",
+        "bicycle store"
+      ]
+    }
+  }
+}

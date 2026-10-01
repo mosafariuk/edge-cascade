@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0457",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street curr RV 65.2k. Prev RV 50.55k. Eff dt 01-Apr. No ancillary assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 65200,
+      "previous_value_gbp": 50550,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": []
+    }
+  }
+}

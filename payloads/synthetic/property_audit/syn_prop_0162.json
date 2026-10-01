@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0162",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse: Current value 24k GBP, Prev. value 16.8k GBP, Cohort avg. incre. 20.8%. Assets incl.: bicycle store, 4 parking spaces, basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 24000,
+      "previous_value_gbp": 16800,
+      "cohort_avg_increase_pct": 20.8,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store",
+        "4 parking spaces",
+        "basement storage unit"
+      ]
+    }
+  }
+}

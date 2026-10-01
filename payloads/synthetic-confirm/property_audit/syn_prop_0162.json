@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0162",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High St: Current RV: 14k. Previous RV: 9.2k. Assets: roof terrace, 1 loading bay, bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 14000,
+      "previous_value_gbp": 9200,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "1 loading bay",
+        "bicycle store"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0010",
+  "source": "synthetic",
+  "raw_text": "Including 1 loading bay, 3rd Floor Office Suite, EC1A shows a rateable value of £4,000; no prior rateable value is on record, with no cohort percentage stated and no effective date provided.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

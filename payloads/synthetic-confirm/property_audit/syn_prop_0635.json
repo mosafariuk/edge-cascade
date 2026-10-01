@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0635",
+  "source": "synthetic",
+  "raw_text": "There are 3 EV charging points at Corner Shop, 81 High Street, and its current rateable value is 37300 pounds while the previous value was 36850 pounds. The cohort average increase is 6.7 percent but there's no effective date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 37300,
+      "previous_value_gbp": 36850,
+      "cohort_avg_increase_pct": 6.7,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

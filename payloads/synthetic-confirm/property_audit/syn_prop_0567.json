@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0567",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter curr val 22.4k. No prev val noted. Cohort avg inc 13.9%. Mezzanine level, 4 parking spaces & external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 22400,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 13.9,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces",
+        "mezzanine level",
+        "external signage rights"
+      ]
+    }
+  }
+}

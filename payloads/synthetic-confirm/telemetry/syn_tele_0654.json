@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0654",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:49:37] Acoustic pitch is measured at +2.5σ. Gaze is not off-screen and no gaze deviation duration reported. No deviation in baseline stress metrics from nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.5,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

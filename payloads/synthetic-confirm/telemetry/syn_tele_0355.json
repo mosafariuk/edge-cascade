@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0355",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:48:40] Gaze is off-screen, acoustic pitch at +2.4σ, and gaze deviation recorded 2s, all while baseline is flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.4,
+      "gaze_deviation_duration_sec": 2,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

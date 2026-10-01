@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0005",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:25:25] A 4.2s gaze deviation occurred with acoustic pitch at +4.4σ, while maintaining rigid posture, yet baseline measures are nominal by now.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.4,
+      "gaze_deviation_duration_sec": 4.2,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

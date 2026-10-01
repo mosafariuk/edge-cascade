@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0751",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:08:22] Pitch elevation is +3.9σ. Gaze deviated off-screen for 2.3 seconds. Rigid posture observed. Baseline stress metrics are not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.9,
+      "gaze_deviation_duration_sec": 2.3,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

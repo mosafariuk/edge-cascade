@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0697",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: RV 120.1k GBP. Prev RV N/A. Cohort avg incr 2.7%. Eff date 15-Oct. Incl. 4 parking spaces, basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 120100,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 2.7,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "4 parking spaces",
+        "basement storage unit"
+      ]
+    }
+  }
+}

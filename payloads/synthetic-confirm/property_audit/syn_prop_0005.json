@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0005",
+  "source": "synthetic",
+  "raw_text": "Including 2 parking spaces, Warehouse B, Trafford Park, as of the latest records, is assessed a rateable £54,500, having preceded at £37,750; no effective date is given, with cohort uplift noted at 12.9%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 54500,
+      "previous_value_gbp": 37750,
+      "cohort_avg_increase_pct": 12.9,
+      "effective_date_raw": null,
+      "assets": [
+        "2 parking spaces"
+      ]
+    }
+  }
+}

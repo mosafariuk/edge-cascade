@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0373",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:55:36] Acoustic measure recorded at +2.4σ. Gaze deviated off-screen for 0.2 seconds. Frame count: 120, baseline nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.4,
+      "gaze_deviation_duration_sec": 0.2,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

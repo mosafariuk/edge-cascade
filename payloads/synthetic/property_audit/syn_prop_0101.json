@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0101",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A has a current rateable value of 6,000 pounds. Previously, the rateable value was 5,600 pounds. The cohort average increase is 5.2 percent. Effective from 01-Apr, the property includes 4 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6000,
+      "previous_value_gbp": 5600,
+      "cohort_avg_increase_pct": 5.2,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "4 parking spaces"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0208",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:25:05] High pitch elevation at +3.9σ and gaze deviation duration recorded was 4.4s. Baseline stress metrics are nominal. Unexpected frame count of 1000 was noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.9,
+      "gaze_deviation_duration_sec": 4.4,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0057",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:19:54] Pitch +4.3σ. Gaze off-screen, deviated for 7.2s. Baseline dev. flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.3,
+      "gaze_deviation_duration_sec": 7.2,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

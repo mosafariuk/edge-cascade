@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0315",
+  "source": "synthetic",
+  "raw_text": "Despite no provided effective date, Workshop 7, Canal Mills's current value stands at 82,500 pounds, formerly 74,200 pounds. It benefits from 2 parking spaces and a basement storage unit, amidst a 23.8 percent cohort average increase.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 82500,
+      "previous_value_gbp": 74200,
+      "cohort_avg_increase_pct": 23.8,
+      "effective_date_raw": null,
+      "assets": [
+        "2 parking spaces",
+        "basement storage unit"
+      ]
+    }
+  }
+}

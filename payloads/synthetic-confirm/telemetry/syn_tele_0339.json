@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0339",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:18:26] Acoustic pitch +1.4σ detected. Gaze deviation lasted 5.9s. Rigid posture confirmed. Baseline is nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.4,
+      "gaze_deviation_duration_sec": 5.9,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

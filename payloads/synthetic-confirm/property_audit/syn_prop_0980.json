@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0980",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills, with a current rateable value 28,600 GBP, was previously valued at 24,950 GBP. The effective date is 2025-10-15, and it includes a mezzanine level. A cohort-average percentage increase is 10.3%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 28600,
+      "previous_value_gbp": 24950,
+      "cohort_avg_increase_pct": 10.3,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

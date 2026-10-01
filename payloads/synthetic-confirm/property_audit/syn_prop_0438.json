@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0438",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park has a current rateable value set at 5500 pounds. There is no previous value recorded. Effective date is 2026-04-01. Assets include 2 parking spaces. Note: the adjacent Unit 11 has a floor area of 150 square meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "2 parking spaces"
+      ]
+    }
+  }
+}

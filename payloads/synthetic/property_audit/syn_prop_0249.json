@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0249",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A has a current rateable value of 25,200 pounds. The previous value was 17,800 pounds. No cohort average increase percentage applicable. The effective date is 2025-10-15. Assets include mezzanine level, basement storage unit, and 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 25200,
+      "previous_value_gbp": 17800,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "mezzanine level",
+        "basement storage unit",
+        "1 loading bay"
+      ]
+    }
+  }
+}

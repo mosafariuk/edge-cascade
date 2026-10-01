@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0773",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:32:21] Acoustic pitch elevation at +0.6σ and gaze deviation lasted 2.2s. The baseline metrics are nominal. Room temperature was 72°F.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.6,
+      "gaze_deviation_duration_sec": 2.2,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

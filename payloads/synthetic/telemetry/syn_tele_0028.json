@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0028",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:05:03] 4.4σ pitch, 3.9s gaze deviation, off-screen. Rigid posture. Baseline metrics nominal. Note: Site reports max occupancy at 150.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.4,
+      "gaze_deviation_duration_sec": 3.9,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

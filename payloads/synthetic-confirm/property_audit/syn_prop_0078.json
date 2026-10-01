@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0078",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter holds a current rateable value of 12,000 GBP. No previous value is on record. The cohort average increase is 5.9 percent. The property features a mezzanine level and a rear service yard. A local studio reports 15 classes per week.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 12000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 5.9,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "rear service yard"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0505",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:20:25] With pitch at +2.4σ, a 4.9s gaze deviation occurs off-screen, while baseline deviation is flagged with rigid posture.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.4,
+      "gaze_deviation_duration_sec": 4.9,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

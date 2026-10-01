@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0105",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:09:08] With a gaze deviation lasting 5.2s, the baseline metrics remain nominal, and gaze stayed on-screen without any posture rigidity.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 5.2,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}
