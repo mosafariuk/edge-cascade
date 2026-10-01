@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0188",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:32:16] Pitch elevation at +3.9σ, suggests rigid posture while looking off-screen. Nominal baseline stress confirmed. Total viewing area is 1500 sq ft.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.9,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

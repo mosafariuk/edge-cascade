@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0922",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:45:21] Acoustic pitch +2.8σ, gaze dev'd 7.6s. Baseline deviation; no rigid posture.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.8,
+      "gaze_deviation_duration_sec": 7.6,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

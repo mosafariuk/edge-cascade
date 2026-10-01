@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0235",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A: Effective date being 1 April 2026; current value is 17,950 GBP. It includes 4 parking spaces and a rear service yard. No previous figure exists. Cohort stats not specified.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 17950,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "4 parking spaces",
+        "rear service yard"
+      ]
+    }
+  }
+}

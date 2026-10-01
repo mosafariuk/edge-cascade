@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0733",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:07:14] No pitch elevation or gaze deviation. Measurements were concurrent across 124 frames. Baseline deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

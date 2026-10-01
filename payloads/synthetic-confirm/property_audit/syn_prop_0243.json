@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0243",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park has a current rateable value of 271,600 GBP effective on 01/04/2026, with a cohort average increase of 3%. The property comprises 3 EV charging points. Note: The adjoining Warehouse C has 15,000 square feet.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 271600,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 3,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

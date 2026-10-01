@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0640",
+  "source": "synthetic",
+  "raw_text": "For 3rd Floor Office Suite, EC1A, the value is 15,600 GBP with no previous value noted. The cohort average increase is 12.3%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 15600,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 12.3,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

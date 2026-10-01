@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0297",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter curr. rateable value 238.6k; prev. 194.6k. No cohort avg. increase pct. No eff. date. Assets incl. external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 238600,
+      "previous_value_gbp": 194600,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

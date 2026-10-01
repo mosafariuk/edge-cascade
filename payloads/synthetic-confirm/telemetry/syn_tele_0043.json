@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0043",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:47:21] Gaze deviation duration 3.4 seconds. Baseline deviation is flagged. 2000 units processed.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 3.4,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

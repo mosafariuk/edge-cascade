@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0605",
+  "source": "synthetic",
+  "raw_text": "On the effective date of 2025-10-15, Unit 4, Ground Floor Retail carries a current value of 8,500 GBP. The cohort average increase is 19.9%, and this unit includes 1 loading bay. No previous value is available.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 8500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 19.9,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

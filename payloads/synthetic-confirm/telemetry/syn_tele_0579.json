@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0579",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:52:44] No acoustic elevation. Gaze deviated off-screen; posture not rigid and baseline metrics are not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

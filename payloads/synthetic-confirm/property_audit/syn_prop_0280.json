@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0280",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A, with basement storage unit, has a new rateable value of 299,550 pounds, previously 323,150 pounds, but no effective date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 299550,
+      "previous_value_gbp": 323150,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

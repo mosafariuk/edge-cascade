@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0610",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:04:50] With a pitch elevation at +2.7σ, gaze is off-screen. Baseline stress metrics remain nominal, but posture is not rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.7,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0160",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:12:56] During rigid posture, gaze was directed off-screen. No acoustic pitch elevation noted. Baseline stress metrics indicate deviation.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

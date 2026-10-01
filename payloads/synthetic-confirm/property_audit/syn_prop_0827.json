@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0827",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: Curr val 39.3k, prev 26,650. Cohort incr 16.6%. Miss eff date. 2 parking spaces, 1 loading bay, rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 39300,
+      "previous_value_gbp": 26650,
+      "cohort_avg_increase_pct": 16.6,
+      "effective_date_raw": null,
+      "assets": [
+        "2 parking spaces",
+        "1 loading bay",
+        "rear service yard"
+      ]
+    }
+  }
+}

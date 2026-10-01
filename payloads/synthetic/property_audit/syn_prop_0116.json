@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0116",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter currently has a rateable value of 5,300 GBP with a previous value of 5,350 GBP. The cohort average increase is 6.5 percent. The property includes a roof terrace and 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5300,
+      "previous_value_gbp": 5350,
+      "cohort_avg_increase_pct": 6.5,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

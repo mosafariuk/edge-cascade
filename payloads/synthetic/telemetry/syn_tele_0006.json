@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0006",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:45:59] The gaze deviated for 4.7s. Baseline stress metrics are nominal. No elevation in pitch detected. The gaze remained on-screen and posture is not rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 4.7,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

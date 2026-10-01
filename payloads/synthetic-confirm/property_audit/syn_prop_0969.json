@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0969",
+  "source": "synthetic",
+  "raw_text": "At Workshop 7, Canal Mills, the current rateable value is £10,100, previously it was £6,700. The cohort average increase is 18.1%. Effective date is 01/04/2026. Property features a roof terrace.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10100,
+      "previous_value_gbp": 6700,
+      "cohort_avg_increase_pct": 18.1,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "roof terrace"
+      ]
+    }
+  }
+}

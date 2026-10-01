@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0069",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse has a current rateable value of 288,900 pounds. The previous value was 233,600 pounds. No cohort average percentage increase is recorded. No effective date is provided. Includes a roof terrace and 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 288900,
+      "previous_value_gbp": 233600,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

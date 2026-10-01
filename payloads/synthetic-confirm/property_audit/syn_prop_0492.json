@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0492",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter valued at 40.4k. Eff dt: 2025-10-15. Includes mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 40400,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

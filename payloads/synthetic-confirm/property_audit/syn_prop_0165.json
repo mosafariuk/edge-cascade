@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0165",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse offers 3 EV charging points and a basement storage unit, with a current rateable value set at 4,000 pounds. No previous value is available, and the cohort average increase is 13.3%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 13.3,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points",
+        "basement storage unit"
+      ]
+    }
+  }
+}

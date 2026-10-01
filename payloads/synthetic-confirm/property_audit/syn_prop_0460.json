@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0460",
+  "source": "synthetic",
+  "raw_text": "At Warehouse B, Trafford Park, the rateable value now stands at 88,500 GBP, rising from 64,950 GBP previously; includes a basement storage unit. The cohort average increase is 4.3%, with no effective date given.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 88500,
+      "previous_value_gbp": 64950,
+      "cohort_avg_increase_pct": 4.3,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

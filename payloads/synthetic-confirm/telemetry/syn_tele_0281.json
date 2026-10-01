@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0281",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:24:43] The pitch elevation is +2.1σ. Rigid posture is observed. Gaze deviation duration is 5s.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.1,
+      "gaze_deviation_duration_sec": 5,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

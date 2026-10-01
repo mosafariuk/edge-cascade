@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0239",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street has a current rateable value of 380,200 pounds. Previously, the value was 240,800 pounds. No cohort percentage available. No effective date provided. There are no ancillary assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 380200,
+      "previous_value_gbp": 240800,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

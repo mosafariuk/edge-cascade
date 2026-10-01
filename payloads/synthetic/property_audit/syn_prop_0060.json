@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0060",
+  "source": "synthetic",
+  "raw_text": "On-site at Kiosk 2, Station Concourse, one finds its current rateable value at £10,900, formerly £8,550 was owed prior; and no cohort average increase is cited. While set with no effective date, it includes a roof terrace, basement storage unit, and 2 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10900,
+      "previous_value_gbp": 8550,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "basement storage unit",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

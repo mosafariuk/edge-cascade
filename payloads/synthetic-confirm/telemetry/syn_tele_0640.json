@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0640",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:43:34] During 1.8 seconds of gaze deviation, the gaze is off-screen. No acoustic elevation recorded with baseline deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 1.8,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

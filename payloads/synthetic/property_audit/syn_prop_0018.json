@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0018",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter has a current rateable value of 217,000 GBP. The studio includes 2 parking spaces, a basement storage unit, and 1 loading bay. Additionally, the ground-level cafe has a seating capacity of 45.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 217000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "2 parking spaces",
+        "basement storage unit",
+        "1 loading bay"
+      ]
+    }
+  }
+}

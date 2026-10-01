@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0911",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street currently has a rateable value of 40,900 GBP. The previous rateable value was 28,450 GBP. Ancillary items included are a mezzanine level, a bicycle store, and 4 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 40900,
+      "previous_value_gbp": 28450,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "bicycle store",
+        "4 parking spaces"
+      ]
+    }
+  }
+}

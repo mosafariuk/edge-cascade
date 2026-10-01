@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0562",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park curr RV 48.6k. Prev RV 53,650. No eff date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 48600,
+      "previous_value_gbp": 53650,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

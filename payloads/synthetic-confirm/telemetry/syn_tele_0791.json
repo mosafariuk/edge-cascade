@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0791",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:47:59] Acoustic pitch elevation is +2.4σ. Baseline stress metrics are not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

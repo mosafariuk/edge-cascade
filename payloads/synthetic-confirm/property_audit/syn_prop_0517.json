@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0517",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park rv 7.1k, prev 5.2k. Cohort avg +21.6%. Eff.: 2025-10-15. No assets noted.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 7100,
+      "previous_value_gbp": 5200,
+      "cohort_avg_increase_pct": 21.6,
+      "effective_date_raw": "2025-10-15",
+      "assets": []
+    }
+  }
+}

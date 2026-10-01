@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0951",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:28:39] Acoustic pitch is elevated by +2.9σ. Gaze has deviated off-screen for 5 seconds. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.9,
+      "gaze_deviation_duration_sec": 5,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0565",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse offers a roof terrace and a rear service yard, but no effective date. Despite a cohort average increase of 18.4 percent, the current rateable value is 3,400 GBP, which follows a previous value of 3,550 GBP.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3400,
+      "previous_value_gbp": 3550,
+      "cohort_avg_increase_pct": 18.4,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "rear service yard"
+      ]
+    }
+  }
+}

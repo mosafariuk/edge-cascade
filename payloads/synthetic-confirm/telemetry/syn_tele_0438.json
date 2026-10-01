@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0438",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:31:56] Acoustic sigma reached +2.7σ while gaze moved off-screen. Area maintained at 75 m².",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.7,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0136",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:19:19] Gaze was off-screen for 1.4 seconds. Rigid contraction detected.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 1.4,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

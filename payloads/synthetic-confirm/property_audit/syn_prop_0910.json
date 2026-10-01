@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0910",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills, previously valued at 5,450 GBP, is now at 7,000 GBP. A mezzanine level is included. The cohort's average increase is 5.6%. No effective date given.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 7000,
+      "previous_value_gbp": 5450,
+      "cohort_avg_increase_pct": 5.6,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

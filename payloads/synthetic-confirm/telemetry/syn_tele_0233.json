@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0233",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:42:33] Acoustic pitch is elevated by +3.5σ. Gaze deviated for 5.5 seconds and is off-screen; baseline nominal. Note an unrelated value of 3200 m² floor area.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.5,
+      "gaze_deviation_duration_sec": 5.5,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

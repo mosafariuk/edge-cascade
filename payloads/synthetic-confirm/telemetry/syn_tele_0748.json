@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0748",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:58:37] 6.4s gaze deviation recorded. Rigid posture noted. Adjacent floor 4, field 3 unaffected.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 6.4,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

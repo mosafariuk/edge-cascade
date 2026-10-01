@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0815",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:50:54] Baseline metrics nominal, with gaze deviation for 4.1s and gaze off-screen. Acoustic pitch shows +3.2σ with rigid posture noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.2,
+      "gaze_deviation_duration_sec": 4.1,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

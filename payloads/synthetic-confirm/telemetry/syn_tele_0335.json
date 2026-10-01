@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0335",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:34:31] Observed gaze deviation lasted 8.8s with a +4.2σ pitch elevation. Baseline deviation flagged without gaze going off-screen or rigid posture.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.2,
+      "gaze_deviation_duration_sec": 8.8,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

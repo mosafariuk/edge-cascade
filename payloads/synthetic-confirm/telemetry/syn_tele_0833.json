@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0833",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:51:40] Acoustic elevation +1.8σ. (Coord: 1024) Baseline deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.8,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

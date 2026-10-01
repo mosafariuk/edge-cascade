@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0205",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:21:23] Stress metrics are nominal under 1.9σ pitch conditions. Gaze deviation occurred for 7.9s.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.9,
+      "gaze_deviation_duration_sec": 7.9,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

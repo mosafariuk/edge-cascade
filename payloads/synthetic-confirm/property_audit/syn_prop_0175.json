@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0175",
+  "source": "synthetic",
+  "raw_text": "With a current rateable value of 244,000 pounds, Corner Shop, 81 High Street sees a cohort average increase of 19.3 percent effective 1 April 2026, and includes a basement storage unit. Previous value is not specified.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 244000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 19.3,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

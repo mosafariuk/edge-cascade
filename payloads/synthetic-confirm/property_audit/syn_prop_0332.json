@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0332",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail: £3.2k now. Eff. date not specified. No prev. value noted. Cohort avg. inc: 8%. Incl. 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3200,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 8,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0047",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter: curr val 72.55k, prev val 46.75k. Cohort avg +11.5%. Assets: external signage rights, bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 72550,
+      "previous_value_gbp": 46750,
+      "cohort_avg_increase_pct": 11.5,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights",
+        "bicycle store"
+      ]
+    }
+  }
+}

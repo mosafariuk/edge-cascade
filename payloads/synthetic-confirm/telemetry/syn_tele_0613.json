@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0613",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:27:14] Acoustic elevation is +3.4σ with a gaze deviation of 7.2 seconds, and the gaze is off-screen. Flagged deviation from baseline while 340 frames processed.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.4,
+      "gaze_deviation_duration_sec": 7.2,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

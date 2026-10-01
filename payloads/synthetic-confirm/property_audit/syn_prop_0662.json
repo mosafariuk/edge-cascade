@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0662",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail, current value: 302.5k GBP, prev val: 218.8k GBP, cohort avg: 12.4%. No eff. date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 302500,
+      "previous_value_gbp": 218800,
+      "cohort_avg_increase_pct": 12.4,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

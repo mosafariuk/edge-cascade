@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0199",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:02:18] No acoustic pitch recorded. No gaze deviation noted, with gaze on-screen. No rigid posture. Baseline stress metrics deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

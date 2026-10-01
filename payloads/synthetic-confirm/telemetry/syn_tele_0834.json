@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0834",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:53:17] Pitch elevation +0.4σ. Gaze deviation for 4.5s. Gaze was off-screen. No rigid contraction. Baseline nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.4,
+      "gaze_deviation_duration_sec": 4.5,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0030",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:40:37] While gaze is off-screen, the baseline metrics are nominal. Gaze deviation lasted 1.6s.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 1.6,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

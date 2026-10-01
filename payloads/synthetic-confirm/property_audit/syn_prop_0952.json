@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0952",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills curr val 82.7k, prev 72,050. Inc assets: 2 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 82700,
+      "previous_value_gbp": 72050,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "2 parking spaces"
+      ]
+    }
+  }
+}

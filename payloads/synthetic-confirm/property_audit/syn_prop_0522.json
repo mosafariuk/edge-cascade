@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0522",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A: curr val £131.2k, prev val £115,100. No cohort avg inc. Eff from 1 April 2026. Asset: rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 131200,
+      "previous_value_gbp": 115100,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

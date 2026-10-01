@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0820",
+  "source": "synthetic",
+  "raw_text": "For Unit 4, Ground Floor Retail, currently valued at 118,300 pounds, the previous value stood at 108,700 pounds. Effective on 1 April 2026, this valuation places it with a cohort average increase of 14.3 percent and assets, including a basement storage unit and 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 118300,
+      "previous_value_gbp": 108700,
+      "cohort_avg_increase_pct": 14.3,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "basement storage unit",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

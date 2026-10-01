@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0063",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street has an external signage rights asset, current rateable value 67,450 GBP, and previous rateable value 68,100 GBP. The neighbouring unit has a floor area of 200 square meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 67450,
+      "previous_value_gbp": 68100,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

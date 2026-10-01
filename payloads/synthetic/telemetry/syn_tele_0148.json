@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0148",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:48:29] With pitch elevation at +3.4σ, the baseline is nominal. The height of the unit is 250m.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

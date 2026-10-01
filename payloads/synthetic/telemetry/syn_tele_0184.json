@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0184",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:06:11] No pitch elevation detected. Gaze deviation lasted 4.1s. Gaze remained on-screen. No rigid posture observed. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 4.1,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

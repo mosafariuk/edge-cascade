@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0558",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:30:07] Acoustic elevation +3.7σ, with 7s gaze off-screen. Rigid posture detected. Recent area 15m² surveyed. Baseline deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.7,
+      "gaze_deviation_duration_sec": 7,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

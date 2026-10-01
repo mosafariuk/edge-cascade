@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0617",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park rv currently 14.1k. Prev rv 12,050. Cohort inc 24.1%. Eff dt 2026-04-01.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 14100,
+      "previous_value_gbp": 12050,
+      "cohort_avg_increase_pct": 24.1,
+      "effective_date_raw": "2026-04-01",
+      "assets": []
+    }
+  }
+}

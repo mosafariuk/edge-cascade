@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0068",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:04:52] Pitch elevated to +0.8σ with gaze deviation of 6.3 seconds. Frame 1500 was logged. Gaze is off-screen with a rigid posture. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.8,
+      "gaze_deviation_duration_sec": 6.3,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

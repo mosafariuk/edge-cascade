@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0767",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter rv 4,500. No prev. value. Cohort 16.4%. Has rear service yard, mezzanine level, bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 16.4,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard",
+        "mezzanine level",
+        "bicycle store"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+12 configurations × 500 payloads → bench/results-zen5-run2/guard-grid.jsonl
+  T0_shot0       accuracy 74.2%  (371/500)  non-done 0  69s
+  T0.1_shot0     accuracy 74.2%  (371/500)  non-done 0  73s
+  T0.3_shot0     accuracy 74.0%  (370/500)  non-done 0  73s
+  T0.5_shot0     accuracy 73.0%  (365/500)  non-done 0  73s
+  T0_shot1       accuracy 91.6%  (458/500)  non-done 0  53s
+  T0.1_shot1     accuracy 91.4%  (457/500)  non-done 0  53s
+  T0.3_shot1     accuracy 91.2%  (456/500)  non-done 0  53s
+  T0.5_shot1     accuracy 91.4%  (457/500)  non-done 0  53s
+  T0_shot2       accuracy 96.2%  (481/500)  non-done 0  54s
+  T0.1_shot2     accuracy 96.2%  (481/500)  non-done 0  54s
+  T0.3_shot2     accuracy 96.2%  (481/500)  non-done 0  54s
+  T0.5_shot2     accuracy 96.4%  (482/500)  non-done 0  54s
+done. Next: python3 analysis/guard_grid.py bench/results-zen5-run2/guard-grid.jsonl

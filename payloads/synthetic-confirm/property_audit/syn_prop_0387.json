@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0387",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills curr. val. 6800. Prev. val. 5750. No eff. date. Asset: 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6800,
+      "previous_value_gbp": 5750,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

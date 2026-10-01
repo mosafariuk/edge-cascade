@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0288",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:23:39] Gaze is off-screen. Coordinates show a shift to 380.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0705",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street offers assets such as a roof terrace and external signage rights. As of 01-Apr, the current value is 10,600 GBP, and the previously set value was 7,350 GBP.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10600,
+      "previous_value_gbp": 7350,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "roof terrace",
+        "external signage rights"
+      ]
+    }
+  }
+}

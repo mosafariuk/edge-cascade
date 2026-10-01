@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0798",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:42:57] Acoustic pitch elevation is +0.6σ while posture remains rigid, and gaze is off-screen. Latitude is 34.2.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.6,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

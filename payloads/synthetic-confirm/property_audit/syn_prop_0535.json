@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0535",
+  "source": "synthetic",
+  "raw_text": "Effective from 15-Oct, Warehouse B, Trafford Park's valuation is 23,400 GBP. Previously, this was 16,100 GBP.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 23400,
+      "previous_value_gbp": 16100,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "15-Oct",
+      "assets": []
+    }
+  }
+}

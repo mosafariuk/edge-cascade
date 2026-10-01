@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0482",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: curr value £26k. No prev value. No cohort % inc. No assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 26000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

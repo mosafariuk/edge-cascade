@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0560",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:39:58] Gaze deviation for 0.2s occurred with pitch elevation at 3.7σ; baseline deviation noted, not rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.7,
+      "gaze_deviation_duration_sec": 0.2,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

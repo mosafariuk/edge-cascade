@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0135",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park, with a bicycle store, currently holds a rateable value of 6,600 GBP as effective from 2026-04-01. Previously, it was valued at 4,250 GBP. The cohort average increase is 23.1 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6600,
+      "previous_value_gbp": 4250,
+      "cohort_avg_increase_pct": 23.1,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0078",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park is currently valued at £3,000 effective from 2026-04-01, previously £2,500. It also includes a roof terrace asset. The cohort average increase is 5%. Across from it, Unit 13 has a CCTV system.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3000,
+      "previous_value_gbp": 2500,
+      "cohort_avg_increase_pct": 5,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "roof terrace"
+      ]
+    }
+  }
+}

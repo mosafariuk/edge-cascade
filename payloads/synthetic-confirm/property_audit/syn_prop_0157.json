@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0157",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street: Curr val £38.9k, Prev val £28.5k, Coh inc 9.9%, Eff dt 30 September 2025. Incl roof terrace.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 38900,
+      "previous_value_gbp": 28500,
+      "cohort_avg_increase_pct": 9.9,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "roof terrace"
+      ]
+    }
+  }
+}

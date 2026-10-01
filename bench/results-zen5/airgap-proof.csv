@@ -1,0 +1,2 @@
+workers,trial,achieved_rps,mean_ms,p50_ms,p95_ms,p99_ms,contended,ort_intra_op,pin_cores,embed_mode,rate,duration,loadgen_cpu_pct,redis_cpu_pct
+2,1,4499,2340.1,2325,3501,4695,0,1,1,real,50000,30,10,4.4

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0377",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:16:04] Acou +4.3σ. Gaze offscreen 1.9s. Baseline dev flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.3,
+      "gaze_deviation_duration_sec": 1.9,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

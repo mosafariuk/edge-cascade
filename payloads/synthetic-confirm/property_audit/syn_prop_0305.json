@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0305",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills stands at £379,600, was £414,300 before. No effective date noted. This aligns with a cohort average increase of 2.9%. No ancillary assets included.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 379600,
+      "previous_value_gbp": 414300,
+      "cohort_avg_increase_pct": 2.9,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

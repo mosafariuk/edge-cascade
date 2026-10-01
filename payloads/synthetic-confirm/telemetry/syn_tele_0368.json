@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0368",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:35:14] Gaze deviated for 0.3s, off-screen. Rigid contraction noted. The temperature reads 22°C.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 0.3,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

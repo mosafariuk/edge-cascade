@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0895",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street, with an effective date of 2026-04-01, has a rateable value of 94,900 GBP currently. The previous rateable value was 105,150 GBP, with a cohort average increase of 12.8 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 94900,
+      "previous_value_gbp": 105150,
+      "cohort_avg_increase_pct": 12.8,
+      "effective_date_raw": "2026-04-01",
+      "assets": []
+    }
+  }
+}

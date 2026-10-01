@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0235",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills features no ancillary assets, having a current rateable value of 10,150 pounds, previously 10,550, though there was a cohort average increase of 24.1 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10150,
+      "previous_value_gbp": 10550,
+      "cohort_avg_increase_pct": 24.1,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

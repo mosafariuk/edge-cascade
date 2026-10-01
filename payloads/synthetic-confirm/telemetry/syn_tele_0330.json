@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0330",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:02:02] Deviation observed for 1.5s with no gaze off-screen; no pitch elevation noted. Baseline deviation is flagged, indicating a high variance from expected norms.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 1.5,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

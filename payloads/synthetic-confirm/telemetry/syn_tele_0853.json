@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0853",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:54:05] Pitch elevated by +2.6σ. Baseline metrics nominal. Neighboring floor area: 2300 sq ft.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.6,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

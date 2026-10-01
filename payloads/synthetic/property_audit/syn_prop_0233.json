@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0233",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter has a current rateable value of 397,900 pounds. Previously, it was valued at 252,150 pounds. The premises include a roof terrace, 2 parking spaces, and a bicycle store. Unit 3 across the street is valued at 310,000.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 397900,
+      "previous_value_gbp": 252150,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "2 parking spaces",
+        "bicycle store"
+      ]
+    }
+  }
+}

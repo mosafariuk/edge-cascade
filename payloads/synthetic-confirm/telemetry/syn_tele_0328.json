@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0328",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:23:31] Acoustic pitch at +0.6σ. Deviation 3.4s while off-screen. Posture rigid. Frame count: 2403 and baseline metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.6,
+      "gaze_deviation_duration_sec": 3.4,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

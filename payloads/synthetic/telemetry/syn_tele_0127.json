@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0127",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:31:47] +2.2σ pitch elvtn. Gaze dev 4.4s, not off-scrn. No rgid post. Blsln dev flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.2,
+      "gaze_deviation_duration_sec": 4.4,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

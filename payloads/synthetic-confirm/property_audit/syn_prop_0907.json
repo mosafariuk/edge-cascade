@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0907",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter, 21.9k current, prev 17.5k. Effect date 2025-10-15. No assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 21900,
+      "previous_value_gbp": 17500,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2025-10-15",
+      "assets": []
+    }
+  }
+}

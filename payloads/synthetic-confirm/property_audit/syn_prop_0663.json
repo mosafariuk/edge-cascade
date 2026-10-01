@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0663",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter holds a current rateable value of 180,650 GBP. The property includes 1 loading bay. The total floor area of the neighbouring unit is 250 sqm.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 180650,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

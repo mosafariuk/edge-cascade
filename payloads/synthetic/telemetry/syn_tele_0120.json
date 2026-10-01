@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0120",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:49:51] The gaze was off-screen for 8.9 seconds, with +0.9σ pitch elevation. Posture was not rigid, baseline was nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.9,
+      "gaze_deviation_duration_sec": 8.9,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

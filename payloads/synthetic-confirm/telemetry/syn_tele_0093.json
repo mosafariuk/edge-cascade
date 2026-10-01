@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0093",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:13:29] Gaze deviation occurred for 3.5 seconds and was off-screen while baseline stress metrics remained nominal. The space measured 250 square meters.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 3.5,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

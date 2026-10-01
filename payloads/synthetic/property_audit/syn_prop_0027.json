@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0027",
+  "source": "synthetic",
+  "raw_text": "Current val. of 3rd Floor Office Suite, EC1A is 4,300, prev. was 2,900. Cohort avg incr. 21.8%. Basement storage unit incl. No eff. date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4300,
+      "previous_value_gbp": 2900,
+      "cohort_avg_increase_pct": 21.8,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

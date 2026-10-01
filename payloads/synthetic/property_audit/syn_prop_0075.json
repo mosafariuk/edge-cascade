@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0075",
+  "source": "synthetic",
+  "raw_text": "For the Corner Shop, 81 High Street, on 2026-04-01, the rateable value stands at 72,400 GBP, increased from 58,500 GBP. The cohort average climbed by 3.3%. It includes a rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 72400,
+      "previous_value_gbp": 58500,
+      "cohort_avg_increase_pct": 3.3,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

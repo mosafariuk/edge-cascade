@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0328",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current value of 255,550 pounds. The cohort average increase is 5.3 percent, effective from 15-Oct. Ancillary items include a rear service yard and a basement storage unit. Floor area of 650 square meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 255550,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 5.3,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "rear service yard",
+        "basement storage unit"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0023",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:18:55] With acoustic pitch at +2.4σ and gaze deviation duration of 1.2s, the gaze is off-screen and baseline metrics are nominal. Nearby coordinates 35, 54 were noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.4,
+      "gaze_deviation_duration_sec": 1.2,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

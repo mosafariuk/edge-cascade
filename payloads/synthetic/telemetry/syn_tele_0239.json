@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0239",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:20:49] Acoustic elevation at +2.1σ, and gaze deviation of 2.2s noted. Gaze is off-screen. No rigid posture. Baseline is not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.1,
+      "gaze_deviation_duration_sec": 2.2,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

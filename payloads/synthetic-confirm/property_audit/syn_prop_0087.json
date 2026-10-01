@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0087",
+  "source": "synthetic",
+  "raw_text": "3rd Flr Offc Suite, EC1A curr val 6.5k GBP, prev val 4.3k GBP. Date 30 September 2025. Assets: 2 parking spaces, 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6500,
+      "previous_value_gbp": 4300,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "2 parking spaces",
+        "1 loading bay"
+      ]
+    }
+  }
+}

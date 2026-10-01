@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0050",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:32:11] Gaze deviated for 4.1 seconds, with posture rigid. Baseline deviation is noted, acoustic values not recorded.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 4.1,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0127",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail: curr. val. 52.9k, prev. 35k. Coh. avg. incr. 3.4%. Eff. 01-Apr. Asset: external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 52900,
+      "previous_value_gbp": 35000,
+      "cohort_avg_increase_pct": 3.4,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

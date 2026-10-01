@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0320",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:58:55] With acoustic sigma at +1.9σ, gaze remained off-screen for 2.6s. Baseline maintains nominal metrics.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.9,
+      "gaze_deviation_duration_sec": 2.6,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

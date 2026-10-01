@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0345",
+  "source": "synthetic",
+  "raw_text": "For Unit 12, Riverside Trade Park, with an effective date of 1 April 2026, the current value is 56,000 pounds, previously it was 36,000 pounds, and no ancillary assets are included. The cohort average increase is 15.5 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 56000,
+      "previous_value_gbp": 36000,
+      "cohort_avg_increase_pct": 15.5,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

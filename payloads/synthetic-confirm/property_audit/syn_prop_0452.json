@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0452",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park curr. RV: 258,650. Prev. RV: 286,900. Cohort avg inc: 18.5%. Eff. dt: 1 April 2026. No assets incl.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 258650,
+      "previous_value_gbp": 286900,
+      "cohort_avg_increase_pct": 18.5,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0782",
+  "source": "synthetic",
+  "raw_text": "3rd Flr Office Suite, EC1A: Curr val 16.5k. Prev val 11,450. Cohort 4%. Assets: external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 16500,
+      "previous_value_gbp": 11450,
+      "cohort_avg_increase_pct": 4,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

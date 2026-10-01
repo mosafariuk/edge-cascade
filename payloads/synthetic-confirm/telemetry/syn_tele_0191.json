@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0191",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:46:22] Gaze deviation lasted 2.8 seconds. No gaze off-screen, and no rigid posture noted. Baseline stress metrics deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 2.8,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

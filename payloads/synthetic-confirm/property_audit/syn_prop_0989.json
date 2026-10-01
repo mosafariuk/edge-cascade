@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0989",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, current value is 91,000 GBP, previously 60,850 GBP, cohort average increase is 19.4 percent, no effective date on record, includes basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 91000,
+      "previous_value_gbp": 60850,
+      "cohort_avg_increase_pct": 19.4,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

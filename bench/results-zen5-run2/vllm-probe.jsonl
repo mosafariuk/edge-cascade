@@ -1,0 +1,5 @@
+probing http://127.0.0.1:18000/v1/completions (single-boolean guided_json)…
+structural token "{\""  entropy=0.0486 nats
+VERDICT: POST-MASK
+{"kind":"vllm-probe","generated_at":"2026-10-01T01:39:01.155Z","edge_model":{"id":"Qwen/Qwen3-8B-AWQ","hf_repo":"Qwen/Qwen3-8B-AWQ","revision":"4da05a8edb55c6046cce958586c33b61da07bb79","quant":"AWQ 4-bit, group size 128 (official Qwen3-8B-AWQ release)","vllm":"0.9.2","gpu":"NVIDIA GeForce RTX 3090 24 GB (vast.ai, PCIe x16, 21.9 GB/s)","guided_decoding_backend":"xgrammar"},"judge_model":{"provider":"openai","id":"claude-opus-4-8","openai_id":"gpt-4o","pinned_on":"2026-10-01"},"embed_model":{"id":"Xenova/all-MiniLM-L6-v2","file":"onnx/model_quantized.onnx","quant":"INT8 (dynamic)","bytes":22972370,"sha256":"afdb6f1a0e45b715d0bb9b11772f032c399babd23bfc31fed1c170afc848bdb1","dim":384,"onnxruntime_node":"1.27.0"},"node":"v22.23.2","endpoint":"http://127.0.0.1:18000/v1/completions","model_requested":"Qwen/Qwen3-8B-AWQ","structural_token":"{\"","entropy_nats":0.048594,"verdict":"POST-MASK"}
+→ value-surprisal guard (src/constrained.mjs) is correct; calibrate MAX_SURPRISAL.

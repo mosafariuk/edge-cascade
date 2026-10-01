@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0615",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:28:33] Even with +0.3σ acoustic elevation, the baseline deviated without gaze off-screen and no rigid posture reported.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.3,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

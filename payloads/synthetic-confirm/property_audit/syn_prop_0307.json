@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0307",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A: £260,350 now, previously £199,450. Eff. date: 30 September 2025. Assets: roof terrace, 3 EV charging points, rear service yard. Cohort avg. inc: 21.5%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 260350,
+      "previous_value_gbp": 199450,
+      "cohort_avg_increase_pct": 21.5,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "roof terrace",
+        "3 EV charging points",
+        "rear service yard"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0332",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:31:28] 3.9σ pitch, 8.8s gaze dev. Off-screen, no rigid posture, baseline flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.9,
+      "gaze_deviation_duration_sec": 8.8,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

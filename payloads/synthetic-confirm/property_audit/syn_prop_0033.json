@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0033",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A, with 13,000 pounds as the current value and 13,550 pounds previously. Cohort avg increase: 20.9%. Effective date noted as 15-Oct. 2nd Floor Suite measures 1,200 sq ft.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 13000,
+      "previous_value_gbp": 13550,
+      "cohort_avg_increase_pct": 20.9,
+      "effective_date_raw": "15-Oct",
+      "assets": []
+    }
+  }
+}

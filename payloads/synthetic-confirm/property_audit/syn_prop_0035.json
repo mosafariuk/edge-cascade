@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0035",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills has rates set at 90,000 pounds from the previous 61,350, without a known cohort average increase. Effective date is not provided. It includes no assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 90000,
+      "previous_value_gbp": 61350,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

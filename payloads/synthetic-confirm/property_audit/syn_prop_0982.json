@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0982",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Flr Rtl current rateable value 5.5k, eff. 01-Apr. Prev. value omitted. Incl. 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0900",
+  "source": "synthetic",
+  "raw_text": "On 01-Apr, the 3rd Floor Office Suite, EC1A has a rateable value of 299,200 GBP, which was previously 203,500 GBP; the cohort average increase is 13.5 percent. Included are assets: a rear service yard and a bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 299200,
+      "previous_value_gbp": 203500,
+      "cohort_avg_increase_pct": 13.5,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "rear service yard",
+        "bicycle store"
+      ]
+    }
+  }
+}

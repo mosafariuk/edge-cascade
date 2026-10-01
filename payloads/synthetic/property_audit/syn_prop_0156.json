@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0156",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street is valued at 177,000 GBP currently. There is no previous rateable value on record. Bicycle store and 3 EV charging points are included as assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 177000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

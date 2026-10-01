@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0279",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current rateable value of 3,900 pounds with a previous value of 2,700 pounds. There is no cohort percentage average. No effective date provided. The asset includes a bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3900,
+      "previous_value_gbp": 2700,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

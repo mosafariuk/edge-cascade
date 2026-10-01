@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0182",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A. Current val: 32.5k GBP prev val 23900 GBP. Eff date: 01-Apr. 1 loading bay incl.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 32500,
+      "previous_value_gbp": 23900,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

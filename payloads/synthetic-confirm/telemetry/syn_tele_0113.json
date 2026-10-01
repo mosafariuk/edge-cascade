@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0113",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:35:52] Acoustic at +2.5σ with 3.3s gaze dev. Rigid contraction noted. Baseline metrics nominal. Neighboring unit expends 11kW.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.5,
+      "gaze_deviation_duration_sec": 3.3,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

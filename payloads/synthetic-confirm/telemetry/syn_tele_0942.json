@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0942",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:04:42] Gaze off-screen. +4.2σ pitch elev. No dev. dur. Rigid posture not observed. Baseline nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

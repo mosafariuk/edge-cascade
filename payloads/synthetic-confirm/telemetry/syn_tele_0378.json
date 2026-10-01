@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0378",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:02:09] Pitch elevated at +1.5σ. Gaze deviation recorded is 4.7 seconds. Coordinate Y = 25, baseline deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.5,
+      "gaze_deviation_duration_sec": 4.7,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

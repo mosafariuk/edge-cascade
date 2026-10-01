@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0867",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: Curr val £23.5k. Prev val n/a. Eff date: 1 April 2026. Assets: basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 23500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

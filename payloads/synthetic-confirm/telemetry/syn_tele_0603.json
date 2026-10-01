@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0603",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:15:27] Acoustic pitch elevation at +0.7σ with 7.7s gaze deviation, eyes off-screen, and posture rigid. Processed coordinates at 45.2. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.7,
+      "gaze_deviation_duration_sec": 7.7,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

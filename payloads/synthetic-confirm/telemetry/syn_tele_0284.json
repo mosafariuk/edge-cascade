@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0284",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:13:03] Pitch elevation at +3.7σ. Gaze remained on-screen. Rigid posture recorded. Baseline was flagged, not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.7,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

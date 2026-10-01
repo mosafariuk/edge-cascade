@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0675",
+  "source": "synthetic",
+  "raw_text": "On 01-Apr, Warehouse B, Trafford Park has a rateable value of £19,800. With a 4.4% cohort average increase, a roof terrace is included, though no prior value history exists.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 19800,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 4.4,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "roof terrace"
+      ]
+    }
+  }
+}

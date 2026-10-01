@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0110",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:17:39] Observed pitch elevation was +3.8σ, yet no deviation in gaze duration was noted. Baseline stress metrics are not nominal, with on-screen gaze and no rigidity in posture.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.8,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

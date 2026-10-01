@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0763",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:50:46] Acoustic sigma is +0.7σ; deviation of gaze occurs over 1.3s with off-screen behavior. Baseline metrics at 8k are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.7,
+      "gaze_deviation_duration_sec": 1.3,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

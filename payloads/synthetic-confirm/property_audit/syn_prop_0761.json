@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0761",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A has a current rateable value of 4,000 pounds. The suite includes a roof terrace, external signage rights, and 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "external signage rights",
+        "1 loading bay"
+      ]
+    }
+  }
+}

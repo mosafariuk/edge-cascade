@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0035",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:39:04] Baseline metrics, now confirmed nominal, reported alongside 6.8s of gaze deviation, yet no pitch elevation detected.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 6.8,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

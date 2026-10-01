@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0852",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse: current RV 11k GBP. No prev. RV, no eff. date given. Includes mezzanine level, basement storage unit, bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 11000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "basement storage unit",
+        "bicycle store"
+      ]
+    }
+  }
+}

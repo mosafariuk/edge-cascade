@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0091",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse has a current rateable value of 11,400 pounds. The previous rateable value was 7,200 pounds. The effective date for this valuation is 2025-10-15. Included assets are a basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 11400,
+      "previous_value_gbp": 7200,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

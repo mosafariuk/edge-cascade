@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0998",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter has a current rateable value of 4,550 GBP. The premises feature a mezzanine level and 4 parking spaces. It neighbours Studio 2A, which measures 120 square meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4550,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "4 parking spaces"
+      ]
+    }
+  }
+}

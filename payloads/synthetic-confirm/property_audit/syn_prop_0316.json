@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0316",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A currently has a rateable value of 125,400 pounds, up from a previous value of 125,000 pounds. The property includes 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 125400,
+      "previous_value_gbp": 125000,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

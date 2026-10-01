@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0063",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:11:02] The pitch elevation recorded is +0.9σ. There is a gaze deviation of 3.5 seconds. A baseline deviation is flagged. The training facility spans 500m².",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.9,
+      "gaze_deviation_duration_sec": 3.5,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

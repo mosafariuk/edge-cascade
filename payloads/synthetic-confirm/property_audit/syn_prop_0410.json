@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0410",
+  "source": "synthetic",
+  "raw_text": "Effective 2026-04-01, Workshop 7, Canal Mills' rateable value, elevated from 70,450 to 83,500 pounds, omits any ancillary items.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 83500,
+      "previous_value_gbp": 70450,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2026-04-01",
+      "assets": []
+    }
+  }
+}

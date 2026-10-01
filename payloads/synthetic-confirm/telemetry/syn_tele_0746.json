@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0746",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:37:02] 0.4 seconds of gaze deviation recorded. Gaze is confirmed off-screen. Baseline deviation detected.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 0.4,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

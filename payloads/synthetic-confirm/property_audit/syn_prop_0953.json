@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0953",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter has a current rateable value of £16,300, up from the previous £13,100. The cohort average increase is 8.2%. The effective date is 1 April 2026. An adjacent studio has a lighting load of 5700 lumens.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 16300,
+      "previous_value_gbp": 13100,
+      "cohort_avg_increase_pct": 8.2,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

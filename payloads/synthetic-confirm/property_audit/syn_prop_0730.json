@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0730",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A includes a mezzanine level along with a basement storage unit; current rateable value stands at 6,200 pounds, and previously was 4,150 pounds, although one notes no effective date. The cohort average increase is seen as 8.4 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6200,
+      "previous_value_gbp": 4150,
+      "cohort_avg_increase_pct": 8.4,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit",
+        "mezzanine level"
+      ]
+    }
+  }
+}

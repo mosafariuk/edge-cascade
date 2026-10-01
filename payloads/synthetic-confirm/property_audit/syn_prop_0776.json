@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0776",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park has a current rateable value of 4,000 GBP. The cohort average increase is 23.5%. Ancillary asset includes a rear service yard. No previous value is recorded or effective date given.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 23.5,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

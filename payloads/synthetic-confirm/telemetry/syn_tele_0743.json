@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0743",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:01:14] Acoustic +1.4σ, 8.8s gaze deviation. Off-screen gaze, baseline nominal. Nearby, unit 45 collects further data.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.4,
+      "gaze_deviation_duration_sec": 8.8,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

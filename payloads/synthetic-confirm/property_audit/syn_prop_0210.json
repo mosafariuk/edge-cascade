@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0210",
+  "source": "synthetic",
+  "raw_text": "82.5 sq meters at Corner Shop, 81 High Street, which holds a current rateable value of 382,700 pounds, has an effective date of 01/04/2026. The previous rateable value was 317,650 pounds, with a cohort average increase of 12.9 percent. Bicycle store as asset.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 382700,
+      "previous_value_gbp": 317650,
+      "cohort_avg_increase_pct": 12.9,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

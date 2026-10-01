@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0152",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail current rate 334.55k, prev. rate 220.7k. Cohort avg. increase 4.4%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 334550,
+      "previous_value_gbp": 220700,
+      "cohort_avg_increase_pct": 4.4,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

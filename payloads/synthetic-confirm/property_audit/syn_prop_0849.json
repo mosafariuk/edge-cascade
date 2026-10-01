@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0849",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A holds a current rateable value of 57,600 GBP. No previous assessment on record. No cohort average percentage increase. No effective date recorded. Ancillary assets include mezzanine level, external signage rights, and rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 57600,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "external signage rights",
+        "rear service yard"
+      ]
+    }
+  }
+}

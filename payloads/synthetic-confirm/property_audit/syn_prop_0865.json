@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0865",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park ranks a cohort average increase of 3.8% and currently is valued at 4,250 pounds; no previous value exists or effective date is provided, and no associated ancillary items are present.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4250,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 3.8,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

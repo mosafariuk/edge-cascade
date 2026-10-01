@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0044",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills has a current rateable value of 4,000 GBP. Previous assessment was 2,850 GBP. Cohort average increase is 8.9%. No effective date. Assets include 3 EV charging points, 2 parking spaces, roof terrace.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4000,
+      "previous_value_gbp": 2850,
+      "cohort_avg_increase_pct": 8.9,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points",
+        "2 parking spaces",
+        "roof terrace"
+      ]
+    }
+  }
+}

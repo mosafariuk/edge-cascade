@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0792",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: curr val 5.55k. Prev val 4.4k. Avg cohort incr 22.8%. Includes 1 loading bay; external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5550,
+      "previous_value_gbp": 4400,
+      "cohort_avg_increase_pct": 22.8,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay",
+        "external signage rights"
+      ]
+    }
+  }
+}

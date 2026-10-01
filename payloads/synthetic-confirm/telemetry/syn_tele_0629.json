@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0629",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:11:35] No acoustic pitch elevation recorded. No gaze deviation detected. Gaze shifted off-screen. Rigid posture present. Baseline deviation noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

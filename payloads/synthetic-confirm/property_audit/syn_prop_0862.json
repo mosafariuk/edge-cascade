@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0862",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse: Curr val £31.5k. Prev val n/a. Cohort +19.9%. Eff date: 1 April 2026. No ancillary items.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 31500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 19.9,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

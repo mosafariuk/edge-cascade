@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0723",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A is valued at 54,500 pounds now, with a previous value of 45,050 pounds. Effective date noted as 15-Oct. An unrelated ground floor unit is 23 square meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 54500,
+      "previous_value_gbp": 45050,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "15-Oct",
+      "assets": []
+    }
+  }
+}

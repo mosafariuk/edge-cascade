@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0702",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail: curr val 172.4k, prev val 170.5k, cohrt avg incr 21.9%, eff date 01-Apr. Assets: 4 parking spaces, basement storage unit, 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 172400,
+      "previous_value_gbp": 170500,
+      "cohort_avg_increase_pct": 21.9,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "4 parking spaces",
+        "basement storage unit",
+        "1 loading bay"
+      ]
+    }
+  }
+}

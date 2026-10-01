@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0190",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills, with 1 loading bay, advertises external signage rights. Its current rateable value is 232,500 GBP from 235,350 GBP before, with a 7.7 percent cohort average increase as of 01-Apr. Offers 4 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 232500,
+      "previous_value_gbp": 235350,
+      "cohort_avg_increase_pct": 7.7,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "1 loading bay",
+        "external signage rights",
+        "4 parking spaces"
+      ]
+    }
+  }
+}

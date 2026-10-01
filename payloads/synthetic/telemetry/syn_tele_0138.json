@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0138",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:42:44] Acoustic pitch elevation recorded at +2.5σ, gaze deviation occurred for 1.9s. Baseline stress metrics are nominal. The floor space is 75 square meters.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.5,
+      "gaze_deviation_duration_sec": 1.9,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0428",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:39:56] +3.2σ in pitch, 5.5s gaze deviation. Rigid posture observed. Extra data: Room depth is 7.5m.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.2,
+      "gaze_deviation_duration_sec": 5.5,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

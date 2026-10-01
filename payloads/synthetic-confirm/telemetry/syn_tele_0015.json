@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0015",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:48:26] With a gaze deviation lasting 0.5s, posture remains rigid and stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 0.5,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

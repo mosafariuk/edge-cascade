@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0588",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:45:07] Pitch elevation at +2.9σ, and gaze deviation was 0.9s. Rigid posture detected. Floor area is 150 m².",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.9,
+      "gaze_deviation_duration_sec": 0.9,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

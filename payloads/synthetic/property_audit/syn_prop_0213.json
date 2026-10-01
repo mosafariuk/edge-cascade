@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0213",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter has a current rateable value of 22,400 GBP. The previous rateable value was 21,650 GBP. The effective date is 15-Oct. Includes bicycle store and 1 loading bay. The space has an area of 85 square meters, unrelated to the rateable values.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 22400,
+      "previous_value_gbp": 21650,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "bicycle store",
+        "1 loading bay"
+      ]
+    }
+  }
+}

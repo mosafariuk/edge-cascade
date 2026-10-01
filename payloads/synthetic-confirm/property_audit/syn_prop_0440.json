@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0440",
+  "source": "synthetic",
+  "raw_text": "As of the examination, the Corner Shop, 81 High Street shows an effective rateable value of 6500 pounds, with 4800 pounds being its prior assessment. Although no effective date is cataloged, a cohort average increase of 14.7% is noted. The property boasts external signage rights, 4 parking spaces, and a basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6500,
+      "previous_value_gbp": 4800,
+      "cohort_avg_increase_pct": 14.7,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights",
+        "4 parking spaces",
+        "basement storage unit"
+      ]
+    }
+  }
+}

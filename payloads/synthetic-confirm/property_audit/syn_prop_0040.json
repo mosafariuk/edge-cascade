@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0040",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills from a prior 64,650 pounds, now stands at 91,000 pounds as of 01-Apr. With no assets included, the cohort average change is 18.7%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 91000,
+      "previous_value_gbp": 64650,
+      "cohort_avg_increase_pct": 18.7,
+      "effective_date_raw": "01-Apr",
+      "assets": []
+    }
+  }
+}

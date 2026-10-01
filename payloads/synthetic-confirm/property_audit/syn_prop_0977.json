@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0977",
+  "source": "synthetic",
+  "raw_text": "Ksk 2, Stn Conc: curr val 64.5k GBP, prev 69,550 GBP. Coh avg incr 3.2%. No eff dt. No assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 64500,
+      "previous_value_gbp": 69550,
+      "cohort_avg_increase_pct": 3.2,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

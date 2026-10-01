@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0240",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter includes no ancillary items, yet with a cohort average increase of 22 percent, its current rateable value, 51,950 pounds, has grown from 38,300.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 51950,
+      "previous_value_gbp": 38300,
+      "cohort_avg_increase_pct": 22,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0253",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:34:32] Gaze is off-screen with pitch elevation of +0.4σ. The total number of frames processed is 3500. Baseline metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

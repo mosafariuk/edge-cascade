@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0367",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park rateable val currently 96.7k GBP; no prev val; cohort avg 9.7%. Assets: 4 parking spaces, external signage rights, 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 96700,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 9.7,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces",
+        "external signage rights",
+        "1 loading bay"
+      ]
+    }
+  }
+}

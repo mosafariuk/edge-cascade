@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0112",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:53:21] Pitch dev 4.1σ, gaze 8.1s, baseline not nom.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.1,
+      "gaze_deviation_duration_sec": 8.1,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

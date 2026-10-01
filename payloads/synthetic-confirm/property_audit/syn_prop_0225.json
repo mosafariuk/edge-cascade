@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0225",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, as of 15-Oct, has 2 parking spaces, 1 loading bay and a basement storage unit included. The current value is 104,100 pounds. This follows a previous assessment totaling 97,300 pounds, with a cohort increase of 19.5%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 104100,
+      "previous_value_gbp": 97300,
+      "cohort_avg_increase_pct": 19.5,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "2 parking spaces",
+        "1 loading bay",
+        "basement storage unit"
+      ]
+    }
+  }
+}

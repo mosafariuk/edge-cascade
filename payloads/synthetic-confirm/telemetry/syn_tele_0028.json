@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0028",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:48:55] Gaze deviation lasted 7.5s. Gaze off-screen. A coordinate value was tracked at 345.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 7.5,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

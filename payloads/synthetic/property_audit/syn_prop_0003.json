@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0003",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter with a current rateable value of 17,400 GBP effective 30 September 2025 includes 4 parking spaces. The main building next door also has 6,000 square meters of office space.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 17400,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "4 parking spaces"
+      ]
+    }
+  }
+}

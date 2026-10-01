@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0147",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park: current value £23,550 (prev £24,500). 11.9% cohort avg inc. Eff 1 April 2026. mezzanine level incl.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 23550,
+      "previous_value_gbp": 24500,
+      "cohort_avg_increase_pct": 11.9,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0248",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:03:56] Acoustic pitch elevation is +4σ. Gaze is off-screen. Baseline is nominal. Frame count reached 1240.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0951",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street presently holds a rateable value of £16,000. There is no previous rateable value available. The cohort average increase is 3.2%. Various ancillary assets include a mezzanine level and 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 16000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 3.2,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "1 loading bay"
+      ]
+    }
+  }
+}

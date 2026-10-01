@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0559",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:38:11] No acoustic variation noted. Gaze deviated for 8s off-screen. No rigid posture detected, but the baseline is nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 8,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

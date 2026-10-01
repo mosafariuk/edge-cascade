@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0288",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, with a current rateable value of 43,550 pounds and a previous of 37,700 pounds, benefits from 4 parking spaces and a rear service yard. The cohort average increase percentage is 22.8%. An art installation contains 3,500 pieces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 43550,
+      "previous_value_gbp": 37700,
+      "cohort_avg_increase_pct": 22.8,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces",
+        "rear service yard"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0358",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:56:50] Acoustic pitch elevation noted at +2.4σ. Joint measurements included a coordinate reading of 15m. Baseline deviation flagged, with no gaze deviation duration recorded.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

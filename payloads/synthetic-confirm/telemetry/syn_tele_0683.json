@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0683",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:48:24] Gaze deviation lasted 1.2 seconds. Baseline stress metrics are nominal. Neighbor count was 27.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 1.2,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

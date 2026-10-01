@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0453",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:41:17] Acoustic pitch shifted by +2.2σ. Gaze was off-screen, with 200 frame captures logged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

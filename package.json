@@ -1,0 +1,31 @@
+{
+  "name": "edge-cascade",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Edge-Network Semantic Routing / LLM cascade gateway — quantized local router that resolves simple payloads and escalates complex ones to a heavy LLM API.",
+  "scripts": {
+    "worker": "UV_THREADPOOL_SIZE=8 node src/pipeline-worker.mjs",
+    "mockvllm": "node bench/mock-vllm.mjs",
+    "loadgen": "node bench/load-gen.mjs",
+    "test": "node tests/verify.mjs && node tests/verify-egress.mjs && node tests/verify-constrained.mjs && node tests/verify-heavy.mjs && node tests/verify-shadow.mjs && node tests/verify-worker.mjs && node bench/load-gen.mjs --selftest",
+    "bootstrap-model": "node bench/bootstrap-model.mjs",
+    "probe": "node bench/vllm-probe.mjs",
+    "shadow": "node bench/shadow-run.mjs",
+    "audit-sample": "node bench/audit-sample.mjs",
+    "audit-score": "node bench/audit-score.mjs",
+    "validate-samples": "node payloads/validate-samples.mjs",
+    "analysis": "python3 analysis/queue_sim.py && python3 analysis/calibrate.py"
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.17.2",
+    "ajv": "^8.20.0",
+    "amqplib": "^0.10.4",
+    "ioredis": "^5.11.1",
+    "onnxruntime-node": "^1.14.0",
+    "pg": "^8.12.0"
+  },
+  "optionalDependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "openai": "^4.70.0"
+  }
+}

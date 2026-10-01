@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0695",
+  "source": "synthetic",
+  "raw_text": "For Warehouse B, Trafford Park, the effective date is not provided. Ancillary items are none, while the current value in GBP is, unexpectedly, 101,500. The cohort average increase, a notable 18.5 percent, contrasts with a prior value of 96,800 GBP, also in pounds.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 101500,
+      "previous_value_gbp": 96800,
+      "cohort_avg_increase_pct": 18.5,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0683",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills. Current rateable value is 275,700 pounds, previously it was 246,300 pounds. Assets include 4 parking spaces, 3 EV charging points. Building height: 12 meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 275700,
+      "previous_value_gbp": 246300,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

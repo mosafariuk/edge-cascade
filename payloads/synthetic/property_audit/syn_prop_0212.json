@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0212",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail: 3800 (prev 4050). Avg increase 13.1% cohort. Includes bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3800,
+      "previous_value_gbp": 4050,
+      "cohort_avg_increase_pct": 13.1,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

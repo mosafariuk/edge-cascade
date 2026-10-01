@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0138",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:24:01] Gaze deviation is 4.4s. Another channel reported a signal noise of 140 Hz. Gaze remains on-screen with no rigid posture detected.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 4.4,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

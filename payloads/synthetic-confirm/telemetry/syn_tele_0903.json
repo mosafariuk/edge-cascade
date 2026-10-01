@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0903",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:11:15] Rigid posture and gaze is off-screen. Gaze deviation for 3.2s. Nearby unit measured 17.3m2.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 3.2,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

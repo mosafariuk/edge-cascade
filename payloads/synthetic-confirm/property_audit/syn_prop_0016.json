@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0016",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail has a current rateable value of 5,250 GBP, with a previous rateable value of 4,950 GBP. The effective date is 1 April 2026. The property includes a roof terrace.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5250,
+      "previous_value_gbp": 4950,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "roof terrace"
+      ]
+    }
+  }
+}

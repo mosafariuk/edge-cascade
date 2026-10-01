@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0667",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: 4.7k GBP curr. valuation, no prev. value recorded. Eff. 01/04/2026. Assets: 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4700,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

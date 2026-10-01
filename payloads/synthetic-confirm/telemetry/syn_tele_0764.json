@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0764",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:05:35] Acoustic sigma of +3.6σ noted. No gaze deviation duration reported. The gaze is off-screen. The posture shows rigid contraction. The baseline is not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.6,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

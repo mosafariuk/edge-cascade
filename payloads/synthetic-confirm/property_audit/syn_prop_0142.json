@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0142",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: C: 248.55k GBP, P: 184k GBP. Cohort: 16.3%. Eff. dt: 01/04/2026. Assets: 1 loading bay, mezzanine level, 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 248550,
+      "previous_value_gbp": 184000,
+      "cohort_avg_increase_pct": 16.3,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "1 loading bay",
+        "mezzanine level",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

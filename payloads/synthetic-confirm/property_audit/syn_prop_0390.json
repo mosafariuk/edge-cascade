@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0390",
+  "source": "synthetic",
+  "raw_text": "At Unit 12, Riverside Trade Park, as of 2026-04-01, the rateable value is 14,200 pounds. The previous value was 10,350 pounds. It has a 22.3 percent cohort average increase. 1 loading bay is included.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 14200,
+      "previous_value_gbp": 10350,
+      "cohort_avg_increase_pct": 22.3,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

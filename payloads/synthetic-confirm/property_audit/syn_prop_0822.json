@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0822",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High St: Curr val 3,850, prev 2,950. Eff 30 September 2025. Assets: 1 loading bay, 2 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3850,
+      "previous_value_gbp": 2950,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "1 loading bay",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

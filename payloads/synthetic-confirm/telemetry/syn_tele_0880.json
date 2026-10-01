@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0880",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:40:24] Gaze deviation duration reached 8.8 seconds. Baseline assessment shows nominal stress metrics. No posture rigidity or acoustic pitch recorded.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 8.8,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

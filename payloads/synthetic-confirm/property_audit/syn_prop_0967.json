@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0967",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter, has a new rateable value set at 55.8k. No previous rateable value recorded. Eff. date: 2026-04-01.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 55800,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2026-04-01",
+      "assets": []
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0985",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:38:51] With acoustic pitch at +1.9σ, the gaze is off-screen and baseline stress metrics hold nominal. No gaze deviation is noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.9,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

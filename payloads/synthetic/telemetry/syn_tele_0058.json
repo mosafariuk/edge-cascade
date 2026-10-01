@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0058",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:27:50] The acoustic pitch at +3.5σ, with a 7.9s gaze deviation off-screen and rigid posture. Coordinates were set to 15, 22.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.5,
+      "gaze_deviation_duration_sec": 7.9,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

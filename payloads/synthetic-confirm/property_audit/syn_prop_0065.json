@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0065",
+  "source": "synthetic",
+  "raw_text": "4200 GBP is the assessed rateable value for Warehouse B, Trafford Park, which has 1 loading bay. The previous amount recorded was 3100 GBP. No effective date is given. The baseline average increase is 16.6 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4200,
+      "previous_value_gbp": 3100,
+      "cohort_avg_increase_pct": 16.6,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

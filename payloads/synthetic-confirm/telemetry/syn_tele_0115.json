@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0115",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:41:41] 1.8s of off-screen gaze, coupled with acoustic at +4.1σ, indicate baseline deviation; posture rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.1,
+      "gaze_deviation_duration_sec": 1.8,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0145",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:23:03] Acoustic pitch elevation to +2.2σ observed, with nominal baseline stress metrics. Not rigid or off-screen during this time.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

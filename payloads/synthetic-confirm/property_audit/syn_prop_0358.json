@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0358",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park has a rateable value of 65,600 pounds; the previous value was 44,250 pounds. The cohort average increase is 22.5 percent. Assets include a roof terrace and 2 parking spaces. Adjacent area measures 1,500 sq ft.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 65600,
+      "previous_value_gbp": 44250,
+      "cohort_avg_increase_pct": 22.5,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

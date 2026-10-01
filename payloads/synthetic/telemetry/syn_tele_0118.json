@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0118",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:27:40] With an acoustic signal of +2.9σ, a minor anomaly is present. The floor area is 120m².",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.9,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

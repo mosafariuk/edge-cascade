@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0527",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:20:07] 1.9σ, 6.5s deviation. Off-screen gaze, baselines nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.9,
+      "gaze_deviation_duration_sec": 6.5,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0433",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:43:45] Acoustic deviation is +1.4σ. Rigid contraction observed. An impinging peak of 300 frames was noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

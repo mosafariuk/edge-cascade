@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0152",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail: CV £125.1k, PV £99.5k. Assets: basement storage unit, mezzanine level, bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 125100,
+      "previous_value_gbp": 99500,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit",
+        "mezzanine level",
+        "bicycle store"
+      ]
+    }
+  }
+}

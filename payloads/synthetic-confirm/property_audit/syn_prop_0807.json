@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0807",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: curr val £359.5k, prev £367.1k, eff date 15-Oct. Inc. roof terrace.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 359500,
+      "previous_value_gbp": 367100,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "roof terrace"
+      ]
+    }
+  }
+}

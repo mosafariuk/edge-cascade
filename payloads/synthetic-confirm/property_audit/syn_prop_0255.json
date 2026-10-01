@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0255",
+  "source": "synthetic",
+  "raw_text": "Despite no effective date, the current value for Corner Shop, 81 High Street is 10,150 pounds. Without ancillary assets and from a baseline increase of 6.5 percent, its previous valuation was 9,550.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10150,
+      "previous_value_gbp": 9550,
+      "cohort_avg_increase_pct": 6.5,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

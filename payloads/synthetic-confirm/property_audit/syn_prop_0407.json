@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0407",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park has crnt val of 313,300 pounds; prev val not stated; cohort avg inc value missing; eff date absent. Inc: basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 313300,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

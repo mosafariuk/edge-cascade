@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0657",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: 60.05k RV, was 64k. Assets: 3 EV charging points, basement storage unit. No eff. date noted; cohort +23%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 60050,
+      "previous_value_gbp": 64000,
+      "cohort_avg_increase_pct": 23,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points",
+        "basement storage unit"
+      ]
+    }
+  }
+}

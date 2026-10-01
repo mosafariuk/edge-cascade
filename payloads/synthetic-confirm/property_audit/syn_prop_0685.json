@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0685",
+  "source": "synthetic",
+  "raw_text": "In the Northern Quarter, the First Floor Studio has a current value of 104,400 pounds. There was a previous value of 69,450 pounds, without an effective date. The cohort's average increase is 16.9 percent, and there are no ancillary assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 104400,
+      "previous_value_gbp": 69450,
+      "cohort_avg_increase_pct": 16.9,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

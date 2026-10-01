@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0222",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter: Curr. val. 114k, prev. val. 112k. Cohort avg. inc. 4.9%. Effective date: 01-Apr. Assets: 3 EV charging points, basement storage unit.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 114000,
+      "previous_value_gbp": 112000,
+      "cohort_avg_increase_pct": 4.9,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "3 EV charging points",
+        "basement storage unit"
+      ]
+    }
+  }
+}

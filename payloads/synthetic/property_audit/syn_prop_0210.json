@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0210",
+  "source": "synthetic",
+  "raw_text": "For Workshop 7, Canal Mills, with external signage rights and a mezzanine level, the current value is 246,300 GBP, while the previous was 215,850 GBP. No effective date provided, though the cohort average is a 17.4 percent increase.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 246300,
+      "previous_value_gbp": 215850,
+      "cohort_avg_increase_pct": 17.4,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights",
+        "mezzanine level"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0150",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:52:16] Gaze deviated for 3.4s while the +3.6σ pitch was recorded. Baseline metrics flagged for deviation as the gaze is off-screen and posture is rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.6,
+      "gaze_deviation_duration_sec": 3.4,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

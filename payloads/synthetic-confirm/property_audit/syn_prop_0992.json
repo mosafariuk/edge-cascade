@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0992",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail current RV 88.9k GBP. Previous 76.25k GBP. Eff. date 01-Apr. No assets.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 88900,
+      "previous_value_gbp": 76250,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": []
+    }
+  }
+}

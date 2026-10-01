@@ -1,0 +1,30 @@
+# compose.server.yml — production override for bench/docker-compose.yml.
+#   docker compose -f bench/docker-compose.yml -f deploy/compose.server.yml up -d
+# Adds auth + interface-scoped port publishing so an EXTERNAL load-gen can reach
+# Redis without exposing an unauthenticated instance to the world.
+services:
+  redis:
+    command:
+      - redis-server
+      - --save
+      - ""
+      - --appendonly
+      - "no"
+      - --maxclients
+      - "50000"
+      - --protected-mode
+      - "yes"
+      - --requirepass
+      - "${REDIS_PASSWORD:?set REDIS_PASSWORD}"
+    ports:
+      # publish only on the chosen host interface (e.g. the VPC/private IP), not 0.0.0.0
+      - "${REDIS_BIND:-127.0.0.1}:6379:6379"
+
+  postgres:
+    ports:
+      - "${PG_BIND:-127.0.0.1}:5432:5432"
+
+  # workers run on BARE METAL (taskset-pinned) via deploy/start-workers.sh, not here.
+  worker:
+    deploy:
+      replicas: 0

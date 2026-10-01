@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0052",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter: current val 177.3k GBP, prev val 138.7k GBP, cohort avg incr 12.2%. 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 177300,
+      "previous_value_gbp": 138700,
+      "cohort_avg_increase_pct": 12.2,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

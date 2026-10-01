@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0460",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:05:25] Gaze was off-screen while a pitch elevation occurred with +4.2σ. Posture was not rigid. Gaze deviation exhibited for 3.6s. Baseline flagged for deviation.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.2,
+      "gaze_deviation_duration_sec": 3.6,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

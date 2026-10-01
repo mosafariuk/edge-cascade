@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0207",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:30:10] Pch elvtd +0.6σ, 1.1s gaze dev. Baseline deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.6,
+      "gaze_deviation_duration_sec": 1.1,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

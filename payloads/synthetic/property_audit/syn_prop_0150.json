@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0150",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail, with no listed ancillary assets, holds a current value of 16,000 pounds. Previously valued at 10,550 pounds and despite having no effective date, the cohort saw an average increase of 18.1 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 16000,
+      "previous_value_gbp": 10550,
+      "cohort_avg_increase_pct": 18.1,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

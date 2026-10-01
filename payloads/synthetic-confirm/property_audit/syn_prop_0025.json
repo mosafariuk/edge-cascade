@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0025",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, with external signage rights, now has a rateable value of 99,000 GBP. Previously recorded at 98,200 GBP, no cohort percentage is available nor is an effective date recorded.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 99000,
+      "previous_value_gbp": 98200,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

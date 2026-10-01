@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0119",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park has a current rateable value of 78,500 GBP. Previous rateable value was 57,800 GBP. No cohort average increase is recorded. Effective date is 2025-10-15. Recorded ancillary assets include basement storage unit, 4 parking spaces, bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 78500,
+      "previous_value_gbp": 57800,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "basement storage unit",
+        "4 parking spaces",
+        "bicycle store"
+      ]
+    }
+  }
+}

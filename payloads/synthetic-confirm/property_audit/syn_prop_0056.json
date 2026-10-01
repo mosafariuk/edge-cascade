@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0056",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street reports a rateable value of 14,000 GBP. Previously, the value was 11,550 GBP. The cohort's average increase is 9.1%. Includes a bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 14000,
+      "previous_value_gbp": 11550,
+      "cohort_avg_increase_pct": 9.1,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

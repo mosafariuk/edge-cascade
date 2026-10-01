@@ -1,0 +1,135 @@
+
+═══════ pool intra-op=1 (spin off, no affinity) ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=1 PIN_CORES=0 ALLOW_SPINNING=0 EMBED_MODE=real LABEL=pool-1
+
+starting dedicated redis on :6390 (core 15)
+W=8 trial 1/5 ... 14138 req/s   p99=4004ms   lg=14% redis=7.3%
+W=8 trial 2/5 ... 14283 req/s   p99=3983ms   lg=14% redis=7.3%
+W=8 trial 3/5 ... 14173 req/s   p99=4010ms   lg=14% redis=7.3%
+W=8 trial 4/5 ... 14147 req/s   p99=4003ms   lg=14% redis=7.3%
+W=8 trial 5/5 ... 14275 req/s   p99=3992ms   lg=14% redis=7.4%
+
+════════ SUMMARY (bench/results-zen5-run2/pool-sweep.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+pool-1               8       1   0       0   5    14203.2     70.4      87.4  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ pool intra-op=2 (spin off, no affinity) ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=2 PIN_CORES=0 ALLOW_SPINNING=0 EMBED_MODE=real LABEL=pool-2
+
+starting dedicated redis on :6390 (core 15)
+W=8 trial 1/5 ... 16696 req/s   p99=3859ms   lg=22% redis=11.2%
+W=8 trial 2/5 ... 16069 req/s   p99=4004ms   lg=22% redis=11.3%
+W=8 trial 3/5 ... 16133 req/s   p99=4034ms   lg=22% redis=11.6%
+W=8 trial 4/5 ... 15749 req/s   p99=4134ms   lg=22% redis=11.1%
+W=8 trial 5/5 ... 15936 req/s   p99=4041ms   lg=23% redis=11.7%
+
+════════ SUMMARY (bench/results-zen5-run2/pool-sweep.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+pool-1               8       1   0       0   5    14203.2     70.4      87.4  
+pool-2               8       2   0       0   5    16116.6    355.7     441.5  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ pool intra-op=4 (spin off, no affinity) ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=4 PIN_CORES=0 ALLOW_SPINNING=0 EMBED_MODE=real LABEL=pool-4
+
+starting dedicated redis on :6390 (core 15)
+W=8 trial 1/5 ... 15337 req/s   p99=4203ms   lg=30% redis=15.7%
+W=8 trial 2/5 ... 15088 req/s   p99=4169ms   lg=30% redis=15.8%
+W=8 trial 3/5 ... 15459 req/s   p99=4218ms   lg=29% redis=15.2%
+W=8 trial 4/5 ... 15097 req/s   p99=4284ms   lg=31% redis=15.0%
+W=8 trial 5/5 ... 15122 req/s   p99=4314ms   lg=30% redis=15.9%
+
+════════ SUMMARY (bench/results-zen5-run2/pool-sweep.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+pool-1               8       1   0       0   5    14203.2     70.4      87.4  
+pool-2               8       2   0       0   5    16116.6    355.7     441.5  
+pool-4               8       4   0       0   5    15220.6    168.1     208.6  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ pool intra-op=8 (spin off, no affinity) ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=8 PIN_CORES=0 ALLOW_SPINNING=0 EMBED_MODE=real LABEL=pool-8
+
+starting dedicated redis on :6390 (core 15)
+W=8 trial 1/5 ... 16299 req/s   p99=4149ms   lg=33% redis=17.1%
+W=8 trial 2/5 ... 16300 req/s   p99=4254ms   lg=33% redis=16.7%
+W=8 trial 3/5 ... 15478 req/s   p99=4276ms   lg=34% redis=16.4%
+W=8 trial 4/5 ... 15810 req/s   p99=4251ms   lg=34% redis=16.8%
+W=8 trial 5/5 ... 16260 req/s   p99=4360ms   lg=34% redis=17.2%
+
+════════ SUMMARY (bench/results-zen5-run2/pool-sweep.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+pool-1               8       1   0       0   5    14203.2     70.4      87.4  
+pool-2               8       2   0       0   5    16116.6    355.7     441.5  
+pool-4               8       4   0       0   5    15220.6    168.1     208.6  
+pool-8               8       8   0       0   5    16029.4    371.2     460.9  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ pool intra-op=16 (spin off, no affinity) ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=16 PIN_CORES=0 ALLOW_SPINNING=0 EMBED_MODE=real LABEL=pool-16
+
+starting dedicated redis on :6390 (core 15)
+W=8 trial 1/5 ... 15044 req/s   p99=4375ms   lg=34% redis=16.7%
+W=8 trial 2/5 ... 14861 req/s   p99=4347ms   lg=34% redis=16.8%
+W=8 trial 3/5 ... 14796 req/s   p99=4454ms   lg=34% redis=16.7%
+W=8 trial 4/5 ... 14469 req/s   p99=4327ms   lg=34% redis=16.7%
+W=8 trial 5/5 ... 14757 req/s   p99=4356ms   lg=34% redis=16.6%
+
+════════ SUMMARY (bench/results-zen5-run2/pool-sweep.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+pool-1               8       1   0       0   5    14203.2     70.4      87.4  
+pool-16              8      16   0       0   5    14785.4    208.3     258.6  
+pool-2               8       2   0       0   5    16116.6    355.7     441.5  
+pool-4               8       4   0       0   5    15220.6    168.1     208.6  
+pool-8               8       8   0       0   5    16029.4    371.2     460.9  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+═══════ pool intra-op=32 (spin off, no affinity) ═══════
+topology: 16 physical cores [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+infra core (load-gen + redis): 15   usable worker cores: 15
+config: TRIALS=5 DURATION=60s RATE=50000/s ORT_INTRA_OP=32 PIN_CORES=0 ALLOW_SPINNING=0 EMBED_MODE=real LABEL=pool-32
+
+starting dedicated redis on :6390 (core 15)
+W=8 trial 1/5 ... 13051 req/s   p99=4628ms   lg=33% redis=15.3%
+W=8 trial 2/5 ... 13080 req/s   p99=4543ms   lg=32% redis=15.3%
+W=8 trial 3/5 ... 12950 req/s   p99=4413ms   lg=32% redis=15.2%
+W=8 trial 4/5 ... 13183 req/s   p99=4631ms   lg=33% redis=15.3%
+W=8 trial 5/5 ... 12797 req/s   p99=4701ms   lg=33% redis=14.9%
+
+════════ SUMMARY (bench/results-zen5-run2/pool-sweep.csv) ════════
+label                W intraOp pin    spin   n   mean rps    stdev  95% CI ±  note
+pool-1               8       1   0       0   5    14203.2     70.4      87.4  
+pool-16              8      16   0       0   5    14785.4    208.3     258.6  
+pool-2               8       2   0       0   5    16116.6    355.7     441.5  
+pool-32              8      32   0       0   5    13012.2    146.2     181.5  
+pool-4               8       4   0       0   5    15220.6    168.1     208.6  
+pool-8               8       8   0       0   5    16029.4    371.2     460.9  
+
+Report mean ± CI in the paper. A single point estimate per W will be challenged.
+
+════════ pool-size sweep (bench/results-zen5-run2/pool-sweep.csv) ════════
+W=8   intra-op   mean req/s   ±t95   vs intra-op=1
+              1      14203.2      87    100.0%   (threads/worker ≈ 11, fleet ≈ 88)
+              2      16116.6     442    113.5%   (threads/worker ≈ 12, fleet ≈ 96)
+              4      15220.6     209    107.2%   (threads/worker ≈ 14, fleet ≈ 112)
+              8      16029.4     461    112.9%   (threads/worker ≈ 18, fleet ≈ 144)
+             16      14785.4     259    104.1%   (threads/worker ≈ 26, fleet ≈ 208)
+             32      13012.2     181     91.6%   (threads/worker ≈ 42, fleet ≈ 336)
+
+Reading: a monotone decline from intra-op=1 with spin OFF is the pure thread-count loss;
+compare intra-op=32 here against Table II-a arm B (same config) and arm A (spin on).

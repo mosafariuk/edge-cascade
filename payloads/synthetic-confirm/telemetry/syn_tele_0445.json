@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0445",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:02:07] Baseline stress metrics are nominal, and pitch reaches +0.9σ. Posture shows rigid contraction, although gaze is off-screen.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.9,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

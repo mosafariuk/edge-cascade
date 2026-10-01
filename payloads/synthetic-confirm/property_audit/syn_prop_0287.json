@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0287",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter: £46,500. Prev. value: N/A. Avg. cohort inc: 12.1%. Eff. date: 15-Oct. Includes external signage rights, bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 46500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 12.1,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "external signage rights",
+        "bicycle store"
+      ]
+    }
+  }
+}

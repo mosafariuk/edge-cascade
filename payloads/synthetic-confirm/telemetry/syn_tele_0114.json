@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0114",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:48:02] Acoustic sigma is +4.4σ and gaze deviated for 0.9 seconds. Gaze stayed on-screen and no rigid posture. Baseline stress metrics not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.4,
+      "gaze_deviation_duration_sec": 0.9,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

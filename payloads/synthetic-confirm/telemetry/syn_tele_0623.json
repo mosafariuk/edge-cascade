@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0623",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:32:51] Rigid contraction present with baseline metrics nominal. Note: Frame count 2403 recorded.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

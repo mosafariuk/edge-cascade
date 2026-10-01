@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0422",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter: RV 3.4k, prev. 2.75k. Assets: 1 loading bay, 2 parking spaces, rear service yard. (Cohort 2.6%.) No eff. date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3400,
+      "previous_value_gbp": 2750,
+      "cohort_avg_increase_pct": 2.6,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay",
+        "2 parking spaces",
+        "rear service yard"
+      ]
+    }
+  }
+}

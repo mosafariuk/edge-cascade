@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0220",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail, with rear service yard and bicycle store, also contains 4 parking spaces. The current rateable value is 96,800 pounds with a previous rateable value of 65,350 pounds.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 96800,
+      "previous_value_gbp": 65350,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard",
+        "bicycle store",
+        "4 parking spaces"
+      ]
+    }
+  }
+}

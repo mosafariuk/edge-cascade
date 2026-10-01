@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0267",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: curr val 8k; cohort avg incr 8.2%. No prev val. Asset: rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 8000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 8.2,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0927",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park curr. val. £12.2k, prev. val. £9.9k. Cohort avg. inc. 13.2% eff. 2025-10-15. Asset: rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 12200,
+      "previous_value_gbp": 9900,
+      "cohort_avg_increase_pct": 13.2,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

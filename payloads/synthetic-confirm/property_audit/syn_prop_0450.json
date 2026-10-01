@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0450",
+  "source": "synthetic",
+  "raw_text": "Current rateable value of Kiosk 2, Station Concourse, as of 1 April 2026, is 3,700 pounds, with no historical value reported. Features include 1 loading bay, 4 parking spaces, and a mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3700,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "1 April 2026",
+      "assets": [
+        "1 loading bay",
+        "4 parking spaces",
+        "mezzanine level"
+      ]
+    }
+  }
+}

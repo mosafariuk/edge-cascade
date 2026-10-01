@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0813",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:25:11] Gaze deviation lasted 7.9s. Gaze is off-screen. Baseline stress metrics are nominal. Frame count reached 240.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 7.9,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

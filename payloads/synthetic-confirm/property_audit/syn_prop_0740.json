@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0740",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park is rated at 164,500 GBP, with no prior value known, and features a mezzanine level. The cohort average increase is 9.7%. No effective date is mentioned.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 164500,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 9.7,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

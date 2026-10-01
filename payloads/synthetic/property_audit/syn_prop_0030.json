@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0030",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A is listed with a rateable value of 5,000 GBP as current. Having no prior value recorded, the cohort average stands at 18.9%. Assets include 2 parking spaces and a mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 18.9,
+      "effective_date_raw": null,
+      "assets": [
+        "2 parking spaces",
+        "mezzanine level"
+      ]
+    }
+  }
+}

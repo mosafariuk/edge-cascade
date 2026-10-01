@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0585",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:38:38] Baseline deviation noted, and the pitch elevation was +0.7σ. No gaze deviation noted. No posture rigidity.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.7,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0728",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:01:31] 740 units, gaze off-screen and deviated for 3.6s. Posture is rigid. Baseline stress metrics nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 3.6,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

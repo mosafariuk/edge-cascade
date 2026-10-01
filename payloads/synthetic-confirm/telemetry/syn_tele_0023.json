@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0023",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:05:20] Acoustic signal at +4σ; gaze deviation lasted 5.8s. Baseline nominal. Total frame count reached 240.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4,
+      "gaze_deviation_duration_sec": 5.8,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

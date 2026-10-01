@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0513",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A has a current rateable value of 9,000 pounds with a previous value of 6,600 pounds. The cohort average increase is 10.2 percent. Assets include 1 loading bay and a roof terrace. Building height is 20 meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 9000,
+      "previous_value_gbp": 6600,
+      "cohort_avg_increase_pct": 10.2,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay",
+        "roof terrace"
+      ]
+    }
+  }
+}

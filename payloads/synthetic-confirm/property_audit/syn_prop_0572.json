@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0572",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills. Curr val £15.5k, prev £11.85k. 19.9% avg incr. Eff 15-Oct.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 15500,
+      "previous_value_gbp": 11850,
+      "cohort_avg_increase_pct": 19.9,
+      "effective_date_raw": "15-Oct",
+      "assets": []
+    }
+  }
+}

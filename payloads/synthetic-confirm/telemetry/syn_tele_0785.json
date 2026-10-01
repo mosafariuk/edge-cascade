@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0785",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:07:30] Elevation recorded at +4σ. 5.5s gaze deviation confirmed as off-screen, baseline flagged for deviation, posture not rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4,
+      "gaze_deviation_duration_sec": 5.5,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

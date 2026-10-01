@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0050",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, currently values at 9,300 pounds, was previously at 6,750; it holds a rear service yard and 1 loading bay. Having a roof terrace too, its cohort increase is set at 5.6 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 9300,
+      "previous_value_gbp": 6750,
+      "cohort_avg_increase_pct": 5.6,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard",
+        "1 loading bay",
+        "roof terrace"
+      ]
+    }
+  }
+}

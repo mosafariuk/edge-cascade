@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0413",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:30:26] Pitch elevation at +4σ. Gaze is off-screen. Baseline stress metrics remain nominal. Reference ID: 410.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

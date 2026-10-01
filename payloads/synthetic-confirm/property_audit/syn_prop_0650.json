@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0650",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills has included 2 parking spaces, with the current value being 6,450 pounds; a previous value does not exist. The cohort average increase is 19.9 percent. No effective date is provided.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6450,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 19.9,
+      "effective_date_raw": null,
+      "assets": [
+        "2 parking spaces"
+      ]
+    }
+  }
+}

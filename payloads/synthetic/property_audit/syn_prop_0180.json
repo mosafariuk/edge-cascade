@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0180",
+  "source": "synthetic",
+  "raw_text": "Assets such as a bicycle store are part of the 3rd Floor Office Suite, EC1A, where the current rateable value is 10,800 pounds. The previous value being 7,800 pounds, with an effective date set on 01-Apr and no cohort percentage provided.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10800,
+      "previous_value_gbp": 7800,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

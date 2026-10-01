@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0085",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:37:01] Gaze was off-screen for 6.5s, while baseline stress metrics remain nominal. No specific acoustic pitch elevation is recorded this time, and posture rigidity is absent.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 6.5,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

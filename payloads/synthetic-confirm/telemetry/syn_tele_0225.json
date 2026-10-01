@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0225",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:37:02] Baseline nominal, despite 0.6s gaze deviation. Acoustic pitch is +1.1σ with no rigidity in posture, and gaze stays on-screen.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.1,
+      "gaze_deviation_duration_sec": 0.6,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,68 @@
+shadow-labeling 500 payloads → edge Qwen/Qwen3-8B-AWQ @ http://127.0.0.1:18000/v1/completions + judge openai/gpt-4o
+  [25/500] labeled=25 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  11s
+  [50/500] labeled=50 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  17s
+  [75/500] labeled=75 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  26s
+  [100/500] labeled=100 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  30s
+  [125/500] labeled=125 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  36s
+  [150/500] labeled=150 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  43s
+  [175/500] labeled=175 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  49s
+  [200/500] labeled=200 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  55s
+  [225/500] labeled=225 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  61s
+  [250/500] labeled=250 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  68s
+  [275/500] labeled=275 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  72s
+  [300/500] labeled=300 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  78s
+  [325/500] labeled=325 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  85s
+  [350/500] labeled=350 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  92s
+  [375/500] labeled=375 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  99s
+  [400/500] labeled=400 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  104s
+  [425/500] labeled=425 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  110s
+  [450/500] labeled=450 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  115s
+  [475/500] labeled=475 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  120s
+  [500/500] labeled=500 skipped={"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}  123s
+labeled 500/500 payloads; skipped {"not_admitted":0,"edge_failed":0,"heavy_failed":0,"no_signal":0}
+
+─── JUDGE FIDELITY (judge vs constructed truth) ───
+judge agrees with truth : 482/500 = 96.4%  95% CI [94.4, 97.7]
+  by kind : property_audit 236/250 (94.4%)   telemetry 246/250 (98.4%)
+judge-relative label == truth-relative label : 485/500 = 97.0%
+
+edge accuracy vs truth by kind  : property_audit 210/250 (84.0%)   telemetry 161/250 (64.4%)
+edge accuracy vs truth by style : clean 80/100 (80.0%)   distractor 65/100 (65.0%)   negation 85/100 (85.0%)   reordered 69/100 (69.0%)   shorthand 72/100 (72.0%)
+
+─── PRIMARY — labels = constructed truth (report these) ───
+labeled pairs        : 500  (fit on train=329, EVALUATED on held-out=171)
+edge accuracy (raw)  : 73.7%  95% CI [66.6, 79.7]
+target escalation    : 20%   → MAX_SURPRISAL = 0.032 nats
+achieved escalation  : 9.4%  95% CI [5.8, 14.7]
+local precision      : 77.4%  95% CI [70.2, 83.3]
+edge-error recall    : 22.2%  95% CI [12.5, 36.3]  (45 errors in eval set)
+calibrated ECE       : 0.084
+
+─── per workload: property_audit (truth labels) ───
+labeled pairs        : 250  (fit on train=128, EVALUATED on held-out=122)
+edge accuracy (raw)  : 80.3%  95% CI [72.4, 86.4]
+target escalation    : 20%   → MAX_SURPRISAL = 0.010 nats
+achieved escalation  : 18.0%  95% CI [12.2, 25.8]
+local precision      : 84.0%  95% CI [75.6, 89.9]
+edge-error recall    : 33.3%  95% CI [18.0, 53.3]  (24 errors in eval set)
+calibrated ECE       : 0.121
+
+─── per workload: telemetry (truth labels) ───
+labeled pairs        : 250  (fit on train=201, EVALUATED on held-out=49)
+edge accuracy (raw)  : 57.1%  95% CI [43.3, 70.0]
+target escalation    : 20%   → MAX_SURPRISAL = 0.057 nats
+achieved escalation  : 14.3%  95% CI [7.1, 26.7]
+local precision      : 64.3%  95% CI [49.2, 77.0]
+edge-error recall    : 28.6%  95% CI [13.8, 50.0]  (21 errors in eval set)
+calibrated ECE       : 0.119
+
+─── SECONDARY — labels = frontier judge (the deployable, label-free procedure) ───
+labeled pairs        : 500  (fit on train=329, EVALUATED on held-out=171)
+edge accuracy (raw)  : 74.3%  95% CI [67.2, 80.2]
+target escalation    : 20%   → MAX_SURPRISAL = 0.032 nats
+achieved escalation  : 9.4%  95% CI [5.8, 14.7]
+local precision      : 78.1%  95% CI [70.9, 83.9]
+edge-error recall    : 22.7%  95% CI [12.8, 37.0]  (44 errors in eval set)
+calibrated ECE       : 0.084
+
+pairs written to bench/shadow-pairs.jsonl

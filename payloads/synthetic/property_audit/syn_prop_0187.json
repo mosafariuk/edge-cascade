@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0187",
+  "source": "synthetic",
+  "raw_text": "1st Floor Studio, Northern Quarter val 5050 GBP (was 5250 GBP). No cohort % or eff date rec. 2 parking spaces incl.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5050,
+      "previous_value_gbp": 5250,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "2 parking spaces"
+      ]
+    }
+  }
+}

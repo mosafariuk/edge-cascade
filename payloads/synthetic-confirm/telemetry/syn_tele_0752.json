@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0752",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:35:54] 8.2s gaze dev., non-rigid posture. No pitch elevation. Baseline deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 8.2,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0041",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A has a current rateable value of 55,500 pounds and the previous rateable value was 36,650 pounds. Cohort average increase is 10.1 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 55500,
+      "previous_value_gbp": 36650,
+      "cohort_avg_increase_pct": 10.1,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

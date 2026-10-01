@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0130",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:49:14] Gaze is off-screen, deviation lasts for 7.7 seconds. Baseline is not nominal, and posture is not rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 7.7,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

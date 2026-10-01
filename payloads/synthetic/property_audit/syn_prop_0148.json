@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0148",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street's current rateable value is 4,900 GBP, up from a previous 3,700 GBP. Ancillary items include a basement storage unit and a bicycle store. Nearby unit listed for 2,100 GBP.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4900,
+      "previous_value_gbp": 3700,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit",
+        "bicycle store"
+      ]
+    }
+  }
+}

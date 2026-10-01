@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0718",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:12:13] Pitch elevation at +4σ. Gaze deviation duration is 4.3s, and gaze is off-screen. Baseline nominal. 600 frames rendered.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4,
+      "gaze_deviation_duration_sec": 4.3,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

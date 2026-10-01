@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0127",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail - Current val. 6.5k GBP, prev. 5,150 GBP. Eff. date: 01/04/2026. Inc. bicycle store, 3 EV charging points, external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6500,
+      "previous_value_gbp": 5150,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "bicycle store",
+        "3 EV charging points",
+        "external signage rights"
+      ]
+    }
+  }
+}

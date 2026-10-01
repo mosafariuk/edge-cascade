@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0135",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:12:58] With a pitch elevation of +1.0σ, gaze deviation takes 2.4 seconds. Baseline stress deviation, but no rigid posture. Gaze is on-screen.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1,
+      "gaze_deviation_duration_sec": 2.4,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

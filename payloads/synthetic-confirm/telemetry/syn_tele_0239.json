@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0239",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:02:14] No acoustic elevation noted. No gaze deviation, with gaze staying on-screen. No rigid posture detected, baseline is nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

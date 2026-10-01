@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0141",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:30:51] Acoustic pitch elevation is +0.6σ. Rigid posture detected. Baseline stress metrics issue flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.6,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

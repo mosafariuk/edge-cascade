@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0195",
+  "source": "synthetic",
+  "raw_text": "Now valued at 18550 GBP, Corner Shop, 81 High Street includes 2 parking spaces and a roof terrace; no prior valuation exists.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 18550,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "2 parking spaces",
+        "roof terrace"
+      ]
+    }
+  }
+}

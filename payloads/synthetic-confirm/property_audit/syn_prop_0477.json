@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0477",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street: CV £36050, 2026-04-01 effect. Assets: bicycle store, 3 EV charging points, 2 parking spaces. No prev val or cohort % noted.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 36050,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "2026-04-01",
+      "assets": [
+        "bicycle store",
+        "3 EV charging points",
+        "2 parking spaces"
+      ]
+    }
+  }
+}

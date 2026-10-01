@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0357",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail curr: £269,450. No prev. value. Cohort avg. inc.: 22.5%. No eff. date. Includes 4 parking spaces, 3 EV charging points, bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 269450,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 22.5,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces",
+        "3 EV charging points",
+        "bicycle store"
+      ]
+    }
+  }
+}

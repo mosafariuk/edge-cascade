@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0383",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park's rateable value is currently 143,250 pounds. Effective as of 1 April 2026. The neighbouring Warehouse C has 1,000 square meters of floor space.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 143250,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "1 April 2026",
+      "assets": []
+    }
+  }
+}

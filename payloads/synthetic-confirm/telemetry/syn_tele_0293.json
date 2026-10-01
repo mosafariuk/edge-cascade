@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0293",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:26:03] Acoustic pitch elevated by +2.6σ. The gaze is off-screen. Rigid contraction observed. 1080 frames processed.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.6,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

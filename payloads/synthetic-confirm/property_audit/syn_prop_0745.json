@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0745",
+  "source": "synthetic",
+  "raw_text": "8900 GBP is the current value for Workshop 7, Canal Mills, and it had a previous value of 6600 GBP. With no cohort average percentage increase or an effective date noted, the premises includes a mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 8900,
+      "previous_value_gbp": 6600,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

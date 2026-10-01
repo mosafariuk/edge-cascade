@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0820",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:42:26] Baseline deviation flagged. With gaze off-screen, elevation in pitch measures +3.7σ, and gaze deviation time is 5.9s.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.7,
+      "gaze_deviation_duration_sec": 5.9,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

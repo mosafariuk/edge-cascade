@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0817",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park: curr val 3.9k, prev 3.25k. Coh inc 21.2%. No eff date. Inc: 3 EV charging points, basement storage unit, mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3900,
+      "previous_value_gbp": 3250,
+      "cohort_avg_increase_pct": 21.2,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points",
+        "basement storage unit",
+        "mezzanine level"
+      ]
+    }
+  }
+}

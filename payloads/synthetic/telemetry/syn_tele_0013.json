@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0013",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:48:19] +3.1σ, 0.8s, gaze went off-screen. On level 6, baseline flagged as nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.1,
+      "gaze_deviation_duration_sec": 0.8,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0441",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park currently has a rateable value of 134,800 pounds. Previously, it was valued at 113,600 pounds. The cohort average increase is 11.6 percent. The property includes external signage rights and a rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 134800,
+      "previous_value_gbp": 113600,
+      "cohort_avg_increase_pct": 11.6,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights",
+        "rear service yard"
+      ]
+    }
+  }
+}

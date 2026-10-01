@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0935",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:48:16] Pitch elevated by +0.4σ, and gaze went off-screen for a duration of 6.4s. No rigid posture observed, and baseline deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.4,
+      "gaze_deviation_duration_sec": 6.4,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

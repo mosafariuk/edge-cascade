@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0095",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:29:35] During this session, the pitch elevation was recorded at +4.3σ with a gaze lasting off-screen for 5.4 seconds, and baseline stress levels staying nominal, though the posture was not rigid.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 4.3,
+      "gaze_deviation_duration_sec": 5.4,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

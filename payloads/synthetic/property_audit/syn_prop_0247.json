@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0247",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High St curr val: 6.5k. Prev: 4,850. Eff date: 01/04/2026. Asset: 1 loading bay.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 6500,
+      "previous_value_gbp": 4850,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "1 loading bay"
+      ]
+    }
+  }
+}

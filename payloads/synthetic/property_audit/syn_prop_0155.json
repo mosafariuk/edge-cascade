@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0155",
+  "source": "synthetic",
+  "raw_text": "On 15-Oct, the current value for 3rd Floor Office Suite, EC1A, is £18,700, up from £12,950. The cohort avg increase is 5.1%. It includes a mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 18700,
+      "previous_value_gbp": 12950,
+      "cohort_avg_increase_pct": 5.1,
+      "effective_date_raw": "15-Oct",
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

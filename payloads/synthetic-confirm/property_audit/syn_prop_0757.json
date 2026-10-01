@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0757",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park: Curr val £50k, prev val £39.8k. Eff date: 30 September 2025. Assets: 2 parking spaces, 1 loading bay, mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 50000,
+      "previous_value_gbp": 39800,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "2 parking spaces",
+        "1 loading bay",
+        "mezzanine level"
+      ]
+    }
+  }
+}

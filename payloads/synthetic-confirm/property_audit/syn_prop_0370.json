@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0370",
+  "source": "synthetic",
+  "raw_text": "With a rateable value of 232,750 pounds, Unit 4, Ground Floor Retail, previously valued at 160,650 pounds, shows a cohort average increase of 21 percent. External signage rights are among the assets. There is no effective date noted.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 232750,
+      "previous_value_gbp": 160650,
+      "cohort_avg_increase_pct": 21,
+      "effective_date_raw": null,
+      "assets": [
+        "external signage rights"
+      ]
+    }
+  }
+}

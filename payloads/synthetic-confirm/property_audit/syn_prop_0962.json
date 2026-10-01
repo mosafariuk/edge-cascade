@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0962",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse now has a rateable value of 17.85k, up from 16.1k. Cohort avg increase 24.8%. Eff. date: 15-Oct.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 17850,
+      "previous_value_gbp": 16100,
+      "cohort_avg_increase_pct": 24.8,
+      "effective_date_raw": "15-Oct",
+      "assets": []
+    }
+  }
+}

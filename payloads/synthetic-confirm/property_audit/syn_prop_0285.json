@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0285",
+  "source": "synthetic",
+  "raw_text": "Assets include a mezzanine level, while the rateable value currently stands at 5,150 pounds for Corner Shop, 81 High Street. Previous value: not recorded.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 5150,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

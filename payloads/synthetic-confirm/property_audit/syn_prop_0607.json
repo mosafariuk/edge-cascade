@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0607",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills has a curr val of 351.3k GBP, prev val was 225.4k GBP. Cohort avg inc. 22.3%. Inc. 3 EV charging points, 4 parking spaces, rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 351300,
+      "previous_value_gbp": 225400,
+      "cohort_avg_increase_pct": 22.3,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points",
+        "4 parking spaces",
+        "rear service yard"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0958",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:17:29] Acoustic pitch elevation measured at +1.4σ. Gaze deviation detected for 4.1 seconds; off-screen condition confirmed. There are 15 floors in the nearby building. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.4,
+      "gaze_deviation_duration_sec": 4.1,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

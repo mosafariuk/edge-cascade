@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0141",
+  "source": "synthetic",
+  "raw_text": "The premises at 3rd Floor Office Suite, EC1A have a current rateable value of 199,950 pounds. Cohort average increase is 14.5 percent. Effective date: 01/04/2026. Included are 3 EV charging points, a bicycle store, and external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 199950,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 14.5,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "3 EV charging points",
+        "bicycle store",
+        "external signage rights"
+      ]
+    }
+  }
+}

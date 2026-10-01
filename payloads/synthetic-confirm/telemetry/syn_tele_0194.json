@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0194",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:20:07] Pitch adjustment detected at +2.2σ. Gaze deviation duration is not recorded. The gaze is off-screen and no rigid posture is present. Baseline deviation is flagged as stress metrics are not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

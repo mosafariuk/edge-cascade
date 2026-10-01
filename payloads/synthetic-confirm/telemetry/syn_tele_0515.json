@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0515",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:53:38] With a pitch elevation of +1.6σ, stress metrics show a gaze deviation of 5.5s while staying on-screen. No rigidity observed, baseline deviation noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.6,
+      "gaze_deviation_duration_sec": 5.5,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

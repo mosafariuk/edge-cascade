@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0686",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter. The current rateable value is 18,000 pounds. Previously it was 12,400 pounds. The cohort average increase is 24.2 percent. Includes 4 parking spaces.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 18000,
+      "previous_value_gbp": 12400,
+      "cohort_avg_increase_pct": 24.2,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces"
+      ]
+    }
+  }
+}

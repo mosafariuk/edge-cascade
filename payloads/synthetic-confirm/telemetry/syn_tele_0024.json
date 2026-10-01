@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0024",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:49:49] Acoustic elevation is +2σ, no gaze deviation recorded. Gaze remained on-screen. No rigid posture. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

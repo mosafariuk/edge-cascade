@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0682",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:16:10] Pitch +2.9σ, gaze dev 8.5s. Posture not rigid. Baseline nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.9,
+      "gaze_deviation_duration_sec": 8.5,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

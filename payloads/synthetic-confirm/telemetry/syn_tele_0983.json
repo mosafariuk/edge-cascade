@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0983",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:16:22] Acoustic pitch shows an elevation of +1.9σ. Gaze deviation is recorded for 5.7 seconds. A baseline deviation is flagged. 13 lbs were noted elsewhere.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.9,
+      "gaze_deviation_duration_sec": 5.7,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

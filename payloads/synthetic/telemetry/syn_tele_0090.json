@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0090",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:16:08] While the gaze shifted off-screen, baseline stress metrics remained nominal. No pitch elevation detected and no rigid contractions.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0262",
+  "source": "synthetic",
+  "raw_text": "First Floor Studio, Northern Quarter: curr val 88.6k, no prev val. Cohort avg incr 2.6%. Assets: basement storage unit, external signage rights, 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 88600,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 2.6,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit",
+        "external signage rights",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

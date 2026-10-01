@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0525",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:06:09] With a pitch elevation of +0.9σ, the athlete showed a 3.7s gaze deviation and maintained a rigid posture, with nominal baseline stress metrics.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.9,
+      "gaze_deviation_duration_sec": 3.7,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

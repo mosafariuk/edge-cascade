@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0281",
+  "source": "synthetic",
+  "raw_text": "Unit 12, Riverside Trade Park has a current rateable value of 266,000 pounds. The property includes a mezzanine level and a rear service yard. The cohort average increase percentage is 24.9%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 266000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 24.9,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level",
+        "rear service yard"
+      ]
+    }
+  }
+}

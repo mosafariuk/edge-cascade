@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0805",
+  "source": "synthetic",
+  "raw_text": "On the 3rd Floor Office Suite, EC1A, including 4 parking spaces and a roof terrace, the current rateable value is 265,500 GBP, a change from 275,400 GBP. The cohort average increase is 12.4%.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 265500,
+      "previous_value_gbp": 275400,
+      "cohort_avg_increase_pct": 12.4,
+      "effective_date_raw": null,
+      "assets": [
+        "4 parking spaces",
+        "roof terrace"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0061",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills has a current rateable value of 32500 pounds. The previous rateable value was 26850 pounds. There is no cohort average percentage increase available. There is no effective date. There are no ancillary items included.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 32500,
+      "previous_value_gbp": 26850,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": []
+    }
+  }
+}

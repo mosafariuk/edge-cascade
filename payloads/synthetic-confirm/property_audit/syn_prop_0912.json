@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0912",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park has current value: 4k GBP. Prev value: nil. Effective 01/04/2026. Avg inc: 5.3%. Ass: rear service yard, basement storage unit, external signage rights.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 4000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 5.3,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "rear service yard",
+        "basement storage unit",
+        "external signage rights"
+      ]
+    }
+  }
+}

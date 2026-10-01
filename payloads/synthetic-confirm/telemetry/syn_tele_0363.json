@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0363",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:36:00] Rigid posture detected with pitch at +2.5σ. Nominal baseline, but note the 120 frames logged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.5,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

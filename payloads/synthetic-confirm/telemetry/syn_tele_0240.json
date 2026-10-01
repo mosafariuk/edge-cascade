@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0240",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:39:56] Despite a +3.8σ acoustic elevation, gaze deviation lasted only 0.4 seconds with gaze not off-screen. Baseline stress metrics are not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.8,
+      "gaze_deviation_duration_sec": 0.4,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0088",
+  "source": "synthetic",
+  "raw_text": "Unit 4, Ground Floor Retail's current rateable value is 10,100 GBP, previously 8,650 GBP; effective 01/04/2026. The cohort average increase is 10.3 percent. No assets. The neighboring shop covers 110 square meters.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 10100,
+      "previous_value_gbp": 8650,
+      "cohort_avg_increase_pct": 10.3,
+      "effective_date_raw": "01/04/2026",
+      "assets": []
+    }
+  }
+}

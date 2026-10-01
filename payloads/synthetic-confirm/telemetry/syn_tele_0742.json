@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0742",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:09:01] 1.2σ, off-screen, rigid posture. Baselines nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

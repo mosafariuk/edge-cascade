@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0698",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:23:51] Acoustic sigma of +2.2σ, room temperature 68°F. Rigid posture detected. Baseline metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2.2,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

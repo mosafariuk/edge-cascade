@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0759",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:09:56] Acoustic pitch at +3.9σ. Gaze deviated off-screen for 6.1s. Posture is not rigid, and baseline not nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.9,
+      "gaze_deviation_duration_sec": 6.1,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

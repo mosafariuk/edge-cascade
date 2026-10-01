@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0300",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:36:57] With pitch elevation at +0.4σ, gaze deviation is 1.6s long but remains on-screen. Baseline deviation noted with no rigid posture.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.4,
+      "gaze_deviation_duration_sec": 1.6,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

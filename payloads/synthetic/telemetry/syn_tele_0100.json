@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0100",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:19:40]Gaze on-screen; 3.9s deviation detected. Pitch elevation +0.7σ, and with a rigid posture, baseline deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.7,
+      "gaze_deviation_duration_sec": 3.9,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

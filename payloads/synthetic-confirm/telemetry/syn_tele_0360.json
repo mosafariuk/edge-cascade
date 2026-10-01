@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0360",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:28:35] Posture shows rigid contraction with all nominal baseline stress metrics intact.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": true,
+      "baseline_nominal": true
+    }
+  }
+}

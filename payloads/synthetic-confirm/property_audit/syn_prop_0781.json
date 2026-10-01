@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0781",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills has a current rateable value of 7,000 pounds. The cohort average increase is 9.6 percent. The effective date is 2025-10-15. This premises includes a bicycle store.",
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 7000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 9.6,
+      "effective_date_raw": "2025-10-15",
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

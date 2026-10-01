@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0107",
+  "source": "synthetic",
+  "raw_text": "3rd Floor Office Suite, EC1A: Current val 36k GBP, prev val 24.95k GBP. Cohort avg inc 17%. Asset: mezzanine level.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 36000,
+      "previous_value_gbp": 24950,
+      "cohort_avg_increase_pct": 17,
+      "effective_date_raw": null,
+      "assets": [
+        "mezzanine level"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0162",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:55:24] Nominal baseline stress metrics reported. No pitch elevation recorded. Gaze deviation not detected; gaze remained on-screen. No rigid contraction observed.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0085",
+  "source": "synthetic",
+  "raw_text": "Possessing a current value of 310,000 GBP, Corner Shop, 81 High Street benefits from 1 loading bay, basement storage unit, and 3 EV charging points. No prior rateable value information is available.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 310000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "1 loading bay",
+        "basement storage unit",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

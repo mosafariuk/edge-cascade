@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0408",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:32:44] Acoustic pitch is slightly elevated at +0.3σ. Gaze was off-screen, and deviation lasted 5.9s. A neighbor recorded a floor area of 250 sq m. Baseline deviation is flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.3,
+      "gaze_deviation_duration_sec": 5.9,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

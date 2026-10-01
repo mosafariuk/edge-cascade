@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0047",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:36:47] Acoustics +3.9σ. Gaze dev off-screen. No rigid posture. Base dev flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 3.9,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

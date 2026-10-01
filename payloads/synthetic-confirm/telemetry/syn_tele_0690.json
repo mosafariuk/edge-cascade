@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0690",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:17:24] +1.8σ recorded for acoustic pitch. Baseline deviations flagged; gaze did not deviate off-screen and there was no rigid posture.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1.8,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

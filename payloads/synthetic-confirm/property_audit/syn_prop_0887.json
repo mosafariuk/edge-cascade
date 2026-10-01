@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0887",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills: curr £3,250. No prev value. Effective 01-Apr. Cohort avg incr 12.9%. Assets: 2 parking spaces, 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3250,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 12.9,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "2 parking spaces",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

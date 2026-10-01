@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0105",
+  "source": "synthetic",
+  "raw_text": "With a current rateable value of 64,450 GBP, Unit 12, Riverside Trade Park includes 3 EV charging points but had previously been assessed at 49,950 GBP. There is no effective date specified and no cohort average percentage provided.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 64450,
+      "previous_value_gbp": 49950,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "3 EV charging points"
+      ]
+    }
+  }
+}

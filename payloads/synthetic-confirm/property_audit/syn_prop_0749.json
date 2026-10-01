@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0749",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse holds a current rateable value of 174,600 GBP. The previous value was 127,650 GBP. Cohort average increase is 9.9%. Effective date is 30 September 2025. It includes 2 parking spaces, 1 loading bay, and 3 EV charging points.",
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 174600,
+      "previous_value_gbp": 127650,
+      "cohort_avg_increase_pct": 9.9,
+      "effective_date_raw": "30 September 2025",
+      "assets": [
+        "2 parking spaces",
+        "1 loading bay",
+        "3 EV charging points"
+      ]
+    }
+  }
+}

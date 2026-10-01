@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0500",
+  "source": "synthetic",
+  "raw_text": "Corner Shop, 81 High Street, with a value of 8,650 pounds now, had a previous value of 9,250 pounds. Enhancements include a rear service yard and mezzanine level. Cohort average increase is 11.6 percent, but lacks an applicable effective date.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 8650,
+      "previous_value_gbp": 9250,
+      "cohort_avg_increase_pct": 11.6,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard",
+        "mezzanine level"
+      ]
+    }
+  }
+}

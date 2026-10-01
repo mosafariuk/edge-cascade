@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0335",
+  "source": "synthetic",
+  "raw_text": "On 30 September 2025, at the Corner Shop, 81 High Street, the current rateable value is £66,000. The cohort average increase is 19.1%, and there are no ancillary assets listed.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 66000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 19.1,
+      "effective_date_raw": "30 September 2025",
+      "assets": []
+    }
+  }
+}

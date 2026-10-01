@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0548",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse has a current rateable value of 35,000 pounds, previously at 25,800 pounds. The cohort average increase was 7.5 percent. The effective date is 01-Apr. It includes a basement storage unit, 4 parking spaces, and a rear service yard. The station's total capacity is 16 tracks.",
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 35000,
+      "previous_value_gbp": 25800,
+      "cohort_avg_increase_pct": 7.5,
+      "effective_date_raw": "01-Apr",
+      "assets": [
+        "basement storage unit",
+        "4 parking spaces",
+        "rear service yard"
+      ]
+    }
+  }
+}

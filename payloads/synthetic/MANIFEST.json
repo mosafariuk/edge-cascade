@@ -1,0 +1,41 @@
+{
+  "kind": "synthetic-corpus",
+  "generated_at": "2026-10-01T02:14:44.137Z",
+  "seed": 20261002,
+  "writer_model": "gpt-4o",
+  "n_per_kind": 250,
+  "styles": [
+    "clean",
+    "shorthand",
+    "distractor",
+    "negation",
+    "reordered"
+  ],
+  "note": "truth sampled in code from the seeded PRNG; the writer model only verbalizes it; every text is mechanically verified to state the truth (faithful()), regenerated on failure, templated as last resort",
+  "counts": {
+    "property_audit": {
+      "clean": 50,
+      "shorthand": 50,
+      "distractor": 50,
+      "negation": 50,
+      "reordered": 50
+    },
+    "telemetry": {
+      "clean": 50,
+      "shorthand": 50,
+      "distractor": 50,
+      "negation": 50,
+      "reordered": 50
+    }
+  },
+  "verification": {
+    "property_audit": {
+      "regenerated": 69,
+      "template_fallback": 0
+    },
+    "telemetry": {
+      "regenerated": 50,
+      "template_fallback": 2
+    }
+  }
+}

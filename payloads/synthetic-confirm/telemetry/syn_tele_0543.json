@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0543",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:19:36] Acoustic pitch elevation is +2.0σ. Gaze deviation lasted 8.6s. Train speed was 220 km/h. Baseline stress nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 2,
+      "gaze_deviation_duration_sec": 8.6,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "req_id": "syn_prop_0045",
+  "source": "synthetic",
+  "raw_text": "On the 30 September 2025, at Unit 4, Ground Floor Retail, the current value stands at 3,250 GBP. No previous value is recorded. Despite this, the cohort has a reported increase of 13.1%, and no ancillary assets are associated.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 3250,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 13.1,
+      "effective_date_raw": "30 September 2025",
+      "assets": []
+    }
+  }
+}

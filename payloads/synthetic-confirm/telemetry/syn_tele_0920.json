@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0920",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:50:09] Gaze is currently off-screen, despite a pitch elevation of +0.8σ, with baseline stress metrics remaining nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.8,
+      "gaze_deviation_duration_sec": null,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

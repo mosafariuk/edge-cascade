@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0197",
+  "source": "synthetic",
+  "raw_text": "Warehouse B, Trafford Park curr. value: 207.1k GBP, no prev. value. Cohort inc. avg not given. Inc. assets: rear service yard.",
+  "metadata": {
+    "synthetic": true,
+    "style": "shorthand",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 207100,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "rear service yard"
+      ]
+    }
+  }
+}

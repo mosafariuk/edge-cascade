@@ -1,0 +1,21 @@
+{
+  "req_id": "syn_prop_0490",
+  "source": "synthetic",
+  "raw_text": "The effective date, 01/04/2026, applies to 3rd Floor Office Suite, EC1A with the current rateable value being 305,200 pounds. It was 310,900 pounds previously. Including 4 parking spaces and mezzanine level, no cohort average percentage is noted.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 305200,
+      "previous_value_gbp": 310900,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": "01/04/2026",
+      "assets": [
+        "4 parking spaces",
+        "mezzanine level"
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0406",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:30:36] Acoustic pitch is elevated by +1σ. Baseline deviation is flagged. Gaze deviation duration is 4.7s.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 1,
+      "gaze_deviation_duration_sec": 4.7,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}

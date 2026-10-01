@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0914",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:02:53] No acoustic pitch value recorded. Gaze was observed off-screen for 3s. No rigidity in posture recorded. Baseline stress metrics are nominal.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "negation",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 3,
+      "gaze_offscreen": true,
+      "posture_rigid": false,
+      "baseline_nominal": true
+    }
+  }
+}

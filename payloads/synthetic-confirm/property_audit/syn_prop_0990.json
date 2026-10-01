@@ -1,0 +1,22 @@
+{
+  "req_id": "syn_prop_0990",
+  "source": "synthetic",
+  "raw_text": "Workshop 7, Canal Mills, with 1 loading bay, a bicycle store, and roof terrace, has a current rateable value of 318,000 GBP. Previously valued at 338,050 GBP with a cohort average increase of 20.5 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 318000,
+      "previous_value_gbp": 338050,
+      "cohort_avg_increase_pct": 20.5,
+      "effective_date_raw": null,
+      "assets": [
+        "roof terrace",
+        "bicycle store",
+        "1 loading bay"
+      ]
+    }
+  }
+}

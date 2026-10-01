@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0175",
+  "source": "synthetic",
+  "raw_text": "Kiosk 2, Station Concourse, with a current value of 199,950 pounds, follows its prior assessment at 127,300 pounds. Bicycle store included, yet there's no recorded effective date. The baseline average increase stands at 9.2 percent.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 199950,
+      "previous_value_gbp": 127300,
+      "cohort_avg_increase_pct": 9.2,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

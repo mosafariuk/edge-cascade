@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0503",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[01:18:09] 144 frames later, gaze was still off-screen for 4.9s with rigid posture. Baseline deviation noted.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "distractor",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": null,
+      "gaze_deviation_duration_sec": 4.9,
+      "gaze_offscreen": true,
+      "posture_rigid": true,
+      "baseline_nominal": false
+    }
+  }
+}

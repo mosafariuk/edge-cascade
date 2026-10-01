@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0185",
+  "source": "synthetic",
+  "raw_text": "The 3rd Floor Office Suite, EC1A, houses a bicycle store alongside its current rateable value of 31,000 GBP. Previously, it stood at 19,500 GBP, although no cohort average increase percent nor effective date is provided.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 31000,
+      "previous_value_gbp": 19500,
+      "cohort_avg_increase_pct": null,
+      "effective_date_raw": null,
+      "assets": [
+        "bicycle store"
+      ]
+    }
+  }
+}

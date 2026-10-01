@@ -1,0 +1,15 @@
+# Dockerfile.worker — build context is the PROJECT ROOT (edge-cascade/).
+#   docker build -f bench/Dockerfile.worker -t cascade-worker .
+# node:20-slim (Debian/glibc) — NOT alpine: onnxruntime-node ships glibc prebuilt
+# binaries that fail to load on musl/alpine.
+FROM node:20-slim
+WORKDIR /app
+# deps first for layer caching
+COPY package.json ./
+RUN npm install --omit=dev
+# source modules (src/*.mjs flattened into /app so relative imports resolve)
+COPY src/ ./
+COPY bench/ ./bench/
+ENV UV_THREADPOOL_SIZE=8
+# For real ONNX contention prefer native onnxruntime-node over WASM (see RESULTS.md).
+CMD ["node", "pipeline-worker.mjs"]

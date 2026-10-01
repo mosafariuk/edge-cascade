@@ -1,0 +1,20 @@
+{
+  "req_id": "syn_prop_0545",
+  "source": "synthetic",
+  "raw_text": "Including a basement storage unit, Unit 12, Riverside Trade Park has a current value of 18,000 pounds with no former value identified. The cohort averaged a 12.5 percent increase.",
+  "metadata": {
+    "synthetic": true,
+    "style": "reordered",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "current_value_gbp": 18000,
+      "previous_value_gbp": null,
+      "cohort_avg_increase_pct": 12.5,
+      "effective_date_raw": null,
+      "assets": [
+        "basement storage unit"
+      ]
+    }
+  }
+}

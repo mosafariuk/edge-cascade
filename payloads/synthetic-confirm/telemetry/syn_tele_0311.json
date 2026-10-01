@@ -1,0 +1,19 @@
+{
+  "req_id": "syn_tele_0311",
+  "stream_type": "synthetic",
+  "raw_telemetry": "[00:13:00] Acoustic elevation recorded at +0.8σ. Gaze deviation lasted 5.4s. Baseline stress deviation flagged.",
+  "timestamp": 1790000000,
+  "metadata": {
+    "synthetic": true,
+    "style": "clean",
+    "writer": "llm",
+    "ref_year": 2026,
+    "synthetic_truth": {
+      "acoustic_sigma": 0.8,
+      "gaze_deviation_duration_sec": 5.4,
+      "gaze_offscreen": false,
+      "posture_rigid": false,
+      "baseline_nominal": false
+    }
+  }
+}
