@@ -24,12 +24,38 @@ import { EgressBuffer, pgvectorSink, redisStreamSink, assertVectorDim } from './
 import { admit } from './schemas.mjs';
 import { extractStructured } from './constrained.mjs';
 import { extractHeavy } from './heavy.mjs';
+import { EDGE_MODEL, GUARD_EVALUATED } from './models.mjs';
 
 const B_MAX      = Number(process.env.B_MAX || 32);
 const VLLM_URL   = process.env.VLLM_URL || 'http://127.0.0.1:8000/v1/completions';
 const SINK_MS    = Number(process.env.SINK_MS || 0);   // simulate slow downstream (bench)
-const EXTRACT    = process.env.EXTRACT === '1';        // constrained structured-extraction mode
-const MAX_SURPRISAL = Number(process.env.MAX_SURPRISAL ?? 0);  // nats, mean over all value tokens; 0 = escalate on any hesitation (see constrained.mjs)
+// ── guard configuration ───────────────────────────────────────────────────────
+// The worker runs the configuration the paper evaluated (Table VIII: 2-shot prompt,
+// s_max = 0 on the mean surprisal over all value tokens) or it refuses to start. A
+// different threshold or shot count is allowed only with ALLOW_GUARD_OVERRIDE=1 and is
+// logged as NOT the evaluated configuration.
+//   EXTRACT=0             legacy unconstrained path (entropy guard) — benchmarks only
+//   EDGE_DEADLINE_MS      abort + escalate an extraction slower than this (default 5000;
+//                         it must exceed the stack's object latency — the evaluation ran
+//                         without a binding deadline, and 1.1–1.9 s/object was measured)
+export function resolveGuardConfig(env = process.env) {
+  const extract = env.EXTRACT !== '0';
+  const unset = env.MAX_SURPRISAL === undefined || env.MAX_SURPRISAL === '';
+  const maxSurprisal = unset ? GUARD_EVALUATED.maxSurprisal : Number(env.MAX_SURPRISAL);
+  const shots = EDGE_MODEL.few_shot;
+  const deadlineMs = Number(env.EDGE_DEADLINE_MS || 5000);
+  const deviations = [];
+  if (Number.isNaN(maxSurprisal)) deviations.push(`MAX_SURPRISAL="${env.MAX_SURPRISAL}" is not a number`);
+  else if (maxSurprisal !== GUARD_EVALUATED.maxSurprisal) deviations.push(`MAX_SURPRISAL=${maxSurprisal} (evaluated: ${GUARD_EVALUATED.maxSurprisal})`);
+  if (shots !== GUARD_EVALUATED.shots) deviations.push(`EDGE_MODEL.few_shot=${shots} (evaluated: ${GUARD_EVALUATED.shots})`);
+  if (extract && deviations.length && env.ALLOW_GUARD_OVERRIDE !== '1') {
+    throw new Error(`guard configuration differs from the evaluated one (${GUARD_EVALUATED.source}): ${deviations.join('; ')}. ` +
+                    'Set ALLOW_GUARD_OVERRIDE=1 to run it anyway.');
+  }
+  return { extract, maxSurprisal, shots, deadlineMs, statistic: GUARD_EVALUATED.statistic, evaluated: extract && deviations.length === 0, deviations };
+}
+const GUARD = resolveGuardConfig();
+const EXTRACT = GUARD.extract;
 const W_MAX_MS   = Number(process.env.W_MAX_MS || 19);
 // Router score p ∈ [0,1] is compared against ROUTE_TAU (see makeRouter). ROUTE_TAU > 1
 // disables the local path entirely (bench: pure embed-bound workload, heavy path stubbed).
@@ -208,7 +234,8 @@ async function routeStructured(payload, vec, calibrate, router = defaultRouter) 
   const p = calibrate(router(vec));
   if (p >= ROUTE_TAU) {
     const r = await extractStructured({ endpoint: VLLM_URL, payload, schemaEntry: gate.entry,
-      maxSurprisal: MAX_SURPRISAL, deadlineMs: 800 });          // guided_json + value-surprisal guard
+      maxSurprisal: GUARD.maxSurprisal, shots: GUARD.shots, statistic: GUARD.statistic,
+      deadlineMs: GUARD.deadlineMs });                       // guided_json + 2-shot prompt + value-surprisal guard
     if (r.status === 'done') return { data: r.data, meta: { path: 'local', kind: gate.entry.key } };
     // guard trip / parse / schema failure → fall through to the heavy model
   }
@@ -304,6 +331,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   const calibrate = (s) => (process.env.EMBED_MODE === 'hash' ? 1 : s); // hash: always attempt local so guard routes
   const router = makeRouter();
+  console.log(GUARD.extract
+    ? `[guard] constrained extraction: few_shot=${GUARD.shots}, s_max=${GUARD.maxSurprisal} nats (${GUARD.statistic}), deadline=${GUARD.deadlineMs} ms — ` +
+      (GUARD.evaluated ? 'EVALUATED configuration (paper Table VIII)' : `OVERRIDDEN, not the evaluated configuration: ${GUARD.deviations.join('; ')}`)
+    : '[guard] EXTRACT=0: legacy unconstrained path — NOT the evaluated cascade (benchmarks only)');
   console.log(`[router] ${process.env.ROUTER || 'local-first'}, ROUTE_TAU=${ROUTE_TAU}` +
               (ROUTE_TAU > 1 ? ' (local path DISABLED: every payload escalates)' : ''));
 

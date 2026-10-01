@@ -113,7 +113,9 @@ confident list-item mismatches that no confidence check can see.
 
 ## 6. Running it
 ```bash
-EXTRACT=1 EMBED_MODE=real EGRESS=redis MAX_SURPRISAL=<calibrated> \
+# EXTRACT=1 and the evaluated guard (2-shot prompt, s_max=0) are the defaults; the worker
+# refuses to start with a different MAX_SURPRISAL unless ALLOW_GUARD_OVERRIDE=1.
+EMBED_MODE=real EGRESS=redis \
   VLLM_URL=http://127.0.0.1:8000/v1/completions node src/pipeline-worker.mjs
 ```
 Egress record: `{ data: <derived structured object>, meta: { path: 'local'|'escalated'|'dead_letter', kind }, id, t_ingest }`.

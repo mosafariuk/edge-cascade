@@ -27,7 +27,10 @@ export REDIS_URL="redis://:${REDIS_PASSWORD}@127.0.0.1:6379"
 export EMBED_MODE=real ORT_INTRA_OP=1 UV_THREADPOOL_SIZE="${UV_THREADPOOL_SIZE:-2}"
 export EGRESS="${EGRESS:-pgvector}" PG_URL="${PG_URL:-postgres://bench:bench@127.0.0.1:5432/cascade}"
 export VLLM_URL="${VLLM_URL:-http://127.0.0.1:8000/v1/completions}"
-export B_MAX="${B_MAX:-32}" W_MAX_MS="${W_MAX_MS:-19}" ROUTE_TAU="${ROUTE_TAU:-2}"
+# Cascade defaults: ROUTE_TAU=0.75 with the local-first router tries the edge model on every
+# admitted payload; EXTRACT=1 runs the evaluated guard configuration (2-shot prompt, s_max=0).
+# For the embed-bound capacity benchmark use:  ROUTE_TAU=2 EXTRACT=0 ./deploy/start-workers.sh
+export B_MAX="${B_MAX:-32}" W_MAX_MS="${W_MAX_MS:-19}" ROUTE_TAU="${ROUTE_TAU:-0.75}" EXTRACT="${EXTRACT:-1}"
 
 echo "physical cores=$PHYS_CORES  logical=$PHYS  reserve=$RESERVE  workers=$NUM_WORKERS  intraOp=1"
 : > "$PIDFILE"

@@ -159,6 +159,7 @@ for W in $WORKERS; do
       ORT_ALLOW_SPINNING="$ORT_ALLOW_SPINNING" \
       EMBED_MODE="$EMBED_MODE" \
       ROUTE_TAU="$ROUTE_TAU" \
+      EXTRACT=0 \
       REDIS_URL="$REDIS_URL" \
       EGRESS="none" \
       "${PINCMD[@]}" node src/pipeline-worker.mjs \

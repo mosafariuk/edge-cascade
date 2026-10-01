@@ -2,7 +2,7 @@
 // router reachability, stable record ids, per-message failure isolation, and
 // pending-entry (PEL) recovery on a mocked Redis Streams client.
 import assert from 'node:assert/strict';
-import { makeRouter, cosine, idOf, processBatch, redisSource } from '../src/pipeline-worker.mjs';
+import { makeRouter, cosine, idOf, processBatch, redisSource, resolveGuardConfig } from '../src/pipeline-worker.mjs';
 
 let pass = 0; const ok = (n) => { console.log(`  ✓ ${n}`); pass++; };
 const tick = () => new Promise((r) => setImmediate(r));
@@ -108,6 +108,23 @@ console.log('5. redisSource.reclaim: stale entries reprocessed, poison entries d
   assert.equal(dl2.length, 1); assert.equal(dl2[0][4], '7-0'); assert.match(dl2[0][6], /unparseable_json/);
   assert.ok(calls.some((c) => c[0] === 'xack' && c.includes('7-0')));
   ok('stale → reprocessed; poison → dead-lettered + acked; trimmed → acked; bad JSON → dead-lettered, batch-mates delivered');
+}
+
+// ── 6. the worker runs the evaluated guard configuration or refuses to start ──
+console.log('6. guard configuration is enforced');
+{
+  const d = resolveGuardConfig({});
+  assert.deepEqual({ extract: d.extract, shots: d.shots, maxSurprisal: d.maxSurprisal, statistic: d.statistic, evaluated: d.evaluated },
+                   { extract: true, shots: 2, maxSurprisal: 0, statistic: 'mean-all', evaluated: true }, 'default = paper Table VIII configuration');
+  assert.ok(d.deadlineMs >= 2000, 'deadline must not truncate a 1–2 s extraction');
+  assert.equal(resolveGuardConfig({ MAX_SURPRISAL: '0' }).evaluated, true);
+  assert.throws(() => resolveGuardConfig({ MAX_SURPRISAL: '0.5' }), /differs from the evaluated/);
+  assert.throws(() => resolveGuardConfig({ MAX_SURPRISAL: 'abc' }), /not a number/);
+  const o = resolveGuardConfig({ MAX_SURPRISAL: '0.021', ALLOW_GUARD_OVERRIDE: '1' });
+  assert.equal(o.maxSurprisal, 0.021); assert.equal(o.evaluated, false);
+  const legacy = resolveGuardConfig({ EXTRACT: '0', MAX_SURPRISAL: '9' });
+  assert.equal(legacy.extract, false); assert.equal(legacy.evaluated, false);
+  ok('default: 2-shot, s_max=0, mean-all; a different threshold is refused without ALLOW_GUARD_OVERRIDE=1');
 }
 
 console.log(`\nALL ${pass} WORKER ASSERTIONS PASSED ✅`);

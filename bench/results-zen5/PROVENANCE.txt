@@ -1,0 +1,70 @@
+==============================================================
+ PROVENANCE — Edge-Network Semantic Cascading, Zen 5 benchmark
+==============================================================
+captured (UTC): Mon Jul 20 07:17:57 PM UTC 2026
+host:           informed-squirrel  (Cherry Servers hourly bare metal, Stockholm)
+public IP:      [redacted; host destroyed after capture]
+
+--- VIRTUALIZATION (bare-metal assertion) ---
+systemd-detect-virt: none
+none  [exits 1 on bare metal]
+hypervisor cpu flag count: 0
+lscpu hypervisor vendor: none
+
+--- CPU ---
+CPU(s):                                  32
+Model name:                              AMD Ryzen 9 9950X 16-Core Processor
+Thread(s) per core:                      2
+Core(s) per socket:                      16
+Socket(s):                               1
+CPU(s) scaling MHz:                      38%
+CPU max MHz:                             5756.4521
+L1d cache:                               768 KiB (16 instances)
+L1i cache:                               512 KiB (16 instances)
+L2 cache:                                16 MiB (16 instances)
+L3 cache:                                64 MiB (2 instances)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-31
+
+--- L3 / CCD TOPOLOGY (basis of the CCD isolation matrix) ---
+cpu0 L3 shared_cpu_list: 0-7,16-23
+cpu7 L3 shared_cpu_list: 0-7,16-23
+cpu8 L3 shared_cpu_list: 8-15,24-31
+cpu15 L3 shared_cpu_list: 8-15,24-31
+
+--- ISA (VNNI relevant to threat (ii)) ---
+avx512f        YES
+avx512_vnni    YES
+avx_vnni       YES
+avx512bw       YES
+avx512vl       YES
+
+--- MEMORY / OS / KERNEL ---
+               total        used        free      shared  buff/cache   available
+Mem:           186Gi       3.2Gi       182Gi        12Mi       2.1Gi       183Gi
+OS: Ubuntu 24.04.4 LTS
+kernel: 6.17.0-23-generic
+scheduler: EEVDF (kernel default >=6.6); sched_ext: disabled
+
+--- TOOLCHAIN (reproduce with: npm ci  — NOT npm install) ---
+node:  v24.18.0
+redis: v=7.0.15
+onnxruntime-node:   1.27.0
+onnxruntime-common: 1.27.0
+NOTE: package.json declares ^1.14.0 but 1.27.0 resolved. PIN THIS for reproducibility.
+model: Xenova/all-MiniLM-L6-v2 model_quantized.onnx 22972370 bytes
+model sha256: afdb6f1a0e45b715d0bb9b11772f032c399babd23bfc31fed1c170afc848bdb1
+
+--- INTERVENTIONS APPLIED (must be disclosed in the paper) ---
+1. RAID1 initial resync FROZEN (echo frozen > /sys/block/md0/md/sync_action)
+   Reason: md0_resync sat in D state, ~62min remaining, would contend during runs.
+2. apt-daily.timer + apt-daily-upgrade.timer MASKED (prevent mid-run apt activity).
+3. Host redis-server systemd unit disabled; benchmark starts its own on :6390 pinned to infra core.
+4. kernel.perf_event_paranoid set to 1 for perf profiling (was 4).
+5. Load generator + Redis pinned to core 15 (last physical core) via taskset.
+
+--- HARNESS VALIDITY ---
+Plumbing ceiling (EMBED_MODE=hash): ~90,000-107,000 req/s
+Peak real-mode throughput measured: 21,803 req/s (W=14 pinned) => 4.1x margin
+Max observed loadgen CPU: 24%   Max observed redis CPU: 18.4%
+=> No data point was harness-limited.
