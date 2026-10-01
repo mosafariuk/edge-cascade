@@ -29,7 +29,7 @@ const B_MAX      = Number(process.env.B_MAX || 32);
 const VLLM_URL   = process.env.VLLM_URL || 'http://127.0.0.1:8000/v1/completions';
 const SINK_MS    = Number(process.env.SINK_MS || 0);   // simulate slow downstream (bench)
 const EXTRACT    = process.env.EXTRACT === '1';        // constrained structured-extraction mode
-const MAX_SURPRISAL = Number(process.env.MAX_SURPRISAL || 0.027);  // nats, mean over all value tokens (see constrained.mjs)
+const MAX_SURPRISAL = Number(process.env.MAX_SURPRISAL ?? 0);  // nats, mean over all value tokens; 0 = escalate on any hesitation (see constrained.mjs)
 const W_MAX_MS   = Number(process.env.W_MAX_MS || 19);
 // Router score p ∈ [0,1] is compared against ROUTE_TAU (see makeRouter). ROUTE_TAU > 1
 // disables the local path entirely (bench: pure embed-bound workload, heavy path stubbed).

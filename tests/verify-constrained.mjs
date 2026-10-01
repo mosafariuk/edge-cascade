@@ -213,4 +213,25 @@ console.log('12. short object (< k value tokens) is judged on the tokens it emit
   ok(`short object: unsure → escalate (${bad.valueTokens} value tokens), confident → done, shadow → labelled`);
 }
 
+// ── 13. deployed prompt = evaluated prompt; default guard = "any hesitation" ──
+console.log('13. few-shot prompt builder and default threshold');
+{
+  const { buildEdgePrompt, EDGE_MODEL } = await import('../src/models.mjs');
+  const e = SCHEMAS.telemetry; const pl = { raw_telemetry: 'T' };
+  const p2 = buildEdgePrompt(e, pl, 2), p0 = buildEdgePrompt(e, pl, 0);
+  assert.equal(EDGE_MODEL.few_shot, 2);
+  assert.equal((p2.match(/<\|im_start\|>user/g) || []).length, 3, '2 example turns + the open turn');
+  assert.equal((p0.match(/<\|im_start\|>user/g) || []).length, 1);
+  assert.ok(p2.endsWith(p0), 'the open turn is the last thing in the prompt');
+  assert.ok(p2.includes(JSON.stringify(e.examples[0].answer)) && p2.includes(JSON.stringify(e.examples[1].answer)));
+  for (const k of Object.keys(SCHEMAS)) for (const ex of SCHEMAS[k].examples) assert.equal(SCHEMAS[k].validate(ex.answer), true, 'examples satisfy their own schema');
+  // default maxSurprisal = 0 at 1e-4 resolution: p≈1 everywhere → done; any measurable hesitation → escalate
+  const json = '{"current_value_gbp":18200,"previous_value_gbp":14500,"cohort_avg_increase_pct":12,"effective_date_raw":null,"assets":["x"]}';
+  const sure = await runExtract(json, -0.00001);          // rounds to 0
+  assert.equal(sure.status, 'done');
+  const hes = await runExtract(json, -0.01);              // 0.01 nats on value tokens
+  assert.equal(hes.status, 'escalate'); assert.equal(hes.reason, 'low_value_confidence');
+  ok('2-shot prompt = 2 solved turns + open turn; default guard escalates on any measurable surprisal');
+}
+
 console.log(`\nALL ${pass} CONSTRAINED-DECODING ASSERTIONS PASSED ✅`);

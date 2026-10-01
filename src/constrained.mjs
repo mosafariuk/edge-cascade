@@ -16,11 +16,13 @@
 // stack (Qwen3-8B-AWQ, vLLM 0.9.2: H = 0.049 nats at the first grammar-forced token), so
 // entropy at structural/key positions is useless. The guard scores -log p of the emitted
 // token at VALUE positions only and decides on the mean over ALL value tokens of the object.
-// Measured on held-out synthetic data with constructed truth (analysis/guard_eval.py):
-// AUROC 0.81; at s_max = 0.027 nats it escalates 17%, lifts local precision 77% → 84% and
-// catches 41% of edge errors. It is a useful filter, NOT a sufficient safety mechanism.
+// Measured against constructed truth on a fresh 2,000-record corpus, pre-registered analysis
+// (analysis/guard_confirm.py), held-out n = 600:
+//   prompt conventions are the FIRST-ORDER lever — accuracy 78.3% (0-shot) → 97.0% (2-shot);
+//   the guard is the SECOND-ORDER filter — on the 2-shot model it escalates 13.7% and cuts
+//   silent errors from 3.0% to 0.7% (recall 77.8%). It is a filter, not a safety case.
 'use strict';
-import { EDGE_MODEL, wrapEdgePrompt } from './models.mjs';
+import { EDGE_MODEL, buildEdgePrompt } from './models.mjs';
 
 // Streaming JSON position tracker: classifies each emitted token as 'value'
 // (string-VALUE content, number, bool, null) vs key/structure. This is what lets
@@ -83,12 +85,17 @@ export async function extractStructured({
   //                 later fields are never seen (AUROC ≈ chance on the property workload).
   statistic = 'mean-all',
   k = 6,                       // window size for 'window-mean'
-  maxSurprisal = 0.027,        // nats; 20%-target quantile of the mean-all signal on the training split (results-zen5-run2)
+  // nats. With the 2-shot prompt ~87% of extractions have NO measurable surprisal at any
+  // value token, so the 20%-target training quantile sits inside that tie and the fitted
+  // threshold is 0: escalate on any hesitation (results-zen5-run2/guard-confirm.txt).
+  // Zero-shot deployments need 0.021 instead (same file).
+  maxSurprisal = 0,
   shadow = false,              // shadow-labeling: never abort on surprisal; always return `signal`
   maxTokens = 200,
   deadlineMs = 800,
   guidedApi = 'guided_json',
   promptFormat = EDGE_MODEL.prompt_format,   // src/models.mjs: chat-format wrapper for the edge model
+  shots = EDGE_MODEL.few_shot,               // in-context examples from schemaEntry.examples
   fetchImpl = fetch,
 } = {}) {
   const controller = new AbortController();
@@ -98,7 +105,7 @@ export async function extractStructured({
   const done = (v) => { clearTimeout(deadline); return v; };
 
   const body = buildBody({
-    model, prompt: wrapEdgePrompt(schemaEntry.prompt(payload), promptFormat), jsonSchema: schemaEntry.jsonSchema, maxTokens, guidedApi,
+    model, prompt: buildEdgePrompt(schemaEntry, payload, shots, promptFormat), jsonSchema: schemaEntry.jsonSchema, maxTokens, guidedApi,
   });
 
   let res;
@@ -133,7 +140,9 @@ export async function extractStructured({
         // POST-MASK: surprisal of the EMITTED token at VALUE positions only
         const lp = ch.logprobs?.token_logprobs?.[0];
         if (lp != null && isValue) {
-          surprisals.push(-lp); valueToks.push(tok);
+          // 1e-4 nat resolution — the resolution of the evaluation traces, so that "> 0" here
+          // means exactly what it meant when the threshold was fitted (p(token) < 0.99995)
+          surprisals.push(Math.round(-lp * 1e4) / 1e4); valueToks.push(tok);
           if (!shadow && statistic === 'window-mean' && surprisals.length === k) {   // shadow never aborts — it labels
             const mean = surprisals.reduce((a, b) => a + b, 0) / k;
             if (mean > maxSurprisal) { verdict = { status: 'escalate', reason: 'low_value_confidence', meanSurprisal: mean }; break outer; }

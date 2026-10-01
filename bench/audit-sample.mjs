@@ -3,7 +3,7 @@
 // so the audited records are the ones where the guard's call actually mattered, then
 // emits a CSV a human labels; audit-score.mjs (below) compares human vs. judge.
 //
-//   node bench/audit-sample.mjs [N=50] [MAX_SURPRISAL=0.027]
+//   node bench/audit-sample.mjs [N=50] [MAX_SURPRISAL=0]
 // Reads bench/shadow-pairs.jsonl, writes bench/audit-todo.csv (blank `human_correct`).
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const N = Number(process.argv[2] || 50);
-const THR = Number(process.argv[3] || process.env.MAX_SURPRISAL || 0.027);
+const THR = Number(process.argv[3] || process.env.MAX_SURPRISAL ?? 0);
 const src = join(here, 'shadow-pairs.jsonl');
 if (!existsSync(src)) { console.error('run bench/shadow-run.mjs first to produce shadow-pairs.jsonl'); process.exit(1); }
 

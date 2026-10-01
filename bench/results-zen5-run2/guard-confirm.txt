@@ -1,0 +1,53 @@
+source: bench/results-zen5-run2/guard-confirm.jsonl   dry_run=False
+edge: Qwen/Qwen3-8B-AWQ (vLLM 0.9.2)   corpus: payloads/synthetic-confirm   n=2000  train=1400  held-out=600
+
+== held-out metrics per arm (threshold fit on train at the 20% target) ==
+
+T0_shot0   (all 2000: accuracy  76.5% (1529/2000) [74.5, 78.3];  non-parsed 0)
+  edge accuracy         78.3% (470/600) [74.9, 81.4]        errors: 130
+    property_audit      89.3% (268/300) [85.3, 92.3]
+    telemetry           67.3% (202/300) [61.8, 72.4]
+  AUROC (held-out)     0.794    (train 0.784)     s_max = 0.0208 nats
+  escalated             21.0% (126/600) [17.9, 24.4]
+  local precision       86.1% (408/474) [82.7, 88.9]
+  error recall          49.2% (64/130) [40.8, 57.7]
+  silent errors        with guard  11.0% (66/600) [8.7, 13.8]    |  without guard  21.7% (130/600) [18.6, 25.1]
+  wrong fields (held-out): posture_rigid 47, assets 31, baseline_nominal 25, gaze_offscreen 22, acoustic_sigma 19, gaze_deviation_duration_sec 3, current_value_gbp 1
+
+T0_shot1   (all 2000: accuracy  91.8% (1835/2000) [90.5, 92.9];  non-parsed 0)
+  edge accuracy         91.5% (549/600) [89.0, 93.5]        errors: 51
+    property_audit      84.3% (253/300) [79.8, 88.0]
+    telemetry           98.7% (296/300) [96.6, 99.5]
+  AUROC (held-out)     0.896    (train 0.872)     s_max = 0.0000 nats
+  escalated             22.2% (133/600) [19.0, 25.7]
+  local precision       98.7% (461/467) [97.2, 99.4]
+  error recall          88.2% (45/51) [76.6, 94.5]
+  silent errors        with guard   1.0% (6/600) [0.5, 2.2]    |  without guard   8.5% (51/600) [6.5, 11.0]
+  wrong fields (held-out): assets 47, posture_rigid 2, gaze_offscreen 2
+
+T0_shot2   (all 2000: accuracy  96.2% (1924/2000) [95.3, 97.0];  non-parsed 0)
+  edge accuracy         97.0% (582/600) [95.3, 98.1]        errors: 18
+    property_audit      94.0% (282/300) [90.7, 96.2]
+    telemetry          100.0% (300/300) [98.7, 100.0]
+  AUROC (held-out)     0.851    (train 0.773)     s_max = 0.0000 nats
+  escalated             13.7% (82/600) [11.1, 16.6]
+  local precision       99.2% (514/518) [98.0, 99.7]
+  error recall          77.8% (14/18) [54.8, 91.0]
+  silent errors        with guard   0.7% (4/600) [0.3, 1.7]    |  without guard   3.0% (18/600) [1.9, 4.7]
+  wrong fields (held-out): assets 18
+
+== paired bootstrap on held-out records (10,000 resamples); * = 95% interval excludes zero ==
+H1 — few-shot as first-order lever (edge accuracy):
+  accuracy T0_shot1 − T0_shot0                                +13.2 pts  95% [+9.7, +16.8]   *
+  accuracy T0_shot2 − T0_shot0                                +18.7 pts  95% [+15.3, +22.0]   *
+  accuracy T0_shot2 − T0_shot1                                 +5.5 pts  95% [+3.7, +7.3]   *
+H2 — guard as second-order filter (silent-error rate):
+  T0_shot0: with guard − without guard                        -10.7 pts  95% [-13.2, -8.3]   *
+  T0_shot1: with guard − without guard                         -7.5 pts  95% [-9.7, -5.5]   *
+  T0_shot2: with guard − without guard                         -2.3 pts  95% [-3.7, -1.2]   *
+  with guard: T0_shot1 − T0_shot0                             -10.0 pts  95% [-12.5, -7.5]   *
+  with guard: T0_shot2 − T0_shot0                             -10.3 pts  95% [-12.8, -7.8]   *
+  with guard: T0_shot2 − T0_shot1                              -0.3 pts  95% [-1.0, +0.3]   n.s.
+
+== decision (pre-registered) ==
+  H1 confirmed for: T0_shot1, T0_shot2.  Deploy: T0_shot2  (held-out silent-error with guard 0.7%, s_max = 0.0000 nats)

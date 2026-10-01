@@ -24,6 +24,9 @@ export const EDGE_MODEL = Object.freeze({
   // ChatML turn format with an empty think block (thinking disabled) so the constrained
   // JSON starts immediately. 'raw' sends the instruction unwrapped.
   prompt_format: 'chatml-nothink',
+  // In-context examples prepended to every extraction prompt (schemaEntry.examples). The
+  // confirmation run chose 2: held-out accuracy 78.3% (0-shot) → 91.5% (1) → 97.0% (2).
+  few_shot: 2,
 });
 
 /** The frontier model used as ground-truth judge in shadow labeling and as the escalation target. */
@@ -50,6 +53,18 @@ export function wrapEdgePrompt(instruction, format = EDGE_MODEL.prompt_format) {
   if (format === 'chatml-nothink') return `<|im_start|>user\n${instruction}<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n`;
   if (format === 'chatml') return `<|im_start|>user\n${instruction}<|im_end|>\n<|im_start|>assistant\n`;
   return instruction;
+}
+
+/** The full edge prompt: `shots` solved example turns from the schema entry, then the open
+ *  turn for this payload. Used by the worker AND by the benchmarks, so what is evaluated is
+ *  what is deployed. Falls back to a single wrapped instruction for non-chat formats. */
+export function buildEdgePrompt(schemaEntry, payload, shots = EDGE_MODEL.few_shot, format = EDGE_MODEL.prompt_format) {
+  if (format !== 'chatml-nothink' && format !== 'chatml') return wrapEdgePrompt(schemaEntry.prompt(payload), format);
+  let p = '';
+  for (const ex of (schemaEntry.examples ?? []).slice(0, shots)) {
+    p += wrapEdgePrompt(schemaEntry.prompt(ex.payload), format) + JSON.stringify(ex.answer) + '<|im_end|>\n';
+  }
+  return p + wrapEdgePrompt(schemaEntry.prompt(payload), format);
 }
 
 /** Everything above, plus the fields that vary per run, for embedding in artifact headers. */

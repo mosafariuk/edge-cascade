@@ -23,7 +23,8 @@ code-side derivation, so the egress record is identical whichever model produced
 | §III-C3, Table II-c: pool-size sweep (non-spinning thread-count loss) | `bench/pool-sweep.sh`, `bench/results-zen5-run2/pool-sweep.csv` |
 | §V-A: `guided_json` masks logprobs (POST-MASK probe) | `bench/vllm-probe.mjs` |
 | §V-B: JsonPos value-surprisal guard | `src/constrained.mjs` |
-| §V-C, §VI-G, Table VIII: guard evaluation against constructed truth (AUROC, held-out operating points, judge fidelity) | `bench/gen-synthetic-corpus.mjs`, `payloads/synthetic/`, `bench/shadow-run.mjs`, `analysis/guard_eval.py`, `bench/results-zen5-run2/shadow-pairs.jsonl` |
+| §V-B/C, §VI-G, Table VIII: pre-registered confirmation — few-shot prompt as first-order lever, guard as second-order filter | `payloads/synthetic-confirm/`, `bench/optimize-guard.mjs`, `analysis/guard_confirm.py`, `bench/results-zen5-run2/guard-confirm.{jsonl,txt}` |
+| §VI-G exploratory results: statistic choice, temperature grid, judge fidelity | `payloads/synthetic/`, `bench/shadow-run.mjs`, `analysis/guard_eval.py`, `analysis/guard_grid.py`, `bench/results-zen5-run2/{shadow-pairs,guard-grid}.jsonl` |
 | §V-D: deterministic derivation | `src/schemas.mjs`, `payloads/` |
 | §IV: adaptive batching, ack-after-commit, PEL recovery, backoff | `src/pipeline-worker.mjs`, `src/egress.mjs`, `src/cascade-lib.mjs` |
 
@@ -47,7 +48,7 @@ src/
 tests/
   verify.mjs             #  7 assertions — batching, rate estimator, entropy guard
   verify-egress.mjs      # 10 assertions — buffer, ack-after-commit, sink failure, backoff, bounded drain, vector-dim check
-  verify-constrained.mjs # 12 assertions — schemas, JsonPos, value-surprisal guard (incl. short objects)
+  verify-constrained.mjs # 13 assertions — schemas, JsonPos, value-surprisal guard, few-shot prompt builder
   verify-heavy.mjs       #  4 assertions — escalation path
   verify-shadow.mjs      #  6 assertions — shadow labelling, PAVA, Wilson CIs, held-out split
   verify-worker.mjs      #  5 assertions — router reachability, stable ids, per-message failure isolation, PEL recovery
@@ -61,6 +62,7 @@ bench/
   vllm-probe.mjs         # POST-MASK / PRE-MASK verdict, self-documenting
   gen-synthetic-corpus.mjs  # synthetic corpus: truth sampled in code, LLM writes the text, mechanical faithfulness check
   shadow-run.mjs         # edge + judge over a corpus → shadow-pairs.jsonl (provenance header, traces, truth labels)
+  optimize-guard.mjs     # runs prompt/temperature arms over a corpus, full per-token traces (DRY_RUN=1 without a GPU)
   audit-sample.mjs, audit-score.mjs   # human-audit subset + judge-fidelity scoring
   bootstrap-model.mjs    # downloads the MiniLM ONNX weights (required before EMBED_MODE=real)
   docker-compose.yml     # redis + postgres/pgvector + mock-vllm (+ an unused rabbitmq service)
@@ -70,13 +72,15 @@ bench/
 analysis/
   queue_sim.py           # M/D/c queue + batching simulation (illustrative; M1-era parameters)
   calibrate.py           # isotonic calibration demo on toy data
-  guard_eval.py          # produces every number in the paper's guard section from shadow-pairs.jsonl
+  guard_confirm.py       # PRE-REGISTERED analysis behind paper Table VIII (confirmation corpus)
+  guard_eval.py          # exploratory corpus: statistic comparison, judge fidelity
+  guard_grid.py          # exploratory temperature × few-shot grid
 ```
 
 ## Quick start (local workers; ~5 minutes)
 ```bash
 npm ci                                  # NOT npm install — the lockfile pins onnxruntime-node 1.27.0
-npm test                                # 44 assertions across 6 suites + load-gen selftest
+npm test                                # 45 assertions across 6 suites + load-gen selftest
 npm run bootstrap-model                 # caches all-MiniLM-L6-v2 INT8 (22.97 MB) for the native embedder
 
 # infrastructure: broker, pgvector (schema from bench/init.sql), mock vLLM
@@ -108,7 +112,7 @@ run `bootstrap-model`); run workers locally until it is fixed.
 | `ROUTER` | `local-first` | `local-first`: score 1, every payload tries the local model and the guard decides; `centroid`: `1 − max cos` to hard-example centroids in `ROUTER_CENTROIDS` |
 | `ROUTE_TAU` | 0.75 | attempt local iff calibrated router score ≥ τ; `>1` disables the local path (bench mode) |
 | `EXTRACT` | unset | `1` = constrained structured extraction (`guided_json` + JsonPos guard); unset = unconstrained entropy-guarded path |
-| `MAX_SURPRISAL` | 0.027 | guard threshold (nats) on the mean surprisal over all value tokens; from the held-out calibration in `bench/results-zen5-run2/` |
+| `MAX_SURPRISAL` | 0 | guard threshold (nats) on the mean surprisal over all value tokens; 0 = escalate on any measurable hesitation (fitted for the 2-shot prompt; use 0.021 zero-shot) |
 | `EGRESS` | `redis` | `pgvector` (durable, idempotent upsert) or `redis` (results stream, for TTA measurement) |
 | `B_MAX` / `W_MAX_MS` | 32 / 19 | batch-size cap and `BLOCK` window (Eq. 3 of the paper is a cap, not a collector) |
 | `EGRESS_BACKOFF_BASE_MS` / `_MAX_MS` / `EGRESS_DRAIN_TIMEOUT_MS` | 100 / 10000 / 30000 | sink retry backoff and shutdown drain bound |
@@ -135,9 +139,8 @@ service is unused.
 2. **Mechanism, ablation, pool sweep (Table II):** `./bench/spin-proof.sh`, `./bench/ablation-2x2.sh`
    and `./bench/pool-sweep.sh` (~1 h, ~50 min, ~35 min; n=5 × 60 s). Run-2 results and verdict printouts are in `bench/results-zen5-run2/`
    (`run-all.log` holds the full console output).
-3. **Guard (Table VIII):** `python3 analysis/guard_eval.py` reproduces every reported number
-   from the committed `bench/results-zen5-run2/shadow-pairs.jsonl` (no model needed). To
-   regenerate the pairs: serve `Qwen/Qwen3-8B-AWQ` with vLLM 0.9.2 (see
-   `VLLM_URL=… PAYLOADS_ROOT=payloads/synthetic HOLDOUT=0.3 OPENAI_API_KEY=… npm run shadow`.
-   The corpus itself is regenerated with `SEED=20261002 node bench/gen-synthetic-corpus.mjs`
-   (the writer model is not deterministic, so texts differ; the constructed truth does not).
+3. **Guard (Table VIII):** `python3 analysis/guard_confirm.py` reproduces every reported number
+   from the committed `bench/results-zen5-run2/guard-confirm.jsonl` (no model needed). To
+   then `VLLM_URL=… TEMPS="0" SHOTS="0 1 2" PAYLOADS_ROOT=payloads/synthetic-confirm
+   OUT=bench/results-zen5-run2/guard-confirm.jsonl node bench/optimize-guard.mjs`.
+   Corpora: `payloads/synthetic-confirm/` (2,000, seed 20261004 — the reported one),
