@@ -51,3 +51,8 @@ H2 — guard as second-order filter (silent-error rate):
 
 == decision (pre-registered) ==
   H1 confirmed for: T0_shot1, T0_shot2.  Deploy: T0_shot2  (held-out silent-error with guard 0.7%, s_max = 0.0000 nats)
+
+== held-out AUROC, bootstrap 95% intervals (10,000 resamples; descriptive, not pre-registered) ==
+  T0_shot0: 0.794  [0.748, 0.837]
+  T0_shot1: 0.896  [0.842, 0.944]
+  T0_shot2: 0.851  [0.737, 0.951]

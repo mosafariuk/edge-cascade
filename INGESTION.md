@@ -22,7 +22,7 @@ fallback. Malformed payloads are **dead-lettered**, never fed to the model (`adm
 ```json
 {
   "kind": "telemetry",
-  "req_id": "frame_0001",             // REQUIRED, string
+  "req_id": "frame_0001",              // REQUIRED, string
   "stream_type": "audio_cv_sync",
   "raw_telemetry": "[00:00:12] pitch +2.4σ; gaze off-screen 4.2s; baseline nominal.", // REQUIRED
   "timestamp": 1700000000
@@ -42,8 +42,8 @@ the output *parses*, not that the model's *math* is right.
 | `property_audit` | `current_value_gbp`, `previous_value_gbp?`, `cohort_avg_increase_pct?`, `effective_date_raw?`, `assets[]` | `increase_pct`, `discrepancy_flag` (= increase > cohort), `effective_date`+`date_ambiguous` (normalized from raw + batch `ref_year`), `value_suspect` (= £<500, catches `45k→45` misread) |
 | `telemetry` | `acoustic_sigma?`, `gaze_deviation_duration_sec?`, `gaze_offscreen`, `posture_rigid`, `baseline_nominal` | `event_classification`, `marker_count`, `requires_deep_diagnostic` (= ≥2 markers) |
 
-**Hardened against real samples:** `posture_rigid` was added after production Sample B
-(`+3.1σ` + "rigid contraction" + "multiple models triggering") — without it `marker_count`
+**Hardened against a real failure mode:** `posture_rigid` was added after a record of the form
+`+3.1σ` + "rigid contraction" + "multiple models triggering" (sample B is a synthetic equivalent) — without it `marker_count`
 under-counts to 1 and `requires_deep_diagnostic` returns a wrong `false`. Date normalization
 uses batch `metadata.ref_year` to resolve partial dates like `01-Apr` → `2026-04-01`.
 

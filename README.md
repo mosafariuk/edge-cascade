@@ -1,8 +1,8 @@
 # edge-cascade
 
-Reference implementation and benchmark artifact for **"Edge-Network Semantic Cascading:
-Resolving CPU Oversubscription and Scaling Constraints in High-Throughput LLM Ingestion
-Pipelines"** (`semantic-cascading.tex`).
+Reference implementation and benchmark artifact for **"Spin-Wait Contention and Chiplet
+Topology in CPU Inference Fleets: Scaling the Embedding Stage of LLM Ingestion Cascades"**
+(`semantic-cascading.tex`).
 
 An **LLM cascade** as an ingestion microservice: a CPU-resident routing stage embeds every
 record with a small ONNX model; each admitted payload is extracted by a small local model
@@ -35,7 +35,7 @@ LLM stages are exercised by the guard/calibration tooling, not by the scaling sw
 ## Layout
 ```
 src/
-  models.mjs           # single source of truth for the edge, judge and embedding models (fill the TODOs)
+  models.mjs           # single source of truth for the edge, judge and embedding models
   pipeline-worker.mjs  # worker: Redis Streams source, embed, router, guard/escalate, egress, PEL recovery
   embed-native.mjs     # onnxruntime-node embedder: intraOpNumThreads pinning, allow_spinning control
   cascade-lib.mjs      # RateEstimator (λ EWMA), adaptiveBatchSize, shannonEntropy  [pure]
@@ -134,6 +134,12 @@ src-<entry id>`, stable across redelivery, so the pgvector `ON CONFLICT (id)` up
 duplicates. The Redis results sink is **not** idempotent. The RabbitMQ adapters in
 `pipeline-worker.mjs` / `egress.mjs` are unwired and untested; the compose file's `rabbitmq`
 service is unused.
+
+## Reading the trace headers
+Every JSONL artifact in `bench/results-zen5-run2/` starts with a provenance line. Its
+`judge_model` object is the configuration record from `src/models.mjs`: `provider: "openai"`
+and `openai_id: "gpt-4o"` identify the judge that was actually used (GPT-4o); the `id`
+field (`claude-opus-4-8`) is the default for the unused Anthropic provider path.
 
 ## Reproducing the paper's numbers
 1. **Scaling / placement / latency (Tables IV–VII):** on a quiesced bare-metal Linux host, see

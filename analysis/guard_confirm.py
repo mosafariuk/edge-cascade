@@ -113,3 +113,15 @@ if not ok: print("  No few-shot arm improves held-out accuracy with an interval 
 else:
     full = {a: silent(a, ev) for a in ok}; best = min(ok, key=lambda a: (round(full[a], 6), ARMS.index(a)))
     print(f"  H1 confirmed for: {', '.join(ok)}.  Deploy: {best}  (held-out silent-error with guard {100*full[best]:.1f}%, s_max = {res[best]['thr']:.4f} nats)")
+
+# ── post-registration addition (descriptive): bootstrap intervals for the held-out AUROC of
+#    each arm. Separate RNG so nothing printed above changes. ──
+ra = random.Random(SPLIT_SEED + 1)
+print("\n== held-out AUROC, bootstrap 95% intervals (10,000 resamples; descriptive, not pre-registered) ==")
+for a in ARMS:
+    v = []
+    for _ in range(B):
+        s = [ev[ra.randrange(len(ev))] for _ in ev]
+        x = auroc([sig(by[a][k]) for k in s], [res[a]['err'][k] for k in s])
+        if not math.isnan(x): v.append(x)
+    v.sort(); print(f"  {a}: {res[a]['auc']:.3f}  [{v[int(.025*len(v))]:.3f}, {v[int(.975*len(v))]:.3f}]")

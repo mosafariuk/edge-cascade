@@ -74,8 +74,8 @@ const TelemetryExtract = {
     acoustic_sigma:              { type: ['number', 'null'], description: 'pitch elevation in σ' },
     gaze_deviation_duration_sec: { type: ['number', 'null'] },
     gaze_offscreen:              { type: 'boolean' },
-    // posture / biomechanical stress marker — REAL sample B ("rigid contraction")
-    // needs this or requires_deep_diagnostic under-counts to 1 and returns false.
+    // posture / biomechanical stress marker — a record of the form "σ spike + rigid contraction"
+    // (sample B) needs this or requires_deep_diagnostic under-counts to 1 and returns false.
     posture_rigid:               { type: 'boolean', description: 'rigid contraction / posture anomaly present' },
     baseline_nominal:            { type: 'boolean' },
   },

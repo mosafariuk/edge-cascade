@@ -1,0 +1,5 @@
+{
+  "req_id": "synth_telemetry_a",
+  "stream_type": "synthetic_monitoring",
+  "raw_telemetry": "[00:00:12] Pitch elevated +2.4σ. Gaze locked off-screen for 4.2s. Baseline stress metrics nominal."
+}

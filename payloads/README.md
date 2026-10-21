@@ -2,7 +2,8 @@
 
 | Directory | What it is |
 |---|---|
-| `property_audit/`, `telemetry/` | Four pseudonymized illustrative samples (2 + 2) used by the tests and by paper §V-D. Any other file placed here is gitignored. |
+| `property_audit/` | Two pseudonymized public-registry samples used by the tests and by paper §V-D. Any other file placed here is gitignored. |
+| `telemetry/` | Two **synthetic** samples with the marker semantics discussed in paper §V-D (A: elevated pitch, off-screen gaze for 4.2 s, baseline nominal; B: pitch spike, rigid posture, gaze centred). No real telemetry is published. |
 | `synthetic-confirm/` | **The confirmation corpus behind paper Table VIII.** 1,000 + 1,000 records, seed 20261004, generated after every design choice and the in-context examples were frozen. |
 | `synthetic/` | **The exploratory corpus (paper §VI-G).** 250 + 250 records, seed 20261002, used to compare guard statistics and explore generation settings. |
 

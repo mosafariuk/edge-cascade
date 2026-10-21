@@ -158,8 +158,8 @@ console.log('10. date normalizer (code-side)');
   ok('ISO parsed, "01-Apr" flagged ambiguous (year missing), refYear resolves, DD/MM flagged');
 }
 
-// ── 11. PRODUCTION samples end-to-end derive (the extracted primitives → derived) ──
-console.log('11. real production samples → derive()');
+// ── 11. sample payloads end-to-end derive (the extracted primitives → derived) ──
+console.log('11. sample payloads → derive()');
 {
   const P = SCHEMAS.property_audit, T = SCHEMAS.telemetry;
 
@@ -180,21 +180,21 @@ console.log('11. real production samples → derive()');
   // the "45k → 45" misread would be caught:
   assert.equal(P.derive({ current_value_gbp: 45, assets: [] }).value_suspect, true);
 
-  // Telemetry Sample A (A): σ2.4 + gaze 4.2s + offscreen → 3 markers, deep diagnostic
+  // Telemetry sample A (synth_telemetry_a): σ2.4 + gaze 4.2s + offscreen → 3 markers, deep diagnostic
   const ta = T.derive({ acoustic_sigma: 2.4, gaze_deviation_duration_sec: 4.2, gaze_offscreen: true, baseline_nominal: true });
   assert.equal(ta.marker_count, 3);
   assert.equal(ta.event_classification, 'acoustic_stress_spike');
   assert.equal(ta.requires_deep_diagnostic, true);
 
-  // Telemetry Sample B (B): σ3.1 + posture_rigid, gaze center-fixed → 2 markers, deep diagnostic
+  // Telemetry sample B (synth_telemetry_b): σ3.1 + posture_rigid, gaze centred → 2 markers, deep diagnostic
   const tb = T.derive({ acoustic_sigma: 3.1, gaze_offscreen: false, posture_rigid: true, baseline_nominal: false });
   assert.equal(tb.marker_count, 2);
   assert.equal(tb.requires_deep_diagnostic, true);
-  // WITHOUT the posture_rigid primitive this would be 1 → false (the bug the real sample exposed):
+  // WITHOUT the posture_rigid primitive this would be 1 → false (the bug this record shape exposed):
   const tbNoPosture = T.derive({ acoustic_sigma: 3.1, gaze_offscreen: false, baseline_nominal: false });
   assert.equal(tbNoPosture.marker_count, 1);
   assert.equal(tbNoPosture.requires_deep_diagnostic, false);
-  ok('4 production samples derive correctly; posture_rigid fixes Sample B (1→2 markers → deep diagnostic)');
+  ok('4 sample payloads derive correctly; posture_rigid fixes sample B (1→2 markers → deep diagnostic)');
 }
 
 // ── 12. objects with FEWER than k value tokens are still guarded ─────────────

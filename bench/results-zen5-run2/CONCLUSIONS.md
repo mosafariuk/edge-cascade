@@ -1,5 +1,12 @@
 # Run 2 — spin-wait intervention and 2×2 pinning ablation (2026-09-30)
 
+> **Logs vs CSVs.** `spin-proof-logs/`, `ablation-logs/` and `pool-sweep-logs/` hold worker
+> and load-generator logs, but every arm of a script wrote to the same file names, so only the
+> LAST arm's logs survive in each directory (spin-proof: arm D; ablation: cell 4; pool sweep:
+> intra-op 32). The per-trial CSVs are complete for every arm and are the data behind the paper.
+> In JSONL trace headers, `judge_model.id` is a config default; the judge used was GPT-4o
+> (`provider: "openai"`, `openai_id: "gpt-4o"`).
+
 **Host:** bare-metal AMD Ryzen 9 9950X (same model/provider as run 1), Ubuntu 24.04.5, kernel
 6.8.0, Node v24.21.0, onnxruntime-node 1.27.0, model sha256 `afdb6f1a…` (identical to run 1).
 Quiesced by the run-1 procedure (RAID resync frozen, apt timers masked, host redis disabled,
@@ -139,8 +146,8 @@ Files: `guard-grid.jsonl` (6,000 traces), `guard-grid.log`, `guard-grid.txt`
 
 ## 9. Confirmation run (paper Table VIII) — 2026-10-01
 
-Pre-registered: `analysis/guard_confirm.py` committed before the data (commit "Pre-register the
-guard confirmation run"). Fresh corpus `payloads/synthetic-confirm` (2,000 records, seed
+Pre-registered: `analysis/guard_confirm.py` committed before the data (first commit of the public
+repository, "Edge-cascade artifact; pre-registration of the guard confirmation run"). Fresh corpus `payloads/synthetic-confirm` (2,000 records, seed
 20261004; 349 first drafts regenerated, 2 templated). rented host, RTX 3090 PCIe 4.0 ×16,
 Qwen3-8B-AWQ, vLLM 0.9.2 (`gpu-host-confirm.txt`). Files: `guard-confirm.jsonl` (6,000 traces),
 `guard-confirm.log`, `guard-confirm.txt`.
